@@ -146,25 +146,60 @@
 # 1 <= s.length, t.length <= 2 * 105
 # s and t consist of lowercase English letters.
 
+##################
+# https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/description/
+# 2273. Find Resultant Array After Removing Anagrams
+
+# You are given a 0-indexed string array words, where words[i] consists of lowercase English letters.
+# In one operation, select any index i such that 0 < i < words.length and words[i - 1] and words[i] are anagrams, and delete words[i] from words. Keep performing this operation as long as you can select an index that satisfies the conditions.
+# Return words after performing all operations. It can be shown that selecting the indices for each operation in any arbitrary order will lead to the same result.
+# An Anagram is a word or phrase formed by rearranging the letters of a different word or phrase using all the original letters exactly once. For example, "dacb" is an anagram of "abdc".
+
+# Example 1:
+# Input: words = ["abba","baba","bbaa","cd","cd"]
+# Output: ["abba","cd"]
+# Explanation:
+# One of the ways we can obtain the resultant array is by using the following operations:
+# - Since words[2] = "bbaa" and words[1] = "baba" are anagrams, we choose index 2 and delete words[2].
+#   Now words = ["abba","baba","cd","cd"].
+# - Since words[1] = "baba" and words[0] = "abba" are anagrams, we choose index 1 and delete words[1].
+#   Now words = ["abba","cd","cd"].
+# - Since words[2] = "cd" and words[1] = "cd" are anagrams, we choose index 2 and delete words[2].
+#   Now words = ["abba","cd"].
+# We can no longer perform any operations, so ["abba","cd"] is the final answer.
+
+# Example 2:
+# Input: words = ["a","b","c","d","e"]
+# Output: ["a","b","c","d","e"]
+# Explanation:
+# No two adjacent strings in words are anagrams of each other, so no operations are performed.
+
+# Constraints:
+# 1 <= words.length <= 100
+# 1 <= words[i].length <= 10
+# words[i] consists of lowercase English letters.
+
 from typing import Dict
 from typing import List
-from collections import defaultdict
+from collections import Counter, defaultdict
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
         ''' Valid Anagram '''
         if len(s) != len(t):
             return False
-        dic_s = {}
-        dic_t = {}
-        for char in s.lower():
-            if char not in dic_s:
-                dic_s[char] = 0
-            dic_s[char] += 1
-        for char in t.lower():
-            if char not in dic_t:
-                dic_t[char] = 0
-            dic_t[char] += 1
+        # dic_s = {}
+        # for char in s.lower():
+        #     if char not in dic_s:
+        #         dic_s[char] = 0
+        #     dic_s[char] += 1
+        dic_s = Counter(s.lower())
+        # dic_t = {}
+        # for char in t.lower():
+        #     if char not in dic_t:
+        #         dic_t[char] = 0
+        #     dic_t[char] += 1
+        dic_t = Counter(t.lower())
         return dic_s == dic_t
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         ''' Group Anagrams '''
@@ -239,27 +274,39 @@ class Solution:
         for i, num in enumerate(nums2):
             mapper[num].add(i)
         return [mapper[num].pop() for num in nums1]
+    def removeAnagrams(self, words: List[str]) -> List[str]:
+        ''' Find Resultant Array After Removing Anagrams '''
+        return [
+            w
+            for i, w in enumerate(words)
+            if i == 0 or sorted(w) != sorted(words[i - 1])
+        ]
 
 s, t = "anagram", "naGaram"
+# Output: True
 # s, t = "rat", "car"
 # s, t = "cat", "Catherine"
 Solution().isAnagram(s, t)
 
 # strs = [""]
 strs = ["eat","tea","tan","ate","nat","bat"]
+# Output: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
 Solution().groupAnagrams(strs)
 
 # s, p = "abab", "ab"
 s, p = "cbaebabacd", "abc"
+# Output: [0, 6]
 Solution().findAnagrams(s, p)
 
 s, t = "leetcode", "practice"
+# Output: 5
 # s, t = "bab", "aba"
 # s, t = "anagram", "mangaar"
 Solution().minSteps(s, t)
 
 # s, t = "leetcode", "coats"
 s, t = "night", "thing"
+# Output: 0
 Solution().minStepsII(s, t)
 
 # nums1 = [12,28,46,32,50]
@@ -274,3 +321,9 @@ nums1 = [84,46,46]
 nums2 = [46,84,46]
 # Output: [1, 0, 2]
 Solution().anagramMappings(nums1, nums2)
+
+# words = ["abba","baba","bbaa","cd","cd"]
+# Output: ['abba', 'cd']
+words = ["abba","bbaa","cd","cd","baba"]
+# Output: ['abba', 'cd', 'baba']
+Solution().removeAnagrams(words)
