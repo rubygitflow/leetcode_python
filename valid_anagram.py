@@ -68,6 +68,30 @@
 # s and p consist of lowercase English letters.
 
 ##################
+# https://leetcode.com/problems/find-anagram-mappings/description/
+# 760. Find Anagram Mappings
+
+# You are given two integer arrays nums1 and nums2 where nums2 is an anagram of nums1.
+# Both arrays may contain duplicates
+# Return an index mapping array mapping from nums1 to nums2 where mapping[i] = j means the ith element in nums1 appears in nums2 at index j. If there are multiple answers, return any of them.
+# An array a is an anagram of an array b means b is made by randomizing the order of the elements in a.
+
+# Example 1:
+# Input: nums1 = [12,28,46,32,50], nums2 = [50,12,32,46,28]
+# Output: [1,4,3,2,0]
+# Explanation: As mapping[0] = 1 because the 0th element of nums1 appears at nums2[1], and mapping[1] = 4 because the 1st element of nums1 appears at nums2[4], and so on.
+
+# Example 2:
+# Input: nums1 = [84,46], nums2 = [84,46]
+# Output: [0,1]
+
+# Constraints:
+# 1 <= nums1.length <= 100
+# nums2.length == nums1.length
+# 0 <= nums1[i], nums2[i] <= 105
+# nums2 is an anagram of nums1.
+
+##################
 # https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/description/
 # 1347. Minimum Number of Steps to Make Two Strings Anagram
 
@@ -121,6 +145,10 @@
 # Constraints:
 # 1 <= s.length, t.length <= 2 * 105
 # s and t consist of lowercase English letters.
+
+from typing import Dict
+from typing import List
+from collections import defaultdict
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
@@ -205,31 +233,44 @@ class Solution:
         for key in dic_s:
             output += dic_s[key]
         return output
+    def anagramMappings(self, nums1: List[int], nums2: List[int]) -> List[int]:
+        ''' Find Anagram Mappings '''
+        mapper = defaultdict(set)
+        for i, num in enumerate(nums2):
+            mapper[num].add(i)
+        return [mapper[num].pop() for num in nums1]
 
 s, t = "anagram", "naGaram"
 # s, t = "rat", "car"
 # s, t = "cat", "Catherine"
-
 Solution().isAnagram(s, t)
 
 # strs = [""]
 strs = ["eat","tea","tan","ate","nat","bat"]
-
 Solution().groupAnagrams(strs)
 
 # s, p = "abab", "ab"
 s, p = "cbaebabacd", "abc"
-
 Solution().findAnagrams(s, p)
 
 s, t = "leetcode", "practice"
 # s, t = "bab", "aba"
 # s, t = "anagram", "mangaar"
-
 Solution().minSteps(s, t)
 
-s, t = "leetcode", "coats"
+# s, t = "leetcode", "coats"
 s, t = "night", "thing"
-
 Solution().minStepsII(s, t)
 
+# nums1 = [12,28,46,32,50]
+# nums2 = [50,12,32,46,28]
+# Output: [1,4,3,2,0]
+
+# nums1 = [84,46]
+# nums2 = [84,46]
+# Output: [0,1]
+
+nums1 = [84,46,46]
+nums2 = [46,84,46]
+# Output: [1, 0, 2]
+Solution().anagramMappings(nums1, nums2)
