@@ -15,7 +15,6 @@
 # Example 3:
 # Input: strs = ["a"]
 # Output: [["a"]]
- 
 
 # Constraints:
 # 1 <= strs.length <= 104
@@ -63,7 +62,7 @@
 # The substring with start index = 0 is "ab", which is an anagram of "ab".
 # The substring with start index = 1 is "ba", which is an anagram of "ab".
 # The substring with start index = 2 is "ab", which is an anagram of "ab".
- 
+
 # Constraints:
 # 1 <= s.length, p.length <= 3 * 104
 # s and p consist of lowercase English letters.
@@ -95,6 +94,33 @@
 # 1 <= s.length <= 5 * 104
 # s.length == t.length
 # s and t consist of lowercase English letters only.
+
+##################
+# https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/description/
+# 2186. Minimum Number of Steps to Make Two Strings Anagram II
+
+# You are given two strings s and t. In one step, you can append any character to either s or t.
+# Return the minimum number of steps to make s and t anagrams of each other.
+# An anagram of a string is a string that contains the same characters with a different (or the same) ordering.
+
+# Example 1:
+# Input: s = "leetcode", t = "coats"
+# Output: 7
+# Explanation: 
+# - In 2 steps, we can append the letters in "as" onto s = "leetcode", forming s = "leetcodeas".
+# - In 5 steps, we can append the letters in "leede" onto t = "coats", forming t = "coatsleede".
+# "leetcodeas" and "coatsleede" are now anagrams of each other.
+# We used a total of 2 + 5 = 7 steps.
+# It can be shown that there is no way to make them anagrams of each other with less than 7 steps.
+
+# Example 2:
+# Input: s = "night", t = "thing"
+# Output: 0
+# Explanation: The given strings are already anagrams of each other. Thus, we do not need any further steps.
+
+# Constraints:
+# 1 <= s.length, t.length <= 2 * 105
+# s and t consist of lowercase English letters.
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
@@ -156,6 +182,29 @@ class Solution:
             else:
                 output += dic_t[key]
         return output
+    def minStepsII(self, s: str, t: str) -> int:
+        ''' Minimum Number of Steps to Make Two Strings Anagram II '''
+        dic_s = {}
+        dic_t = {}
+        for char in s.lower():
+            if char not in dic_s:
+                dic_s[char] = 0
+            dic_s[char] += 1
+        for char in t.lower():
+            if char not in dic_t:
+                dic_t[char] = 0
+            dic_t[char] += 1
+        output = 0
+        for key in dic_t:
+            if key in dic_s:
+                difference = abs(dic_t[key] - dic_s[key])
+                output += difference
+                dic_s.pop(key)
+            else:
+                output += dic_t[key]
+        for key in dic_s:
+            output += dic_s[key]
+        return output
 
 s, t = "anagram", "naGaram"
 # s, t = "rat", "car"
@@ -178,4 +227,9 @@ s, t = "leetcode", "practice"
 # s, t = "anagram", "mangaar"
 
 Solution().minSteps(s, t)
+
+s, t = "leetcode", "coats"
+s, t = "night", "thing"
+
+Solution().minStepsII(s, t)
 
