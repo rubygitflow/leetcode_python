@@ -184,6 +184,16 @@ from typing import List
 from collections import Counter, defaultdict
 
 class Solution:
+    def __dictFromString(self, s: str) -> Dict:
+        d = defaultdict(int)
+        for c in s:
+            d[c] += 1
+        return d
+    def isAnagramOld(self, s: str, t: str) -> bool:
+        ''' Valid Anagram (Old Version - Case sensitive) '''
+        if len(s) != len(t):
+            return False
+        return self.__dictFromString(s) == self.__dictFromString(t)
     def isAnagram(self, s: str, t: str) -> bool:
         ''' Valid Anagram '''
         if len(s) != len(t):
@@ -287,6 +297,9 @@ s, t = "anagram", "naGaram"
 # s, t = "rat", "car"
 # s, t = "cat", "Catherine"
 Solution().isAnagram(s, t)
+s, t = "anagram", "margana"
+# Case sensitive!!!
+Solution().isAnagramOld(s, t)
 
 # strs = [""]
 strs = ["eat","tea","tan","ate","nat","bat"]
