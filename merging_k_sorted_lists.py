@@ -1,0 +1,109 @@
+# https://habr.com/ru/companies/yandex/articles/449890/
+# Задача F. Слияние $k$ сортированных списков
+# ---
+# Как осуществить слияние k сортированных списков (решение)
+# https://ru.stackoverflow.com/questions/927630/%D0%9A%D0%B0%D0%BA-%D0%BE%D1%81%D1%83%D1%89%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%82%D1%8C-%D1%81%D0%BB%D0%B8%D1%8F%D0%BD%D0%B8%D0%B5-k-%D1%81%D0%BE%D1%80%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%B2?ysclid=ltankz97u649243670
+
+# Даны k отсортированных в порядке неубывания массивов натуральных чисел, каждое из которых не превосходит 100. Требуется построить результат их слияния: отсортированный в порядке неубывания массив, содержащий все элементы исходных k массивов.
+# Длина каждого массива не превосходит 10 ⋅ k.
+# Постарайтесь, чтобы решение работало за время k ⋅ log(k) ⋅ n, если считать, что входные массивы имеют длину n.
+
+import sys
+import time
+import tracemalloc
+from typing import List
+from collections import Counter
+
+class Solution:
+    __focus_pos = {}
+    __focus_val = {}
+    __inputs = {}
+    def __read_int(self) -> int:
+        return int(sys.stdin.readline())
+    def __read_array(self) -> List[int]:
+        return list(map(int, sys.stdin.readline().split()))
+    def __trace_start(self) -> float:
+        tracemalloc.start()
+        return time.time()
+    def __trace_stop(self, t: float):
+        print()
+        print(time.time()-t)
+        current, peak = tracemalloc.get_traced_memory()
+        print(f"Current memory usage is {current / 10**6}MB; Peak was {peak / 10**6}MB")
+        tracemalloc.stop()
+        print()
+    def inputAndCombineSortedLists(self) -> List[int]:
+        ''' Merging K sorted lists (New method) '''
+        n = self.__read_int()
+        inputs = {}
+        for i in range(n):
+            inputs[i] = self.__read_array()
+        t = self.__trace_start()
+        c = Counter()
+        for i in range(n):
+            c += Counter(inputs[i][1:])
+        outputs = []
+        for i in sorted(c.keys()):
+            outputs += [i for _ in range(c[i])]
+        self.__trace_stop(t)
+        return outputs
+    def __shift_inputs(self, arr_id: int, from_pos: int):
+        len = self.__inputs[arr_id][0]
+        if from_pos < len:
+            self.__change_focus(arr_id, from_pos + 1)
+        else:
+            self.__focus_pos.pop(arr_id)
+            self.__focus_val.pop(arr_id)
+    def __change_focus(self, arr_id: int, pos: int):
+        self.__focus_pos[arr_id] = pos
+        self.__focus_val[arr_id] = self.__inputs[arr_id][pos]
+    def __iterateSortedLists(self) -> List[int]:
+        output = []
+        k = 0
+        while len(self.__focus_pos) > 0:
+            k += 1
+            arr_id = min(self.__focus_val, key=self.__focus_val.get)
+            old_pos = self.__focus_pos[arr_id]
+            output.append(self.__inputs[arr_id][old_pos])
+            self.__shift_inputs(arr_id, old_pos)
+            if k > 1000000:
+                break
+        return output
+    def inputAndCombineSortedListsOld(self) -> List[int]:
+        ''' Merging K sorted lists (Old method) '''
+        n = self.__read_int()
+        for i in range(n):
+            self.__inputs[i] = self.__read_array()
+        t = self.__trace_start()
+        for i in range(n):
+            if self.__inputs[i][0] > 0:
+                self.__change_focus(i, 1)
+        output = self.__iterateSortedLists()
+        self.__trace_stop(t)
+        return output
+
+# 3
+# 3 1 44 88
+# 3 5 16 78
+# 3 23 44 98
+# Output: 
+# [1, 5, 16, 23, 44, 44, 78, 88, 98]
+
+4
+6 2 26 64 88 96 96
+4 8 20 65 86
+7 1 4 16 42 58 61 69
+3 1 84 86
+# Output: 
+# [1, 1, 2, 4, 8, 16, 20, 26, 42, 58, 61, 64, 65, 69, 84, 86, 86, 88, 96, 96]
+
+
+Solution().inputAndCombineSortedLists()
+
+# 0.0005667209625244141
+# Current memory usage is 0.002923MB; Peak was 0.003371MB
+
+Solution().inputAndCombineSortedListsOld()
+
+# 0.0002269744873046875
+# Current memory usage is 0.000512MB; Peak was 0.000896MB
