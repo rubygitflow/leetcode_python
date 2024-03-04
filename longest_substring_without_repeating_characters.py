@@ -25,6 +25,9 @@
 # 0 <= s.length <= 5 * 104
 # s consists of English letters, digits, symbols and spaces.
 
+from typing import Dict
+from typing import List
+
 class Solution:
     ''' Парсер строк на уникальные последовательсноти '''
     dictArray = {}
@@ -72,13 +75,15 @@ class Solution:
                 output[length].append(self.dictArray[elem])
         return output
 
-from typing import Dict
-from typing import List
 s1 = Solution()
 s1.lengthOfLongestSubstring("abcabcbb")
+# Output: 3
 s1.dictArray
+# Output: {0: 'abc', 1: 'bca', 2: 'cab', 3: 'abc', 5: 'cb', 7: 'b'}
 s1.fetchListsByLength(3)
+# Output: ['abc', 'bca', 'cab']
 s1.rangeDictArray()
+# Output: {3: ['abc', 'bca', 'cab'], 2: ['cb'], 1: ['b']}
 
 s2 = Solution()
 s2.lengthOfLongestSubstring("pwwkew")
@@ -88,6 +93,10 @@ s2.rangeDictArray()
 
 s3 = Solution()
 s3.lengthOfLongestSubstring("bbbbb")
+# Output: 3
 s3.dictArray
-s3.fetchListsByLength(1)
+# Output: {0: 'b', 1: 'b', 2: 'b', 3: 'b', 4: 'b'}
+s3.fetchListsByLength(3)
+# Output: []
 s3.rangeDictArray()
+# Output: {1: ['b']}
