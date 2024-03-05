@@ -131,6 +131,32 @@ class Solution:
             new_list = current
             current = next_node
         return new_list
+    def reverseListVis(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        ''' Reverse Linked List (Visualization) '''
+        new_list = None
+        current = head
+        k = 0
+        while current:
+            k+=1
+            print(' '*8, 'while', k)
+            next_node = current.next
+            try:
+                print('Next_node.val     from current.next',next_node.val)
+            except:
+                print('-Next_node|val    from ',next_node)
+            current.next = new_list
+            try:
+                print('current.next.val  from +New_list < Look back',current.next.val)
+            except:
+                print('-current.next|val from +New_list < Look back',current.next)
+            new_list = current
+            print('+New_list.val     from current',new_list.val)
+            current = next_node
+            try:
+                print('current.val       from Next_node',current.val)
+            except:
+                print('-current|val      from Next_node',current)
+        return new_list
 
 
 def add_linked_list(data, pos = -1):
@@ -172,6 +198,7 @@ res = res.next
 head = [1,2,3,4,5]
 # Output: [5,4,3,2,1]
 res = Solution().reverseList(add_linked_list(head))
+res = Solution().reverseListVis(add_linked_list(head))
 # ...
 res.val
 res = res.next
