@@ -8,7 +8,7 @@
 # Input: p = [1,2,3], q = [1,2,3]
 # Output: true
 # Example 2:
-# Input: p = [1,2], q = [1,null,2]
+# Input: p = [1,2], q = [1,None,2]
 # Output: false
 # Example 3:
 # Input: p = [1,2,1], q = [1,1,2]
@@ -24,6 +24,24 @@
 # 3. If both trees are not null, we check if their values are equal.
 # 4. Then, we recursively call the function on their left and right subtrees and check if they are the same.
 # 5. We combine the results of the checks on the current node's value and its subtrees and return the final result.
+
+#######################
+# https://leetcode.com/problems/symmetric-tree/description/
+# 101. Symmetric Tree
+# Given the root of a binary tree, check whether it is a mirror of itself (i.e., symmetric around its center).
+
+# Example 1:
+# Input: root = [1,2,2,3,4,4,3]
+# Output: true
+
+# Example 2:
+# Input: root = [1,2,2,None,3,None,3]
+# Output: false
+
+# Constraints:
+# The number of nodes in the tree is in the range [1, 1000].
+# -100 <= Node.val <= 100
+
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -47,18 +65,42 @@ class Solution:
             status &= self.isSameTree(p.left, q.left)
             status &= self.isSameTree(p.right, q.right)
             return status
+    def isSymmetric(self, root: Optional[TreeNode]) -> bool:        
+        def dfs(root1, root2):
+            if root1 is None and root2 is None:
+                return True
+            if root1 is None or root2 is None or root1.val != root2.val:
+                return False
+            return dfs(root1.left, root2.right) and dfs(root1.right, root2.left)
+        return dfs(root, root)
+
+def create_node(to_node, data, is_left):
+    if is_left:
+        to_node.left = TreeNode(data)
+        return to_node.left
+    else:
+        to_node.right = TreeNode(data)
+        return to_node.right
 
 def add_tree(data):
     if not data:
         return None
-    root1 = TreeNode(data[0])
+    root = TreeNode(data[0])
     if len(data) > 1:
         node1 = TreeNode(data[1])
-        root1.left = node1
+        root.left = node1
     if len(data) > 2:
         node2 = TreeNode(data[2])
-        root1.right = node2
-    return root1
+        root.right = node2
+    if len(data) > 3:
+        create_node(node1, data[3], True)
+    if len(data) > 4:
+        create_node(node1, data[4], False)
+    if len(data) > 5:
+        create_node(node2, data[5], True)
+    if len(data) > 6:
+        create_node(node2, data[6], False)
+    return root
 
 p, q = [1,2,3], [1,2,3]
 # Output: true
@@ -69,3 +111,11 @@ p, q = [1,2], [1,None,2]
 p, q = [1,2,1], [1,1,2]
 # Output: false
 Solution().isSameTree(add_tree(p), add_tree(q))
+
+p = [1,2,2,3,4,4,3]
+# Output: true
+Solution().isSymmetric(add_tree(p))
+
+# p = [1,2,2,None,3,None,3]
+# Output: false
+Solution().isSymmetric(add_tree(p))
