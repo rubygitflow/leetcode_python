@@ -42,6 +42,28 @@
 # The number of nodes in the tree is in the range [1, 1000].
 # -100 <= Node.val <= 100
 
+#######################
+# https://leetcode.com/problems/balanced-binary-tree/description/
+# 110. Balanced Binary Tree
+
+# Given a binary tree, determine if it is height-balanced
+
+# Example 1:
+# Input: root = [3,9,20,None,None,15,7]
+# Output: true
+
+# Example 2:
+# Input: root = [1,2,2,3,3,None,None,4,4]
+# Output: false
+
+# Example 3:
+# Input: root = []
+# Output: true
+
+# Constraints:
+# The number of nodes in the tree is in the range [0, 5000].
+# -104 <= Node.val <= 104
+
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -49,6 +71,10 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+    def __repr__(self) -> str:
+        return f"val: {self.val}, left: {self.left}, right: {self.right}"
+    def __str__(self) -> str:
+        return str(self.val)
 
 from typing import Optional
 
@@ -73,34 +99,38 @@ class Solution:
                 return False
             return dfs(root1.left, root2.right) and dfs(root1.right, root2.left)
         return dfs(root, root)
+    def helper(self, root: Optional[TreeNode]) -> int:
+        if root is None:
+            return 0
+        l = self.helper(root.left)
+        r = self.helper(root.right)
+        # if parents are unbalanced, even children will be unbalanced
+        if l == -1 or r == -1:
+            return -1
+        if abs(l - r ) > 1:
+            return -1
+        return 1 + max(l, r)
+    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+        output = self.helper(root)
+        if output > -1:
+            return True
+        return False
 
-def create_node(to_node, data, is_left):
-    if is_left:
-        to_node.left = TreeNode(data)
-        return to_node.left
-    else:
-        to_node.right = TreeNode(data)
-        return to_node.right
 
-def add_tree(data):
-    if not data:
+def build_binary_tree(items: list[int]) -> TreeNode:
+    """Create BT from list of values."""
+    n = len(items)
+    if n == 0:
         return None
-    root = TreeNode(data[0])
-    if len(data) > 1:
-        node1 = TreeNode(data[1])
-        root.left = node1
-    if len(data) > 2:
-        node2 = TreeNode(data[2])
-        root.right = node2
-    if len(data) > 3:
-        create_node(node1, data[3], True)
-    if len(data) > 4:
-        create_node(node1, data[4], False)
-    if len(data) > 5:
-        create_node(node2, data[5], True)
-    if len(data) > 6:
-        create_node(node2, data[6], False)
-    return root
+    def inner(index: int = 0) -> TreeNode:
+        """Closure function using recursion bo build tree"""
+        if n <= index or items[index] is None:
+            return None
+        node = TreeNode(items[index])
+        node.left = inner(2 * index + 1)
+        node.right = inner(2 * index + 2)
+        return node
+    return inner()
 
 p, q = [1,2,3], [1,2,3]
 # Output: true
@@ -110,12 +140,23 @@ p, q = [1,2], [1,None,2]
 
 p, q = [1,2,1], [1,1,2]
 # Output: false
-Solution().isSameTree(add_tree(p), add_tree(q))
+Solution().isSameTree(
+    build_binary_tree(p),
+    build_binary_tree(q)
+)
 
 p = [1,2,2,3,4,4,3]
 # Output: true
-Solution().isSymmetric(add_tree(p))
+Solution().isSymmetric(build_binary_tree(p))
 
 # p = [1,2,2,None,3,None,3]
 # Output: false
-Solution().isSymmetric(add_tree(p))
+Solution().isSymmetric(build_binary_tree(p))
+
+p = [3,9,20,None,None,15,7]
+# Output: true
+p = [1,2,2,3,3,None,None,4,4]
+# Output: false
+p = []
+# Output: true
+Solution().isBalanced(build_binary_tree(p))
