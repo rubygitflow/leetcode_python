@@ -25,6 +25,31 @@
 # -105 <= Node.val <= 105
 # pos is -1 or a valid index in the linked-list.
 
+##########################
+# https://leetcode.com/problems/add-two-numbers/description/
+# 2. Add Two Numbers
+
+# You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+# You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+# Example 1:
+# Input: l1 = [2,4,3], l2 = [5,6,4]
+# Output: [7,0,8]
+# Explanation: 342 + 465 = 807.
+
+# Example 2:
+# Input: l1 = [0], l2 = [0]
+# Output: [0]
+
+# Example 3:
+# Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
+# Output: [8,9,9,9,0,0,0,1]
+
+# Constraints:
+# The number of nodes in each linked list is in the range [1, 100].
+# 0 <= Node.val <= 9
+# It is guaranteed that the list represents a number that does not have leading zeros.
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -54,8 +79,27 @@ class Solution:
             visited_nodes.add(current_node)
             current_node = current_node.next
         return False 
+    def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
+        ''' Add Two Numbers '''
+        dummyHead = ListNode(0)
+        carry, tail = 0, dummyHead
+        while l1 is not None or l2 is not None or carry != 0:
+            digit1 = l1.val if l1 is not None else 0
+            digit2 = l2.val if l2 is not None else 0
+            sum = digit1 + digit2 + carry
+            carry, digit = divmod(sum, 10)
+            # digit = sum % 10
+            # carry = sum // 10
+            tail.next = ListNode(digit)
+            tail = tail.next
+            l1 = l1.next if l1 is not None else None
+            l2 = l2.next if l2 is not None else None
+        result = dummyHead.next
+        dummyHead.next = None
+        return result
 
-def add_linked_list(data, pos):
+
+def add_linked_list(data, pos = -1):
     tail = []
     tail.append(ListNode(data[0])) 
     for x in data[1:]:
@@ -75,3 +119,18 @@ head = add_linked_list([3,2,0,-4], 1)
 
 Solution().hasCycleTwoPointer(head)
 Solution().hasCycleHashTable(head)
+
+#########
+# l1, l2 = [9,9,9,9,9,9,9], [9,9,9,9]
+# Output: [8,9,9,9,0,0,0,1]
+
+l1, l2 = [2,4,3], [5,6,4]
+# Output: [7,0,8]
+res = Solution().addTwoNumbers(
+    add_linked_list(l1),
+    add_linked_list(l2)
+)
+# ...
+res.val
+res = res.next
+
