@@ -40,6 +40,3 @@ intervals = []
 intervals = [[-11,40],[1,4],[4,5]]
 
 Solution().mergeIntervals(intervals)
-
-
-
