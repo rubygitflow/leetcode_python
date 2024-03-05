@@ -94,6 +94,32 @@
 # -1000 <= Node.val <= 1000
 # -1000 <= targetSum <= 1000
 
+#######################
+# https://leetcode.com/problems/path-sum-ii/description/
+# 113. Path Sum II
+
+# Given the root of a binary tree and an integer targetSum, return all root-to-leaf paths where the sum of the node values in the path equals targetSum. Each path should be returned as a list of the node values, not node references.
+# A root-to-leaf path is a path starting from the root and ending at any leaf node. A leaf is a node with no children.
+
+# Example 1:
+# Input: root = [5,4,8,11,None,13,4,7,2,None,None,5,1], targetSum = 22
+# Output: [[5,4,11,2],[5,8,4,5]]
+# Explanation: There are two paths whose sum equals targetSum:
+# 5 + 4 + 11 + 2 = 22
+# 5 + 8 + 4 + 5 = 22
+
+# Example 2:
+# Input: root = [1,2,3], targetSum = 5
+# Output: []
+
+# Example 3:
+# Input: root = [1,2], targetSum = 0
+# Output: []
+
+# Constraints:
+# The number of nodes in the tree is in the range [0, 5000].
+# -1000 <= Node.val <= 1000
+# -1000 <= targetSum <= 1000
 
 # Definition for a binary tree node.
 class TreeNode:
@@ -106,10 +132,12 @@ class TreeNode:
     def __str__(self) -> str:
         return str(self.val)
 
-from typing import Optional
+from typing import List, Optional
+from collections import deque
 
 class Solution:
     def isSameTree(self, p: Optional[TreeNode], q: Optional[TreeNode]) -> bool:
+        ''' Same Tree '''
         p_is_null = p is None
         q_is_null = q is None
         if p_is_null and q_is_null:
@@ -122,6 +150,7 @@ class Solution:
             status &= self.isSameTree(p.right, q.right)
             return status
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:        
+        ''' Symmetric Tree '''
         def dfs(root1, root2):
             if root1 is None and root2 is None:
                 return True
@@ -129,11 +158,11 @@ class Solution:
                 return False
             return dfs(root1.left, root2.right) and dfs(root1.right, root2.left)
         return dfs(root, root)
-    def helper(self, root: Optional[TreeNode]) -> int:
+    def __helper(self, root: Optional[TreeNode]) -> int:
         if root is None:
             return 0
-        l = self.helper(root.left)
-        r = self.helper(root.right)
+        l = self.__helper(root.left)
+        r = self.__helper(root.right)
         # if parents are unbalanced, even children will be unbalanced
         if l == -1 or r == -1:
             return -1
@@ -141,11 +170,13 @@ class Solution:
             return -1
         return 1 + max(l, r)
     def isBalanced(self, root: Optional[TreeNode]) -> bool:
-        output = self.helper(root)
+        ''' Balanced Binary Tree '''
+        output = self.__helper(root)
         if output > -1:
             return True
         return False
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
+        ''' Path Sum '''
         if not root:
             return False
         if not root.left and not root.right:
@@ -153,6 +184,33 @@ class Solution:
         left_sum = self.hasPathSum(root.left, targetSum - root.val)
         right_sum = self.hasPathSum(root.right, targetSum - root.val)
         return left_sum or right_sum
+    def pathSum(self, root: Optional[TreeNode], targetSum: int) -> List[List[int]]:
+        ''' Path Sum II '''
+        if not root:
+            return None
+        #Final Result list
+        output = []
+        # Creating Stack for faster Insertion and Deletion
+        path = deque()
+        def dfs(node, summa):
+            #Adding value of node to stack as well as to sum (summa)
+            path.append(node.val)
+            # print('path',path) # Check the real state
+            summa += node.val
+            #Checking Whether it is a leaf node and also whether sum value is equal to targetSum
+            if  not node.left and not node.right and summa == targetSum:
+                output.append(list(path))
+            # If not then we will continue with our dfs by recursively going to left node and right node if exist.
+            if node.left:
+                dfs(node.left, summa)
+            if  node.right:
+                dfs(node.right, summa)
+            # Lastly, remove the node value from path and sum before exiting from the dfs
+            summa -= node.val
+            path.pop()
+        #Calling our dfs method and passing root as main node and sum(summa) as 0
+        dfs(root, 0)
+        return output
 
 def build_binary_tree(items: list[int]) -> TreeNode:
     """Create BT from list of values."""
@@ -184,8 +242,6 @@ Solution().isSameTree(
 
 p = [1,2,2,3,4,4,3]
 # Output: true
-Solution().isSymmetric(build_binary_tree(p))
-
 # p = [1,2,2,None,3,None,3]
 # Output: false
 Solution().isSymmetric(build_binary_tree(p))
@@ -205,3 +261,16 @@ p, targetSum = [1,2,3], 5
 p, targetSum = [], 0
 # Output: false
 Solution().hasPathSum(build_binary_tree(p), targetSum)
+
+# WARNING!!!
+# "Example 1:" includes
+# "Input:     root = [5,4,8,11,null,13,4,7,2,null,null,5,1], targetSum = 22"
+# but we should use "[5,4,8,11,None,4,13,7,2,None,None,5,1]"
+# After this replacement everything is fine!
+p, targetSum = [5,4,8,11,None,4,13,7,2,None,None,5,1], 22
+# Output: [[5,4,11,2],[5,8,4,5]]
+p, targetSum = [1,2,3], 5
+# Output: []
+p, targetSum = [1,2], 0
+# Output: []
+Solution().pathSum(build_binary_tree(p), targetSum)
