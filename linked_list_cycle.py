@@ -50,6 +50,30 @@
 # 0 <= Node.val <= 9
 # It is guaranteed that the list represents a number that does not have leading zeros.
 
+##########################
+# https://leetcode.com/problems/reverse-linked-list/
+# 206. Reverse Linked List
+
+# Given the head of a singly linked list, reverse the list, and return the reversed list.
+
+# Example 1:
+# Input: head = [1,2,3,4,5]
+# Output: [5,4,3,2,1]
+
+# Example 2:
+# Input: head = [1,2]
+# Output: [2,1]
+
+# Example 3:
+# Input: head = []
+# Output: []
+
+# Constraints:
+# The number of nodes in the list is the range [0, 5000].
+# -5000 <= Node.val <= 5000
+
+# Follow up: A linked list can be reversed either iteratively or recursively. Could you implement both?
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, x):
@@ -97,6 +121,16 @@ class Solution:
         result = dummyHead.next
         dummyHead.next = None
         return result
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        ''' Reverse Linked List '''
+        new_list = None
+        current = head
+        while current:
+            next_node = current.next
+            current.next = new_list
+            new_list = current
+            current = next_node
+        return new_list
 
 
 def add_linked_list(data, pos = -1):
@@ -134,3 +168,10 @@ res = Solution().addTwoNumbers(
 res.val
 res = res.next
 
+#########
+head = [1,2,3,4,5]
+# Output: [5,4,3,2,1]
+res = Solution().reverseList(add_linked_list(head))
+# ...
+res.val
+res = res.next
