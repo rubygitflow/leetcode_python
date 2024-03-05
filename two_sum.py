@@ -110,7 +110,7 @@ class Solution:
                 return [num_map[complement]+1, i+1]
             num_map[nums[i]] = i
         return []  # No solution found
-    def threeSum(self, nums: List[int]) -> List[List[int]]:
+    def threeSum(self, nums: List[int], target: int) -> List[List[int]]:
         ''' 3Sum '''
         n = len(nums)
         if n < 3:
@@ -120,25 +120,23 @@ class Solution:
         # сортировка нужна, чтобы исключить дубли в выходном массиве
         nums.sort()
         for i, v in enumerate(nums[:-2]):
-            print('i, v, nums[i-1]', i, v, nums[i-1])
             if i > 0 and v == nums[i-1]:
                 # пропускаем дубли триплетов (по условию задачи)
                 continue
             # two pointers подход
             l = i+1
             r = n-1
-            target = -v
+            current = target - v
             while l < r:
-                if nums[l] + nums[r] == target:
+                if nums[l] + nums[r] == current:
                     output.add((v, nums[l], nums[r]))
                     l += 1
                     r -= 1
-                elif nums[l] + nums[r] > target:
+                elif nums[l] + nums[r] > current:
                     r -= 1
                 else:
                     l += 1
         return list(map(list, output))
-
 
 nums, target = [2,7,11,15], 9
 # Output: [0,1]
@@ -149,7 +147,6 @@ nums, target = [2,3,4], 6
 Solution().twoSumSorted(nums, target)
 
 # nums = [-1,0,1,2,-1,-4]
-nums = [-2,0,1,1,2,-1,-4]
-# target = 0 , allways
+nums, target = [-2,0,1,1,2,-1,-4], 3
 # Output: [[-1,-1,2],[-1,0,1]]
-Solution().threeSum(nums)
+Solution().threeSum(nums, target)
