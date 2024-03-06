@@ -42,7 +42,7 @@
 # It is guaranteed that the answer is unique.
 
 
-from collections import Counter, defaultdict
+from collections import Counter #, defaultdict
 from typing import List
 
 class Solution:

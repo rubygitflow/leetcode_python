@@ -50,13 +50,15 @@ from typing import List
 
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
+        ''' Single Number '''
         # return reduce(lambda x, y: x ^ y, nums)
         for i in range(1, len(nums)):
             # Проводим побитовую операцию xor
             nums[0] ^= nums[i]
         return nums[0]
-    def singleNumber(self, nums: List[int]) -> int:
+    def singleNumberII(self, nums: List[int]) -> int:
         '''
+        Single Number II
         Approach: Magic
         Explanation
         https://leetcode.com/problems/single-number-ii/solutions/3714928/bit-manipulation-c-java-python-beginner-friendly/
@@ -68,7 +70,10 @@ class Solution:
             twos ^= (num & ~ones)
         return ones
     def singleNumberBF(self, nums: List[int]) -> int:
-      ''' Approach: Brute Force '''
+      '''
+      Single Number II
+      Approach: Brute Force
+      '''
         count = defaultdict(int)
         for x in nums:
             count[x] += 1
@@ -85,4 +90,4 @@ Solution().singleNumber(nums)
 nums = [0,1,0,1,0,1,99]
 # Output: 99
 Solution().singleNumberBF(nums)
-Solution().singleNumber(nums)
+Solution().singleNumberII(nums)

@@ -13,10 +13,10 @@ def gen(n: int, counter_open: int, counter_close: int, ans: str):
         print(ans)
         return
     if counter_open < n:
-        print('counter_open', counter_open, 'counter_close', counter_close, 'ans', ans)
+        # print('counter_open', counter_open, 'counter_close', counter_close, 'ans', ans)
         gen(n, counter_open + 1, counter_close, ans + '(')
     if counter_open > counter_close:
-        print('counter_open', counter_open, 'counter_close', counter_close, 'ans', ans)
+        # print('counter_open', counter_open, 'counter_close', counter_close, 'ans', ans)
         gen(n, counter_open, counter_close + 1, ans + ')')
 
 import time
