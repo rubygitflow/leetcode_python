@@ -109,6 +109,28 @@
 # 1 <= prices[i] < 5 * 104
 # 0 <= fee < 5 * 104
 
+#######################
+# https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/description/
+# 309. Best Time to Buy and Sell Stock with Cooldown
+
+# You are given an array prices where prices[i] is the price of a given stock on the ith day.
+# Find the maximum profit you can achieve. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times) with the following restrictions:
+# After you sell your stock, you cannot buy stock on the next day (i.e., cooldown one day).
+# Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
+
+# Example 1:
+# Input: prices = [1,2,3,0,2]
+# Output: 3
+# Explanation: transactions = [buy, sell, cooldown, buy, sell]
+
+# Example 2:
+# Input: prices = [1]
+# Output: 0
+
+# Constraints:
+# 1 <= prices.length <= 5000
+# 0 <= prices[i] <= 1000
+
 from typing import List
 
 class Solution:
@@ -159,6 +181,20 @@ class Solution:
         return sum(
             [deal[1] - deal[0] - fee for deal in merged_deals if (deal[1] - deal[0] - fee) > 0]
         )
+    def maxProfitWithHold(self, prices: List[int]) -> int:
+        sold = 0                # Represents the maximum profit if the stock is sold on the current day
+        hold = float('-inf')    # Represents the maximum profit if the stock is held (bought) on the current day
+        rest = 0                # Represents the maximum profit if no action is taken (rest) on the current day
+        for price in prices:    # Iterating through each day's stock price
+            prev_sold = sold    # Storing the previous value of 'sold' for updating 'rest'
+            # Updating 'sold' with the profit from holding the stock on the previous day plus the current day's stock price
+            sold = hold + price
+            # Updating 'hold' to the maximum of its current value and the profit from resting on the previous day minus the current day's stock price
+            hold = max(hold, rest - price)
+            # Updating 'rest' to the maximum of its current value and the profit from selling the stock on the previous day
+            rest = max(rest, prev_sold)
+        # Returning the maximum profit achievable, which is the maximum between 'sold' and 'rest'
+        return max(sold, rest)
 
 prices = [7,1,5,3,6,4]
 # Output: 5
@@ -183,3 +219,7 @@ prices, fee = [1,3,7,5,10,3], 3
 prices, fee = [8,9,7,6,8,8], 2
 # Output: 0
 Solution().maxProfitAfterFee(prices, fee)
+
+prices = [1,2,3,0,2]
+# Output: 3
+Solution().maxProfitWithHold(prices)
