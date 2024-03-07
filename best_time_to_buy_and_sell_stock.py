@@ -182,6 +182,7 @@ class Solution:
             [deal[1] - deal[0] - fee for deal in merged_deals if (deal[1] - deal[0] - fee) > 0]
         )
     def maxProfitWithHold(self, prices: List[int]) -> int:
+        ''' Best Time to Buy and Sell Stock with Cooldown '''
         sold = 0                # Represents the maximum profit if the stock is sold on the current day
         hold = float('-inf')    # Represents the maximum profit if the stock is held (bought) on the current day
         rest = 0                # Represents the maximum profit if no action is taken (rest) on the current day
