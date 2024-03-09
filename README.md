@@ -12,5 +12,6 @@
 - [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
 - [849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) >>> [free_seats_in_the_row.py](https://github.com/rubygitflow/leetcode_python/blob/master/free_seats_in_the_row.py)
 
+**11 tasks >>> 5 files**
 ## Addition
 - Find all sequences of Ones in a binary vector - [binary_vector.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_vector.py)
