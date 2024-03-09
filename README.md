@@ -19,7 +19,9 @@
 - [849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) >>> [free_seats_in_the_row.py](https://github.com/rubygitflow/leetcode_python/blob/master/free_seats_in_the_row.py)
 
 ## Addition
-- Find all sequences of Ones in a binary vector - [binary_vector.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_vector.py)
-- Find two numbers from the unsorted list in such that they add up to target [find_number_from_array_that_adds_up_to_given_number.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_number_from_array_that_adds_up_to_given_number.py)
+- Find all sequences of Ones in a binary vector >>> [binary_vector.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_vector.py)
+- Find two numbers from the unsorted list in such that they add up to target >>> [find_number_from_array_that_adds_up_to_given_number.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_number_from_array_that_adds_up_to_given_number.py)
+- Output all the unique pairs from a numeric array >>> [all_unique_pairs.py](https://github.com/rubygitflow/leetcode_python/blob/master/all_unique_pairs.py)
+- Just count all the unique pairs from the numeric array >>> [all_unique_pairs.py](https://github.com/rubygitflow/leetcode_python/blob/master/all_unique_pairs.py)
 
-**17(+2) tasks >>> 9 files**
+**17(+4) tasks >>> 10 files**
