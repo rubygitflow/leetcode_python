@@ -1,5 +1,8 @@
-# find a number from an array that adds up to a given number
+# Find two numbers such that they add up to target
 # найти числа из массива дающих в сумме заданное число
+# Look at "1. Two Sum"
+# https://leetcode.com/problems/two-sum/description/
+# two_sum.py
 
 from typing import List
 
