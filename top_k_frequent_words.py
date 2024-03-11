@@ -47,11 +47,13 @@ from typing import List
 
 class Solution:
     def topKFrequentWords(self, words: List[str], k: int) -> List[str]:
+        ''' Top K Frequent Words '''
         data = Counter(words)
         # сортировка по количествам (values) и отображение слов (keys)
         # в количестве k
         return sorted(data, key=lambda x: (-data[x], x))[:k]
     def topKFrequentElements(self, nums: List[int], k: int) -> List[int]:
+        ''' Top K Frequent Elements '''
         data = Counter(nums)
         # data = defaultdict(int)
         # for c in nums:

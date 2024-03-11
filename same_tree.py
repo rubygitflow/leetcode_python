@@ -248,12 +248,12 @@ class Solution:
         return ans
 
 def build_binary_tree(items: list[int]) -> TreeNode:
-    """Create BT from list of values."""
+    """ Create BT from list of values. """
     n = len(items)
     if n == 0:
         return None
     def inner(index: int = 0) -> TreeNode:
-        """Closure function using recursion bo build tree"""
+        """ Closure function using recursion bo build tree """
         if n <= index or items[index] is None:
             return None
         node = TreeNode(items[index])

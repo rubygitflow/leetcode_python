@@ -61,6 +61,7 @@ from typing import List
 
 class Solution:
     def medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
+        ''' Sliding Window Median '''
         res = []
         window = nums[:k]
         window.sort()
@@ -81,6 +82,7 @@ class Solution:
         res.append(float(median))
         return res
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+        ''' Sliding Window Maximum '''
         res = []
         window = nums[:k]
         for i in range(k, len(nums)):
