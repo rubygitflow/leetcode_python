@@ -28,6 +28,7 @@
 - [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
 - [123. Best Time to Buy and Sell Stock III](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iii/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
 - [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum/) >>> [same_tree.py](https://github.com/rubygitflow/leetcode_python/blob/master/same_tree.py)
+- [128. Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) >>> [longest_consecutive_sequence.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_consecutive_sequence.py)
 - [136. Single Number](https://leetcode.com/problems/single-number/) >>> [single_number.py](https://github.com/rubygitflow/leetcode_python/blob/master/single_number.py)
 - [137. Single Number II](https://leetcode.com/problems/single-number-ii/) >>> [single_number.py](https://github.com/rubygitflow/leetcode_python/blob/master/single_number.py)
 - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
@@ -69,4 +70,4 @@
 - a list of strings of a given length from the dictArray dictionary >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 
-**59(+6) tasks >>> 33 files**
+**61(+6) tasks >>> 34 files**
