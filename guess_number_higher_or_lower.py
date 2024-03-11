@@ -42,6 +42,7 @@ def guess(num: int) -> int:
 
 class Solution:
     def guessNumber(self, n: int) -> int:
+        ''' Guess Number Higher or Lower '''
         low, high = 1, n
         while low <= high:
             mid = (low + high) // 2

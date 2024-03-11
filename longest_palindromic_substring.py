@@ -20,6 +20,7 @@
 import time
 
 def longestPalindrome(s: str) -> str:
+    ''' Longest Palindromic Substring (the fastest)'''
     t = time.time()
     length = len(s)
     max_length = 0
@@ -64,6 +65,7 @@ longestPalindrome(s)
 
 #######################
 def longestPalindromeII(s: str) -> str:
+    ''' Longest Palindromic Substring (the slowest)'''
     t = time.time()
     mlen = 0
     start = end = 0

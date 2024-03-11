@@ -1,5 +1,4 @@
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
-
 # 3. Longest Substring Without Repeating Characters
 # Given a string s, find the length of the longest 
 # substring
@@ -29,10 +28,13 @@ from typing import Dict
 from typing import List
 
 class Solution:
-    ''' Парсер строк на уникальные последовательсноти '''
+    ''' Парсер строк на уникальные последовательноcти '''
     dictArray = {}
     def lengthOfLongestSubstring(self, s: str) -> int:
-        ''' извлечение из строки подстрок с последовательностью уникальных символов '''
+        '''
+        Longest Substring Without Repeating Characters
+        извлечение из строки подстрок с последовательностью уникальных символов
+        '''
         self.dictArray = {}
         maxLength = 0
         # charSet = {} # https://www.w3schools.com/python/python_dictionaries.asp
@@ -57,7 +59,10 @@ class Solution:
                 self.dictArray[l] = s[l:r+1]
         return maxLength
     def fetchListsByLength(self, length: int) -> List[str]:
-        ''' список строк заданной длины из словаря dictArray '''
+        '''
+        a list of strings of a given length from the dictArray dictionary
+        список строк заданной длины из словаря dictArray
+        '''
         output = []
         for elem in self.dictArray:
             if (len(self.dictArray[elem]) == length and
@@ -65,7 +70,10 @@ class Solution:
                 output.append(self.dictArray[elem]) 
         return output
     def rangeDictArray(self) -> Dict:
-        ''' словарь dictArray, отфильтрованный по длинам строк '''
+        '''
+        dictArray dictionary, filtered by line lengths
+        словарь dictArray, отфильтрованный по длинам строк
+        '''
         output = {}
         for elem in self.dictArray:
             length = len(self.dictArray[elem])
