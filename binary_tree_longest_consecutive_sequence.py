@@ -57,6 +57,7 @@ from typing import Optional
 
 class Solution:
     def longestConsecutive(self, root: Optional[TreeNode]) -> int:
+        ''' Binary Tree Longest Consecutive Sequence '''
         max_arr = 0
         def dfs(root: Optional[TreeNode]) -> int:
             if root is None:
@@ -79,8 +80,23 @@ class Solution:
         dfs(root)
         return max_arr
     def longestConsecutiveII(self, root: Optional[TreeNode]) -> int:
-        pass
-
+        '''
+        Binary Tree Longest Consecutive Sequence II
+        выбираем решения только через корень дерева
+        '''
+        if not root:
+            return 0
+        def dfs(node: Optional[TreeNode], diff: int) -> int:
+            if not node:
+                return 0
+            l = r = 0
+            if node.left and node.val - node.left.val == diff:
+                l = dfs(node.left, diff) + 1
+            if node.right and node.val - node.right.val == diff:
+                r = dfs(node.right, diff) + 1
+            return max(l, r)
+        # +1 is increasing, -1 is decreasing
+        return dfs(root, 1) + dfs(root, -1) + 1
 
 def build_binary_tree(items: list[int]) -> TreeNode:
     """ Create BT from list of values. """
