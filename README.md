@@ -39,6 +39,7 @@
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
 - [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) >>> [sliding_window_median.py](https://github.com/rubygitflow/leetcode_python/blob/master/sliding_window_median.py)
 - [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
+- [298. Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) >>> [longest_consecutive_sequence.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_consecutive_sequence.py)
 - [301. Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) >>> [remove_invalid_parentheses.py](https://github.com/rubygitflow/leetcode_python/blob/master/remove_invalid_parentheses.py)
 - [305. Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) >>> [number_of_islands.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_islands.py)
 - [309. Best Time to Buy and Sell Stock with Cooldown](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-cooldown/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
@@ -70,4 +71,4 @@
 - a list of strings of a given length from the dictArray dictionary >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 
-**61(+6) tasks >>> 34 files**
+**62(+6) tasks >>> 35 files**
