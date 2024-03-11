@@ -54,8 +54,9 @@
 - [760. Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [763. Partition Labels](https://leetcode.com/problems/partition-labels/) >>> [partition_labels.py](https://github.com/rubygitflow/leetcode_python/blob/master/partition_labels.py)
 - [849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) >>> [free_seats_in_the_row.py](https://github.com/rubygitflow/leetcode_python/blob/master/free_seats_in_the_row.py)
+- [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) >>> [max_consecutive_ones.rb](https://github.com/rubygitflow/leetcode_python/blob/master/max_consecutive_ones.rb)
 - [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
-[1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
+- [1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
 - [2186. Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 
@@ -67,4 +68,4 @@
 - a list of strings of a given length from the dictArray dictionary >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 
-**57(+6) tasks >>> 31 files**
+**59(+6) tasks >>> 33 files**
