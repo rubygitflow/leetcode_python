@@ -55,6 +55,7 @@
 - [763. Partition Labels](https://leetcode.com/problems/partition-labels/) >>> [partition_labels.py](https://github.com/rubygitflow/leetcode_python/blob/master/partition_labels.py)
 - [849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) >>> [free_seats_in_the_row.py](https://github.com/rubygitflow/leetcode_python/blob/master/free_seats_in_the_row.py)
 - [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
+[1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
 - [2186. Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 
