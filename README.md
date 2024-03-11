@@ -48,6 +48,7 @@
 - [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) >>> [sliding_window_median.py](https://github.com/rubygitflow/leetcode_python/blob/master/sliding_window_median.py)
 - [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) >>> [binary_vector.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_vector.py)
+- [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/) >>> [max_consecutive_ones.rb](https://github.com/rubygitflow/leetcode_python/blob/master/max_consecutive_ones.rb)
 - [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) >>> [top_k_frequent_words.py](https://github.com/rubygitflow/leetcode_python/blob/master/top_k_frequent_words.py)
 - [704. Binary Search](https://leetcode.com/problems/binary-search/) >>> [binary_search.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_search.py)
 - [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
