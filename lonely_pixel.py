@@ -48,6 +48,7 @@
 # picture[i][j] is 'W' or 'B'.
 # 1 <= target <= min(m, n)
 
+from collections import defaultdict
 from typing import List
 
 class Solution:
