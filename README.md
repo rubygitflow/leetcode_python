@@ -56,6 +56,7 @@
 - [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) >>> [top_k_frequent_words.py](https://github.com/rubygitflow/leetcode_python/blob/master/top_k_frequent_words.py)
 - [704. Binary Search](https://leetcode.com/problems/binary-search/) >>> [binary_search.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_search.py)
 - [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
+- [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) >>> [find_k_th_smallest_pair_distance.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_k_th_smallest_pair_distance.py)
 - [760. Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [763. Partition Labels](https://leetcode.com/problems/partition-labels/) >>> [partition_labels.py](https://github.com/rubygitflow/leetcode_python/blob/master/partition_labels.py)
 - [849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) >>> [free_seats_in_the_row.py](https://github.com/rubygitflow/leetcode_python/blob/master/free_seats_in_the_row.py)
@@ -76,4 +77,4 @@
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 
-**66(+7) tasks >>> 37 files**
+**67(+7) tasks >>> 38 files**
