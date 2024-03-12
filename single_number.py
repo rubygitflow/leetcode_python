@@ -70,13 +70,23 @@ class Solution:
             twos ^= (num & ~ones)
         return ones
     def singleNumberBF(self, nums: List[int]) -> int:
-      '''
-      Single Number II
-      Approach: Brute Force
-      '''
+        '''
+        Single Number II
+        Approach: Brute Force
+        '''
         count = defaultdict(int)
         for x in nums:
             count[x] += 1
+        for x, freq in count.items():
+            if freq == 1:
+                return x
+        return -1
+    def singleNumberBFII(self, nums: List[int]) -> int:
+        '''
+        Single Number II
+        Approach: Brute Force with Counter
+        '''
+        count = Counter(nums)
         for x, freq in count.items():
             if freq == 1:
                 return x
@@ -91,3 +101,4 @@ nums = [0,1,0,1,0,1,99]
 # Output: 99
 Solution().singleNumberBF(nums)
 Solution().singleNumberII(nums)
+Solution().singleNumberBFII(nums)
