@@ -61,6 +61,7 @@
 - [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) >>> [max_consecutive_ones.rb](https://github.com/rubygitflow/leetcode_python/blob/master/max_consecutive_ones.rb)
 - [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
+- [2006. Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/) >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - [2186. Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2609. Find the Longest Balanced Substring of a Binary String](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) >>> [find_the_longest_balanced_substring_of_a_binary_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_the_longest_balanced_substring_of_a_binary_string.py)
@@ -72,5 +73,6 @@
 - Just count all the unique pairs from the numeric array >>> [all_unique_pairs.py](https://github.com/rubygitflow/leetcode_python/blob/master/all_unique_pairs.py)
 - a list of strings of a given length from the dictArray dictionary >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
+- Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 
-**64(+6) tasks >>> 36 files**
+**65(+7) tasks >>> 37 files**
