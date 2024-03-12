@@ -51,6 +51,7 @@
 - [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) >>> [sliding_window_median.py](https://github.com/rubygitflow/leetcode_python/blob/master/sliding_window_median.py)
 - [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones/) >>> [binary_vector.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_vector.py)
 - [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii/) >>> [max_consecutive_ones.rb](https://github.com/rubygitflow/leetcode_python/blob/master/max_consecutive_ones.rb)
+- [531. Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/) >>> [lonely_pixel.py](https://github.com/rubygitflow/leetcode_python/blob/master/lonely_pixel.py)
 - [532. K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - [549. Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/) >>> [binary_tree_longest_consecutive_sequence.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_tree_longest_consecutive_sequence.py)
 - [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) >>> [top_k_frequent_words.py](https://github.com/rubygitflow/leetcode_python/blob/master/top_k_frequent_words.py)
@@ -77,4 +78,4 @@
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 
-**67(+7) tasks >>> 38 files**
+**68(+7) tasks >>> 39 files**
