@@ -54,6 +54,7 @@
 - [531. Lonely Pixel I](https://leetcode.com/problems/lonely-pixel-i/) >>> [lonely_pixel.py](https://github.com/rubygitflow/leetcode_python/blob/master/lonely_pixel.py)
 - [532. K-diff Pairs in an Array](https://leetcode.com/problems/k-diff-pairs-in-an-array/) >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - [533. Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii/) >>> [lonely_pixel.py](https://github.com/rubygitflow/leetcode_python/blob/master/lonely_pixel.py)
+- [539. Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/) >>> [minimum_time_difference.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_difference.py)
 - [549. Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/) >>> [binary_tree_longest_consecutive_sequence.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_tree_longest_consecutive_sequence.py)
 - [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) >>> [top_k_frequent_words.py](https://github.com/rubygitflow/leetcode_python/blob/master/top_k_frequent_words.py)
 - [704. Binary Search](https://leetcode.com/problems/binary-search/) >>> [binary_search.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_search.py)
@@ -82,4 +83,4 @@
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 
-**72(+7) tasks >>> 42 files**
+**73(+7) tasks >>> 43 files**
