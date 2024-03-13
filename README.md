@@ -65,6 +65,7 @@
 - [719. Find K-th Smallest Pair Distance](https://leetcode.com/problems/find-k-th-smallest-pair-distance/) >>> [find_k_th_smallest_pair_distance.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_k_th_smallest_pair_distance.py)
 - [720. Longest Word in Dictionary](https://leetcode.com/problems/longest-word-in-dictionary/) >>> [longest_word_in_dictionary.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_word_in_dictionary.py)
 - [721. Accounts Merge](https://leetcode.com/problems/accounts-merge/) >>> [accounts_merge.py](https://github.com/rubygitflow/leetcode_python/blob/master/accounts_merge.py)
+- [743. Network Delay Time](https://leetcode.com/problems/network-delay-time/) >>> [network_delay_time.py](https://github.com/rubygitflow/leetcode_python/blob/master/network_delay_time.py)
 - [760. Find Anagram Mappings](https://leetcode.com/problems/find-anagram-mappings/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [763. Partition Labels](https://leetcode.com/problems/partition-labels/) >>> [partition_labels.py](https://github.com/rubygitflow/leetcode_python/blob/master/partition_labels.py)
 - [849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) >>> [free_seats_in_the_row.py](https://github.com/rubygitflow/leetcode_python/blob/master/free_seats_in_the_row.py)
@@ -85,4 +86,4 @@
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 
-**75(+7) tasks >>> 43 files**
+**76(+7) tasks >>> 44 files**
