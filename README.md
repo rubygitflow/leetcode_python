@@ -35,7 +35,7 @@
 - [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
 - [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) >>> [search_in_rotated_sorted_array.py](https://github.com/rubygitflow/leetcode_python/blob/master/search_in_rotated_sorted_array.py)
 - [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) >>> [two_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/two_sum.py)
-[188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
+- [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
 - [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) >>> [number_of_islands.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_islands.py)
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
 - [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) >>> [sliding_window_median.py](https://github.com/rubygitflow/leetcode_python/blob/master/sliding_window_median.py)
@@ -57,6 +57,7 @@
 - [533. Lonely Pixel II](https://leetcode.com/problems/lonely-pixel-ii/) >>> [lonely_pixel.py](https://github.com/rubygitflow/leetcode_python/blob/master/lonely_pixel.py)
 - [539. Minimum Time Difference](https://leetcode.com/problems/minimum-time-difference/) >>> [minimum_time_difference.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_difference.py)
 - [549. Binary Tree Longest Consecutive Sequence II](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/) >>> [binary_tree_longest_consecutive_sequence.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_tree_longest_consecutive_sequence.py)
+- [681. Next Closest Time](https://leetcode.com/problems/next-closest-time/) >>> [minimum_time_difference.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_difference.py)
 - [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words/) >>> [top_k_frequent_words.py](https://github.com/rubygitflow/leetcode_python/blob/master/top_k_frequent_words.py)
 - [704. Binary Search](https://leetcode.com/problems/binary-search/) >>> [binary_search.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_search.py)
 - [714. Best Time to Buy and Sell Stock with Transaction Fee](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
@@ -84,4 +85,4 @@
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 
-**74(+7) tasks >>> 43 files**
+**75(+7) tasks >>> 43 files**
