@@ -41,4 +41,3 @@ nums = [0,3,7,2,5,8,4,6,0,1]
 nums = [0,3,17,12,5,8,14,26,0,21]
 # Output: 1
 Solution().longestConsecutive(nums)
-

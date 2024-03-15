@@ -105,4 +105,3 @@ picture, target = [["W","W","B"],["W","W","B"],["W","W","B"]], 1
 picture, target = [["W","W","B"],["W","W","W"],["W","W","W"]], 1
 # Output: 1
 Solution().findBlackPixel(picture, target)
-

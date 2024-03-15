@@ -77,4 +77,3 @@ nums = [1,0,1,1,0]
 nums = [1,0,1,1,0,1]
 # Output: 4
 Solution().longestOnes(nums, 1)
-

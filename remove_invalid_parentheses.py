@@ -74,4 +74,3 @@ s = ")("
 # Output: [""]
 
 Solution().removeInvalidParentheses(s)
-

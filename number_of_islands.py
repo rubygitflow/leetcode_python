@@ -181,4 +181,3 @@ m, n, positions = 3, 3, [[0,0],[0,1],[1,2],[2,1]]
 m, n, positions = 1, 1, [[0,0]]
 # Output: [1]
 numOfIslandsII(m, n, positions)
-

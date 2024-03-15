@@ -95,7 +95,6 @@ timePoints = ["23:59","00:00"]
 timePoints = ["13:59","04:31"]
 # Output: 568
 Solution().findMinDifference(timePoints)
-21:19
 
 time = "19:34"
 # Output: "19:39"
