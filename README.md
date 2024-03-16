@@ -72,6 +72,7 @@
 - [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) >>> [max_consecutive_ones.rb](https://github.com/rubygitflow/leetcode_python/blob/master/max_consecutive_ones.rb)
 - [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
+- [1735. Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) >>> [count_ways_to_make_array_with_product.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_ways_to_make_array_with_product.py)
 - [1737. Change Minimum Characters to Satisfy One of Three Conditions](https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/description/) >>> [change_minimum_characters_to_satisfy_one_of_three_conditions.py](https://github.com/rubygitflow/leetcode_python/blob/master/change_minimum_characters_to_satisfy_one_of_three_conditions.py)
 - [1742. Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/) >>> [maximum_number_of_balls_in_a_box.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_number_of_balls_in_a_box.py)
 - [1869. Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) >>> [longer_contiguous_segments_of_ones_than_zeros.py](https://github.com/rubygitflow/leetcode_python/blob/master/longer_contiguous_segments_of_ones_than_zeros.py)
@@ -101,4 +102,4 @@
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 
-**91(+7) tasks >>> 59 files**
+**92(+7) tasks >>> 60 files**
