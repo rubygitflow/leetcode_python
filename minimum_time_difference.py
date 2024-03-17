@@ -39,6 +39,29 @@
 # 0 <= HH < 24
 # 0 <= MM < 60
 
+#######################
+# https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/description/
+# 1736. Latest Time by Replacing Hidden Digits
+
+# You are given a string time in the form of  hh:mm, where some of the digits in the string are hidden (represented by ?).
+# The valid times are those inclusively between 00:00 and 23:59.
+# Return the latest valid time you can get from time by replacing the hidden digits.
+
+# Example 1:
+# Input: time = "2?:?0"
+# Output: "23:50"
+# Explanation: The latest hour beginning with the digit '2' is 23 and the latest minute ending with the digit '0' is 50.
+# Example 2:
+# Input: time = "0?:3?"
+# Output: "09:39"
+# Example 3:
+# Input: time = "1?:22"
+# Output: "19:22"
+
+# Constraints:
+# time is in the format hh:mm.
+# It is guaranteed that you can produce a valid time from the given string.
+
 # from itertools import pairwise
 from typing import List
 
@@ -87,6 +110,18 @@ class Solution:
             if set(result) <= set(time):
                 break
         return result
+    def maximumTime(self, time: str) -> str:
+        ''' Return the latest valid time you can get from time by replacing the hidden digits. '''
+        t = list(time)
+        if t[0] == '?':
+            t[0] = '1' if '4' <= t[1] <= '9' else '2'
+        if t[1] == '?':
+            t[1] = '3' if t[0] == '2' else '9'
+        if t[3] == '?':
+            t[3] = '5'
+        if t[4] == '?':
+            t[4] = '9'
+        return ''.join(t)
 
 timePoints = ["00:00","23:59","00:00"]
 # Output: 0
@@ -102,3 +137,11 @@ time = "23:59"
 # Output: "22:22"
 Solution().nextClosestTime(time)
 Solution().nextClosestTimeEX(time)
+
+time = "2?:?0"
+# Output: "23:50"
+time = "0?:3?"
+# Output: "09:39"
+time = "1?:22"
+# Output: "19:22"
+Solution().maximumTime(time)
