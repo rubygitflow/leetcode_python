@@ -129,14 +129,14 @@ timePoints = ["23:59","00:00"]
 # Output: 1
 timePoints = ["13:59","04:31"]
 # Output: 568
-Solution().findMinDifference(timePoints)
+print(Solution().findMinDifference(timePoints))
 
 time = "19:34"
 # Output: "19:39"
 time = "23:59"
 # Output: "22:22"
-Solution().nextClosestTime(time)
-Solution().nextClosestTimeEX(time)
+print(Solution().nextClosestTime(time))
+print(Solution().nextClosestTimeEX(time))
 
 time = "2?:?0"
 # Output: "23:50"
@@ -144,4 +144,4 @@ time = "0?:3?"
 # Output: "09:39"
 time = "1?:22"
 # Output: "19:22"
-Solution().maximumTime(time)
+print(Solution().maximumTime(time))

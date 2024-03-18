@@ -1,4 +1,5 @@
 # leetcode_python
+Solving algorithmic problems on leetcode.com
 
 - [1. Two Sum](https://leetcode.com/problems/two-sum/) >>> [two_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/two_sum.py)
 - [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
@@ -103,4 +104,14 @@
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 
-**93(+7) tasks >>> 60 files**
+**Tasks: 93(+7) >>> Files: 60**
+
+## Install
+```shell
+$ git clone git@github.com:rubygitflow/leetcode_rython.git && cd leetcode_rython/
+```
+
+## Run example
+```shell
+$ python3 minimum_time_difference.py
+```
