@@ -27,15 +27,15 @@ class Solution:
         # print('t',t)
         n = len(nums2)
         output = [0] * n
-        i, j = 0, n - 1
+        l, r = 0, n - 1
         for v in nums1:
-            if v <= t[i][0]:
-                output[t[j][1]] = v
-                j -= 1
+            if v <= t[l][0]:
+                output[t[r][1]] = v
+                r -= 1
             else:
-                output[t[i][1]] = v
-                i += 1
-            print('output',output)
+                output[t[l][1]] = v
+                l += 1
+            # print('output',output)
         return output
 
 print(Solution().advantageCount([2,7,11,15], [1,10,4,11]))
