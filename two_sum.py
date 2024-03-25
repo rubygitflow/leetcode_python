@@ -140,13 +140,15 @@ class Solution:
 
 nums, target = [2,7,11,15], 9
 # Output: [0,1]
-Solution().twoSum(nums, target)
+print(Solution().twoSum(nums, target))
 
 nums, target = [2,3,4], 6
 # Output: [1,3]
-Solution().twoSumSorted(nums, target)
+print(Solution().twoSumSorted(nums, target))
 
-# nums = [-1,0,1,2,-1,-4]
-nums, target = [-2,0,1,1,2,-1,-4], 3
+nums, target = [-1,0,1,2,-1,-4], 0
 # Output: [[-1,-1,2],[-1,0,1]]
-Solution().threeSum(nums, target)
+print(Solution().threeSum(nums, target))
+nums, target = [-2,0,1,1,2,-1,-4], 3
+# Output: [[0, 1, 2]]
+print(Solution().threeSum(nums, target))
