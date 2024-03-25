@@ -71,7 +71,7 @@ class Solution:
 
 nums, target = [1,0,-1,0,-2,2], 0
 # Output: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]
-# nums, target = [2,2,2,2,2], 8
+print(Solution().fourSum(nums, target))
+nums, target = [2,2,2,2,2], 8
 # Output: [[2,2,2,2]]
-
-Solution().fourSum(nums, target)
+print(Solution().fourSum(nums, target))

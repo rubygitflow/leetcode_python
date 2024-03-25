@@ -82,7 +82,7 @@ class Solution:
         m = digit_arr[-1]
         for to_what in sorted_arr:
             if to_what > m:
-                return time[:4] + to_what
+                return time[:4] + str(to_what)
         min_dig = str(sorted_arr[0])
         mm = digit_arr[-2]
         for to_what in sorted_arr:
@@ -125,23 +125,29 @@ class Solution:
 
 timePoints = ["00:00","23:59","00:00"]
 # Output: 0
+print(Solution().findMinDifference(timePoints))
 timePoints = ["23:59","00:00"]
 # Output: 1
+print(Solution().findMinDifference(timePoints))
 timePoints = ["13:59","04:31"]
 # Output: 568
 print(Solution().findMinDifference(timePoints))
 
 time = "19:34"
 # Output: "19:39"
+# print(Solution().nextClosestTimeEX(time))
+print(Solution().nextClosestTime(time))
 time = "23:59"
 # Output: "22:22"
+# print(Solution().nextClosestTimeEX(time))
 print(Solution().nextClosestTime(time))
-print(Solution().nextClosestTimeEX(time))
 
 time = "2?:?0"
 # Output: "23:50"
+print(Solution().maximumTime(time))
 time = "0?:3?"
 # Output: "09:39"
+print(Solution().maximumTime(time))
 time = "1?:22"
 # Output: "19:22"
 print(Solution().maximumTime(time))
