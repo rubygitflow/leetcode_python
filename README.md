@@ -74,6 +74,7 @@ Solving algorithmic problems on leetcode.com
 - [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) >>> [max_consecutive_ones.rb](https://github.com/rubygitflow/leetcode_python/blob/master/max_consecutive_ones.rb)
 - [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
+- [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) >>> [running_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/running_sum.py)
 - [1723. Find Minimum Time to Finish All Jobs](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/) >>> [find_minimum_time_to_finish_all_jobs.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_minimum_time_to_finish_all_jobs.py)
 - [1735. Count Ways to Make Array With Product](https://leetcode.com/problems/count-ways-to-make-array-with-product/) >>> [count_ways_to_make_array_with_product.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_ways_to_make_array_with_product.py)
 - [1736. Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/) >>> [minimum_time_difference.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_difference.py)
@@ -106,7 +107,7 @@ Solving algorithmic problems on leetcode.com
 - the dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 
-**Tasks: 95(+7) >>> Files: 62**
+**Tasks: 96(+7) >>> Files: 63**
 
 ## Install
 ```shell
