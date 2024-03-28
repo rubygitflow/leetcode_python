@@ -4,23 +4,21 @@
 # ("reebok", "bee") -> 1
 
 class Solution:
-    def matchSubstring(self, input_str: str, substring: str) -> int:
+    def matchSubstring(self, hoststring: str, substring: str) -> int:
         match_len = len(substring)
-        inp_len = len(input_str)
+        inp_len = len(hoststring)
         if inp_len < match_len:
             return -1
         def dfs(where: str) -> bool:
-            # print('where',where)
             stack_a = list(substring)
-            # print('stack_a',stack_a)
-            for i, c in enumerate(where):
+            for _i, c in enumerate(where):
                 if c in stack_a:
                     stack_a.remove(c)
                 else:
                     return False
             return True
         for i in range(inp_len - match_len + 1):
-            if dfs(input_str[i:i+match_len]):
+            if dfs(hoststring[i:i+match_len]):
                 return i
         return -1
 
