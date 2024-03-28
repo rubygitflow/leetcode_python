@@ -26,3 +26,5 @@ print(Solution().matchSubstring('reebokee', 'bee'))
 # Output: 1
 print(Solution().matchSubstring('colorados', 'dosar'))
 # Output: 4
+print(Solution().matchSubstring('reebokee', 'mee'))
+# Output: -1
