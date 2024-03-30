@@ -292,35 +292,39 @@ class Solution:
             if i == 0 or sorted(w) != sorted(words[i - 1])
         ]
 
+print("Valid Anagram")
 s, t = "anagram", "naGaram"
 # Output: True
 # s, t = "rat", "car"
 # s, t = "cat", "Catherine"
-Solution().isAnagram(s, t)
+print(Solution().isAnagram(s, t))
 s, t = "anagram", "margana"
 # Case sensitive!!!
-Solution().isAnagramOld(s, t)
+print(Solution().isAnagramOld(s, t))
 
+print("Group Anagrams")
 # strs = [""]
 strs = ["eat","tea","tan","ate","nat","bat"]
 # Output: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
-Solution().groupAnagrams(strs)
+print(Solution().groupAnagrams(strs))
 
+print("Find All Anagrams in a String")
 # s, p = "abab", "ab"
 s, p = "cbaebabacd", "abc"
 # Output: [0, 6]
-Solution().findAnagrams(s, p)
+print(Solution().findAnagrams(s, p))
 
+print("Minimum Number of Steps to Make Two Strings Anagram")
 s, t = "leetcode", "practice"
 # Output: 5
 # s, t = "bab", "aba"
 # s, t = "anagram", "mangaar"
-Solution().minSteps(s, t)
+print(Solution().minSteps(s, t))
 
 # s, t = "leetcode", "coats"
 s, t = "night", "thing"
 # Output: 0
-Solution().minStepsII(s, t)
+print(Solution().minStepsII(s, t))
 
 # nums1 = [12,28,46,32,50]
 # nums2 = [50,12,32,46,28]
@@ -330,13 +334,15 @@ Solution().minStepsII(s, t)
 # nums2 = [84,46]
 # Output: [0,1]
 
+print("Find Anagram Mappings")
 nums1 = [84,46,46]
 nums2 = [46,84,46]
 # Output: [1, 0, 2]
-Solution().anagramMappings(nums1, nums2)
+print(Solution().anagramMappings(nums1, nums2))
 
+print("Find Resultant Array After Removing Anagrams")
 # words = ["abba","baba","bbaa","cd","cd"]
 # Output: ['abba', 'cd']
 words = ["abba","bbaa","cd","cd","baba"]
 # Output: ['abba', 'cd', 'baba']
-Solution().removeAnagrams(words)
+print(Solution().removeAnagrams(words))
