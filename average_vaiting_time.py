@@ -37,7 +37,7 @@ class Solution:
     def averageWaitingTime(self, customers: List[List[int]]) -> float:
         ''' Average Waiting Time '''
         if len(customers) < 1:
-            return 0
+            return 0.0
         output = at_free_time = 0
         for at, wait in customers:
             at_free_time = max(at_free_time, at) + wait
