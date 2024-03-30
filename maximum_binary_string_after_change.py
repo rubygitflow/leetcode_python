@@ -40,3 +40,7 @@ print(Solution().maximumBinaryString("01"))
 # Output: "01"
 print(Solution().maximumBinaryString("1101011"))
 # Output: "1111011"
+print(Solution().maximumBinaryString("0000"))
+# Output: "1110"
+print(Solution().maximumBinaryString("1111"))
+# Output: "1111"
