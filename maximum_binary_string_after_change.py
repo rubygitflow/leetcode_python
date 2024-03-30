@@ -32,6 +32,7 @@ class Solution(object):
         c_first_ones,l = 0,len(binary)
         while c_first_ones<l and binary[c_first_ones]=='1': c_first_ones+=1
         c_zeros = binary.count('0')
+        # The solution formula
         return '1'*c_first_ones+'1'*(c_zeros-1)+'0'*(1 if c_zeros>0 else 0)+'1'*(l-c_first_ones-c_zeros)
 
 print(Solution().maximumBinaryString("000110"))
@@ -39,7 +40,7 @@ print(Solution().maximumBinaryString("000110"))
 print(Solution().maximumBinaryString("01"))
 # Output: "01"
 print(Solution().maximumBinaryString("1101011"))
-# Output: "1111011"
+# Output: "1110111"
 print(Solution().maximumBinaryString("0000"))
 # Output: "1110"
 print(Solution().maximumBinaryString("1111"))
