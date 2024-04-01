@@ -34,6 +34,9 @@ from typing import List
 class Solution:
     def minCost(self, colors: str, neededTime: List[int]) -> int:
         ''' Minimum Time to Make Rope Colorful '''
+        def remove(acc):
+            acc.remove(max(acc))
+            return sum(acc)
         if len(colors) != len(neededTime):
             return -1
         acc = [neededTime[0]]
@@ -43,15 +46,15 @@ class Solution:
                 acc.append(neededTime[i])
             else:
                 if len(acc) > 1:
-                    output += min(acc)
+                    output += remove(acc)
                 acc = [neededTime[i]]
         if len(acc) > 1:
-            output += min(acc)
+            output += remove(acc)
         return output
     def minCostEx(self, colors: str, neededTime: List[int]) -> int:
         time = 0
-        n = len(colors)
-        for i in range(1, n):
+        l = len(colors)
+        for i in range(1, l):
             if colors[i] == colors[i - 1]:
                 time += min(neededTime[i], neededTime[i - 1])
                 neededTime[i] = max(neededTime[i], neededTime[i - 1])
@@ -72,6 +75,11 @@ print(Solution().minCost(
   [1,2,3,4,1]
 ))
 # Output: 2
+print(Solution().minCost(
+  "abaaac",
+  [1,2,3,4,1,5]
+))
+# Output: 4
 
 print(Solution().minCostEx(
   "abaac",
@@ -88,3 +96,8 @@ print(Solution().minCostEx(
   [1,2,3,4,1]
 ))
 # Output: 2
+print(Solution().minCostEx(
+  "abaaac",
+  [1,2,3,4,1,5]
+))
+# Output: 4
