@@ -54,12 +54,19 @@ class Solution:
     def minCostEx(self, colors: str, neededTime: List[int]) -> int:
         time = 0
         l = len(colors)
+        if l != len(neededTime):
+            return -1
         for i in range(1, l):
             if colors[i] == colors[i - 1]:
                 time += min(neededTime[i], neededTime[i - 1])
                 neededTime[i] = max(neededTime[i], neededTime[i - 1])
         return time
 
+print(Solution().minCost(
+  "abaacs",
+  [1,2,3,4,5]
+))
+# Output: -1
 print(Solution().minCost(
   "abaac",
   [1,2,3,4,5]
@@ -81,6 +88,11 @@ print(Solution().minCost(
 ))
 # Output: 4
 
+print(Solution().minCostEx(
+  "abaacs",
+  [1,2,3,4,5]
+))
+# Output: -1
 print(Solution().minCostEx(
   "abaac",
   [1,2,3,4,5]
