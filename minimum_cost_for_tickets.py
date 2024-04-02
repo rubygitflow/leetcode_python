@@ -53,10 +53,31 @@ class Solution:
                 dp[i] = min(dp[i],c+dfs(j))
             return dp[i]
         return dfs(0)
+    def mincostTicketsEx(self, days: List[int], costs: List[int]) -> int:
+        ''' Minimum Cost For Tickets '''
+        travel_days = set(days)
+        min_costs = [0] * (days[-1] + 1)
+        for day in range(1, len(min_costs)):
+            if day in travel_days:
+                min_costs[day] = min(
+                    min_costs[day-1] + costs[0],
+                    min_costs[max(0, day-7)] + costs[1],
+                    min_costs[max(0, day-30)] + costs[2]
+                )
+            else:
+                min_costs[day] = min_costs[day-1]
+        return min_costs[-1];
 
 print(Solution().mincostTickets([1,4,6,7,8,20], [2,7,15]))
 # Output: 11
 print(Solution().mincostTickets([1,2,3,4,5,6,7,8,9,10,30,31], [2,7,15]))
 # Output: 17
 print(Solution().mincostTickets([1,24,146], [2,7,15]))
+# Output: 6
+
+print(Solution().mincostTicketsEx([1,4,6,7,8,20], [2,7,15]))
+# Output: 11
+print(Solution().mincostTicketsEx([1,2,3,4,5,6,7,8,9,10,30,31], [2,7,15]))
+# Output: 17
+print(Solution().mincostTicketsEx([1,24,146], [2,7,15]))
 # Output: 6
