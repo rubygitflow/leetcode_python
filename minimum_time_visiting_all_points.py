@@ -44,4 +44,3 @@ print(Solution().minTimeToVisitAllPoints([[3,2],[-2,2]]))
 # Output: 5
 print(Solution().minTimeToVisitAllPoints([[3,2]]))
 # Output: 0
-
