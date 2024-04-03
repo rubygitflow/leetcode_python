@@ -37,11 +37,11 @@ from typing import List
 class Solution:
     def corpFlightBookings(self, bookings: List[List[int]], n: int) -> List[int]:
         ''' Corporate Flight Bookings '''
-        ans = [0] * n
+        output = [0] * n
         for first, last, seats in bookings:
             for i in range(first, last+1):
-                ans[i - 1] += seats
-        return ans
+                output[i - 1] += seats
+        return output
 
 print(Solution().corpFlightBookings([[1,2,10],[2,3,20],[2,5,25]], 5))
 # Output: [10,55,45,25,25]
