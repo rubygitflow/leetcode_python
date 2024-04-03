@@ -73,6 +73,7 @@ Solving algorithmic problems on leetcode.com
 - [870. Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) >>> [advantage_shuffle.py](https://github.com/rubygitflow/leetcode_python/blob/master/advantage_shuffle.py)
 - [983. Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) >>> [minimum_cost_for_tickets.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_cost_for_tickets.py)
 - [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) >>> [max_consecutive_ones.rb](https://github.com/rubygitflow/leetcode_python/blob/master/max_consecutive_ones.rb)
+- [1109. Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/) >>> [corporate_flight_bookings.py](https://github.com/rubygitflow/leetcode_python/blob/master/corporate_flight_bookings.py)
 - [1266. Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/) >>> [minimum_time_visiting_all_points.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_visiting_all_points.py)
 - [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
@@ -114,7 +115,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 102(+8) >>> Files: 70**
+**Tasks: 103(+8) >>> Files: 71**
 
 ## Install
 ```shell
