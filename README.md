@@ -79,6 +79,7 @@ Solving algorithmic problems on leetcode.com
 - [1266. Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/) >>> [minimum_time_visiting_all_points.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_visiting_all_points.py)
 - [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
+- [1450. Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/) >>> [number_of_students_doing_homework_at_a_given_time.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_students_doing_homework_at_a_given_time.py)
 - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) >>> [running_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/running_sum.py)
 - [1578. Minimum Time to Make Rope Colorful](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/) >>> [minimum_time_to_make_rope_colorful.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_to_make_rope_colorful.py)
 - [1604. Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/) >>> [alert_using_same_key_card.py](https://github.com/rubygitflow/leetcode_python/blob/master/alert_using_same_key_card.py)
@@ -118,7 +119,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 106(+8) >>> Files: 74**
+**Tasks: 107(+8) >>> Files: 75**
 
 ## Install
 ```shell
