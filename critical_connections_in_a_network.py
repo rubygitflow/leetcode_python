@@ -42,23 +42,25 @@ class Solution:
             self.times += 1
             discovered[cur] = lowest[cur] = self.times
             # print(cur,'1. lowest = ',lowest, '; discovered = ',discovered)
-            for next in graph[cur]:
-                if next not in visited:
+            for node in graph[cur]:
+                if node not in visited:
                     # print(cur,'2.1. self.times',self.times)
-                    dfs(next, cur)
-                    lowest[cur] = min(lowest[cur], lowest[next])
+                    dfs(node, cur)
+                    lowest[cur] = min(lowest[cur], lowest[node])
                     # print(cur,'4.1. lowest',lowest)
-                elif next != prev:
-                    lowest[cur] = min(lowest[cur], discovered[next])
+                elif node != prev:
+                    lowest[cur] = min(lowest[cur], discovered[node])
                     # print(cur,'2.2. lowest',lowest)
-                # print('2.3. cur, next , lowest[next], discovered[cur]',cur, next , lowest[next], discovered[cur])
-                if lowest[next] > discovered[cur]:
-                    bridges.append([cur, next])
+                # print('2.3. cur, node , lowest[node], discovered[cur]',cur, node , lowest[node], discovered[cur])
+                if lowest[node] > discovered[cur]:
+                    bridges.append([cur, node])
                     # print(cur,'3.1. bridges',bridges)
                 # else:
                 #     print(cur,'3.2. <<<')
-        dfs(0,-1)
-        # print('lowest = ',lowest, '; discovered = ',discovered)
+        for i in range(0,n):
+            if i not in visited:
+                dfs(i,-1)
+                # print('lowest = ',lowest, '; discovered = ',discovered)
         return bridges
 
 
@@ -73,8 +75,8 @@ print(Solution().criticalConnections(5, [[0,1],[1,2],[2,0],[1,3],[3,4],[4,1]]))
 print(Solution().criticalConnections(6, [[0,1],[1,2],[2,0],[1,3],[3,4],[4,5],[5,3]]))
 # Output: [[1,3]]
 # 2 donuts
-print(Solution().criticalConnections(6, [[0,1],[1,2],[2,0],      [3,4],[4,5],[5,3]]))
-# Output: []
+print(Solution().criticalConnections(7, [[0,1],[1,2],[2,0],      [3,4],[4,5],[5,3],[5,6]]))
+# Output: [[5,6]]
 # star
 print(Solution().criticalConnections(7, [[0,1],[0,2],[2,3],[0,4],[0,5],[5,6]]))
 # Output: [[0, 1], [2, 3], [0, 2], [0, 4], [5, 6], [0, 5]]
