@@ -43,10 +43,14 @@ print(Solution().maxNumberOfBalloons("loonbalxballpoon"))
 # Output: 2
 print(Solution().maxNumberOfBalloons("leetcode"))
 # Output: 0
+print(Solution().maxNumberOfBalloons("regret"))
+# Output: 0
 
 print(Solution().maxNumberOfBalloonsEx("nlaebolko"))
 # Output: 1
 print(Solution().maxNumberOfBalloonsEx("loonbalxballpoon"))
 # Output: 2
 print(Solution().maxNumberOfBalloonsEx("leetcode"))
+# Output: 0
+print(Solution().maxNumberOfBalloonsEx("regret"))
 # Output: 0

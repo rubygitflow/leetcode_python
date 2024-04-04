@@ -82,6 +82,7 @@ Solving algorithmic problems on leetcode.com
 - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) >>> [running_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/running_sum.py)
 - [1578. Minimum Time to Make Rope Colorful](https://leetcode.com/problems/minimum-time-to-make-rope-colorful/) >>> [minimum_time_to_make_rope_colorful.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_to_make_rope_colorful.py)
 - [1604. Alert Using Same Key-Card Three or More Times in a One Hour Period](https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/) >>> [alert_using_same_key_card.py](https://github.com/rubygitflow/leetcode_python/blob/master/alert_using_same_key_card.py)
+- [1700. Number of Students Unable to Eat Lunch](https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/) >>> [number_of_students_unable_to_eat_lunch.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_students_unable_to_eat_lunch.py)
 - [1701. Average Waiting Time](https://leetcode.com/problems/average-waiting-time/) >>> [average_vaiting_time.py](https://github.com/rubygitflow/leetcode_python/blob/master/average_vaiting_time.py)
 - [1702. Maximum Binary String After Change](https://leetcode.com/problems/maximum-binary-string-after-change/) >>> [maximum_binary_string_after_change.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_binary_string_after_change.py)
 - [1723. Find Minimum Time to Finish All Jobs](https://leetcode.com/problems/find-minimum-time-to-finish-all-jobs/) >>> [find_minimum_time_to_finish_all_jobs.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_minimum_time_to_finish_all_jobs.py)
@@ -117,7 +118,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 105(+8) >>> Files: 73**
+**Tasks: 106(+8) >>> Files: 74**
 
 ## Install
 ```shell
