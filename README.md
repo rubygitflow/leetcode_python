@@ -109,6 +109,7 @@ Solving algorithmic problems on leetcode.com
 - [2186. Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2609. Find the Longest Balanced Substring of a Binary String](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) >>> [find_the_longest_balanced_substring_of_a_binary_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_the_longest_balanced_substring_of_a_binary_string.py)
+- [3083. Existence of a Substring in a String and Its Reverse](https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/) >>> [existence_substring_in_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/existence_substring_in_string.py)
 
 ## Addition
 - Find all sequences of Ones in a binary vector >>> [binary_vector.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_vector.py)
@@ -120,7 +121,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 108(+8) >>> Files: 76**
+**Tasks: 109(+8) >>> Files: 77**
 
 ## Install
 ```shell
