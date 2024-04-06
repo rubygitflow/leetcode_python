@@ -35,10 +35,10 @@ from typing import List
 class Solution:
     def numOfMinutes(self, n: int, headID: int, manager: List[int], informTime: List[int]) -> int:
         ''' Time Needed to Inform All Employees '''
-        def dfs(i: int) -> int:
+        def dfs(emp: int) -> int:
             output = 0
-            for j in team[i]:
-                output = max(output, dfs(j) + informTime[i])
+            for j in team[emp]:
+                output = max(output, dfs(j) + informTime[emp])
             return output
 
         team = defaultdict(list)
