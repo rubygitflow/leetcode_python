@@ -78,6 +78,7 @@ Solving algorithmic problems on leetcode.com
 - [1192. Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) >>> [critical_connections_in_a_network.py](https://github.com/rubygitflow/leetcode_python/blob/master/critical_connections_in_a_network.py)
 - [1266. Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/) >>> [minimum_time_visiting_all_points.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_visiting_all_points.py)
 - [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
+- [1376. Time Needed to Inform All Employees](https://leetcode.ca/2019-09-06-1376-Time-Needed-to-Inform-All-Employees/) >>> [time_needed_to_inform.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_needed_to_inform.py)
 - [1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
 - [1450. Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/) >>> [number_of_students_doing_homework_at_a_given_time.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_students_doing_homework_at_a_given_time.py)
 - [1451. Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence/) >>> [rearrange_words_in_a_sentence.py](https://github.com/rubygitflow/leetcode_python/blob/master/rearrange_words_in_a_sentence.py)
@@ -122,7 +123,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 110(+8) >>> Files: 78**
+**Tasks: 111(+8) >>> Files: 79**
 
 ## Install
 ```shell
