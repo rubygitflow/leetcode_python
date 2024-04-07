@@ -57,6 +57,8 @@ class Solution:
                 possible += 1
         return output
 
+print(Solution().secondsToRemoveOccurrencesBF("000111"))
+# Output: 5
 print(Solution().secondsToRemoveOccurrencesBF("0110001"))
 # Output: 4
 print(Solution().secondsToRemoveOccurrencesBF("0110101"))
@@ -64,6 +66,8 @@ print(Solution().secondsToRemoveOccurrencesBF("0110101"))
 print(Solution().secondsToRemoveOccurrencesBF("11100"))
 # Output: 0
 
+print(Solution().secondsToRemoveOccurrences("000111"))
+# Output: 5
 print(Solution().secondsToRemoveOccurrences("0110001"))
 # Output: 4
 print(Solution().secondsToRemoveOccurrences("0110101"))
@@ -71,6 +75,8 @@ print(Solution().secondsToRemoveOccurrences("0110101"))
 print(Solution().secondsToRemoveOccurrences("11100"))
 # Output: 0
 
+print(Solution().secondsToRemoveOccurrencesSingleThreaded("000111"))
+# Output: 9
 print(Solution().secondsToRemoveOccurrencesSingleThreaded("0110001"))
 # Output: 6
 print(Solution().secondsToRemoveOccurrencesSingleThreaded("0110101"))
