@@ -41,7 +41,7 @@ class Solution:
         for left, x in enumerate(flips, 1):
             # we store only the right value of the passed range
             right = max(right, x)
-            # True counter for left-th step
+            # True counter for the left-th step
             output += right == left
         return output
 
