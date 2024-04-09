@@ -31,7 +31,6 @@ class Solution:
             out = ''
             for i in range(5, -1, -1):
                 if i in arr:
-                    pos = arr.index(i)
                     arr.remove(i)
                     out = minute_first_digit(arr, res+str(i))
                     break
@@ -40,7 +39,6 @@ class Solution:
             out = ''
             for i in range(3 if res == '2' else 9, -1, -1):
                 if i in arr:
-                    pos = arr.index(i)
                     arr.remove(i)
                     out = minute_second_digit(arr, res+str(i)+':')
                     break
@@ -48,7 +46,6 @@ class Solution:
         out = ''
         for i in range(2, -1, -1):
             if i in arr:
-                pos = arr.index(i)
                 arr.remove(i)
                 out = hour_first_digit(arr,str(i))
                 break
