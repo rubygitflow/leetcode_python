@@ -89,11 +89,11 @@ print(Solution().search(nums, target))
 
 print('Search a 2D Matrix')
 matrix, target = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], 13
-# Output: true
+# Output: false
 print(Solution().searchMatrix(matrix, target))
 matrix, target = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], 23
-# Output: false
+# Output: true
 print(Solution().searchMatrix(matrix, target))
 matrix, target = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], 34
-# Output: false
+# Output: true
 print(Solution().searchMatrix(matrix, target))
