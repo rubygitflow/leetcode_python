@@ -79,13 +79,21 @@ class Solution:
                 l = mid + 1
         return False
 
+print('Binary Search')
 nums, target = [-1,0,3,5,9,12], 9
 # Output: 4
+print(Solution().search(nums, target))
 nums, target = [-1,0,3,5,9,12], 2
 # Output: -1
-Solution().search(nums, target)
+print(Solution().search(nums, target))
 
+print('Search a 2D Matrix')
 matrix, target = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], 13
+# Output: true
+print(Solution().searchMatrix(matrix, target))
 matrix, target = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], 23
+# Output: false
+print(Solution().searchMatrix(matrix, target))
 matrix, target = [[1,3,5,7],[10,11,16,20],[23,30,34,60]], 34
-Solution().searchMatrix(matrix, target)
+# Output: false
+print(Solution().searchMatrix(matrix, target))
