@@ -34,6 +34,7 @@ Solving algorithmic problems on leetcode.com
 - [137. Single Number II](https://leetcode.com/problems/single-number-ii/) >>> [single_number.py](https://github.com/rubygitflow/leetcode_python/blob/master/single_number.py)
 - [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
 - [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
+- [146. LRU Cache](https://leetcode.com/problems/lru-cache/) >>> [lru_cache.py](https://github.com/rubygitflow/leetcode_python/blob/master/lru_cache.py)
 - [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/) >>> [search_in_rotated_sorted_array.py](https://github.com/rubygitflow/leetcode_python/blob/master/search_in_rotated_sorted_array.py)
 - [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) >>> [two_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/two_sum.py)
 - [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
@@ -128,7 +129,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 116(+8) >>> Files: 84**
+**Tasks: 117(+8) >>> Files: 85**
 
 ## Install
 ```shell

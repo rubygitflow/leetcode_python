@@ -80,4 +80,3 @@ for com, inp in zip(commands, resources):
     else:
         param_2 = obj.get(inp[0],inp[1])
         print(param_2)
-
