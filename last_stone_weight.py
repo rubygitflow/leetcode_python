@@ -64,7 +64,7 @@ class Solution:
             stones.remove(u)
             v = max(stones)
             stones.remove(v)
-            if (u - v) > 0:
+            if u > v:
                 stones.append(u - v)
         return stones[0] if stones else 0
 
@@ -109,6 +109,8 @@ print(Solution().lastStoneWeightEx([31,26,33,21,40]))
 # Output: 9
 
 print('Last Stone Weight II')
+print(Solution().lastStoneWeightII([2,7,4,1,8,2]))
+# Output: 0
 print(Solution().lastStoneWeightII([2,7,4,1,8,1]))
 # Output: 1
 print(Solution().lastStoneWeightII([31,26,33,21,40]))
