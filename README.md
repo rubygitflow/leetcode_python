@@ -76,6 +76,7 @@ Solving algorithmic problems on leetcode.com
 - [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) >>> [time_based_key_value_store.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_based_key_value_store.py)
 - [983. Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) >>> [minimum_cost_for_tickets.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_cost_for_tickets.py)
 - [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) >>> [max_consecutive_ones.rb](https://github.com/rubygitflow/leetcode_python/blob/master/max_consecutive_ones.rb)
+- [1046. Last Stone Weight](https://leetcode.com/problems/last-stone-weight/) >>> [last_stone_weight.py](https://github.com/rubygitflow/leetcode_python/blob/master/last_stone_weight.py)
 - [1109. Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/) >>> [corporate_flight_bookings.py](https://github.com/rubygitflow/leetcode_python/blob/master/corporate_flight_bookings.py)
 - [1189. Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) >>> [maximum_number_of_balloons.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_number_of_balloons.py)
 - [1192. Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) >>> [critical_connections_in_a_network.py](https://github.com/rubygitflow/leetcode_python/blob/master/critical_connections_in_a_network.py)
@@ -129,7 +130,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 117(+8) >>> Files: 85**
+**Tasks: 118(+8) >>> Files: 86**
 
 ## Install
 ```shell

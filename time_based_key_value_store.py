@@ -31,7 +31,7 @@
 # At most 2 * 105 calls will be made to set and get.
 
 from collections import defaultdict
-from typing import List, Tuple
+from typing import List
 
 class TimeMap:
     ''' Time Based Key-Value Store '''
