@@ -64,7 +64,8 @@ class Solution:
             stones.remove(u)
             v = max(stones)
             stones.remove(v)
-            stones.append(u - v)
+            if (u - v) > 0:
+                stones.append(u - v)
         return stones[0] if stones else 0
 
     def lastStoneWeightEx(self, stones: List[int]) -> int:
