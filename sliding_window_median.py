@@ -81,8 +81,13 @@ class Solution:
             median = (window[k // 2] + window[k // 2 - 1]) / 2
         res.append(float(median))
         return res
+
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
-        ''' Sliding Window Maximum '''
+        '''
+        Sliding Window Maximum
+        (Time complexity: O(n)<=T<O(n^2); Space complexity: O(k))
+        https://proglib.io/p/slozhnost-algoritmov-i-operaciy-na-primere-python-2020-11-03
+        '''
         res = []
         window = nums[:k]
         for i in range(k, len(nums)):
@@ -93,11 +98,19 @@ class Solution:
         res.append(max(window))
         return res
 
+    def maxSlidingWindowEx(self, nums: List[int], k: int) -> List[int]:
+        ''' Sliding Window Maximum (short code) '''
+        return [ max(nums[(i - k):i]) for i in range(k, len(nums)+1) ]
+
+print("Sliding Window Median")
 nums, size = [1,3,-1,-3,5,3,6,7], 3
 # Output: [1.00000,-1.00000,-1.00000,3.00000,5.00000,6.00000]
-Solution().medianSlidingWindow(nums, size)
+print(Solution().medianSlidingWindow(nums, size))
 
+print("Sliding Window Maximum")
 nums, size = [1,3,-1,-3,5,3,6,7], 3
 # Output: [3,3,5,5,6,7]
-Solution().maxSlidingWindow(nums, size)
+print(Solution().maxSlidingWindow(nums, size))
+
+print(Solution().maxSlidingWindowEx([1,3,-1,-3,5,3,6,7], 3))
 
