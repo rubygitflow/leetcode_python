@@ -73,6 +73,7 @@ Solving algorithmic problems on leetcode.com
 - [849. Maximize Distance to Closest Person](https://leetcode.com/problems/maximize-distance-to-closest-person/) >>> [free_seats_in_the_row.py](https://github.com/rubygitflow/leetcode_python/blob/master/free_seats_in_the_row.py)
 - [870. Advantage Shuffle](https://leetcode.com/problems/advantage-shuffle/) >>> [advantage_shuffle.py](https://github.com/rubygitflow/leetcode_python/blob/master/advantage_shuffle.py)
 - [949. Largest Time for Given Digits](https://leetcode.com/problems/largest-time-for-given-digits/) >>> [largest_time_for_given_digits.py](https://github.com/rubygitflow/leetcode_python/blob/master/largest_time_for_given_digits.py)
+- [977. Squares of a Sorted Array](https://leetcode.com/problems/squares-of-a-sorted-array/) >>> [squares_sorted_array.py](https://github.com/rubygitflow/leetcode_python/blob/master/squares_sorted_array.py)
 - [981. Time Based Key-Value Store](https://leetcode.com/problems/time-based-key-value-store/) >>> [time_based_key_value_store.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_based_key_value_store.py)
 - [982. Triples with Bitwise AND Equal To Zero](https://leetcode.com/problems/triples-with-bitwise-and-equal-to-zero/) >>> [triples_with_bitwise.py](https://github.com/rubygitflow/leetcode_python/blob/master/triples_with_bitwise.py)
 - [983. Minimum Cost For Tickets](https://leetcode.com/problems/minimum-cost-for-tickets/) >>> [minimum_cost_for_tickets.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_cost_for_tickets.py)
@@ -133,7 +134,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 121(+8) >>> Files: 88**
+**Tasks: 122(+8) >>> Files: 89**
 
 ## Install
 ```shell
