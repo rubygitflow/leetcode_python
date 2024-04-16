@@ -116,6 +116,7 @@ Solving algorithmic problems on leetcode.com
 - [1958. Check if Move is Legal](https://leetcode.com/problems/check-if-move-is-legal/) >>> [check_if_move_is_legal.py](https://github.com/rubygitflow/leetcode_python/blob/master/check_if_move_is_legal.py)
 - [1974. Minimum Time to Type Word Using Special Typewriter](https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/) >>> [minimum_time_to_type_word_using_special_typewriter.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_to_type_word_using_special_typewriter.py)
 - [1975. Maximum Matrix Sum](https://leetcode.com/problems/maximum-matrix-sum/description/) >>> [maximum_matrix_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_matrix_sum.py)
+- [1977. Number of Ways to Separate Numbers](https://leetcode.com/problems/number-of-ways-to-separate-numbers/) >>> [number_ways_to_separate_numbers.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_ways_to_separate_numbers.py)
 - [2006. Count Number of Pairs With Absolute Difference K](https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/) >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - [2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/) >>> [time_needed_to_buy.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_needed_to_buy.py)
 - [2186. Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
@@ -134,7 +135,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 122(+8) >>> Files: 89**
+**Tasks: 123(+8) >>> Files: 90**
 
 ## Install
 ```shell
