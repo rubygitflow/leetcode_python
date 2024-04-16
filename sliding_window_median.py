@@ -63,22 +63,27 @@ class Solution:
     def medianSlidingWindow(self, nums: List[int], k: int) -> List[float]:
         ''' Sliding Window Median '''
         res = []
+        if len(nums) < k:
+            return res
+        odd = True if k % 2 == 1 else False
+        median_index = k // 2 if odd else k // 2 - 1
+        median_index_next = median_index + 1
         window = nums[:k]
         window.sort()
         for i in range(k, len(nums)):
-            if k % 2 == 1:
-                median = window[k // 2]
+            if odd:
+                median = window[median_index]
             else:
-                median = (window[k // 2] + window[k // 2 - 1]) / 2
+                median = (window[median_index] + window[median_index_next]) / 2
             res.append(float(median))
             window.remove(nums[i - k])
             window.append(nums[i])
             window.sort()
         # Process the last window
-        if k % 2 == 1:
-            median = window[k // 2]
+        if odd:
+            median = window[median_index]
         else:
-            median = (window[k // 2] + window[k // 2 - 1]) / 2
+            median = (window[median_index] + window[median_index_next]) / 2
         res.append(float(median))
         return res
 
@@ -103,9 +108,16 @@ class Solution:
         return [ max(nums[(i - k):i]) for i in range(k, len(nums)+1) ]
 
 print("Sliding Window Median")
-nums, size = [1,3,-1,-3,5,3,6,7], 3
+print(Solution().medianSlidingWindow([1,3,-1,-3,5,3,6,7], 3))
 # Output: [1.00000,-1.00000,-1.00000,3.00000,5.00000,6.00000]
-print(Solution().medianSlidingWindow(nums, size))
+print(Solution().medianSlidingWindow([1,2,3,4,2,3,1,4,2], 3))
+# Output: [2, 3, 3, 3, 2, 3, 2]
+print(Solution().medianSlidingWindow([1,3,-1,-3,5,3,6,7], 4))
+# Output: [0.0, 1.0, 1.0, 4.0, 5.5]
+print(Solution().medianSlidingWindow([1,3,-1,-3,5,3,6,7], 1))
+# Output: [1,3,-1,-3,5,3,6,7]
+print(Solution().medianSlidingWindow([1,3,-1,-3,5,3,6,7], 10))
+# Output: []
 
 print("Sliding Window Maximum")
 nums, size = [1,3,-1,-3,5,3,6,7], 3
