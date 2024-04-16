@@ -94,6 +94,8 @@ class Solution:
         https://proglib.io/p/slozhnost-algoritmov-i-operaciy-na-primere-python-2020-11-03
         '''
         res = []
+        if len(nums) < k:
+            return res
         window = nums[:k]
         for i in range(k, len(nums)):
             res.append(max(window))
@@ -120,9 +122,12 @@ print(Solution().medianSlidingWindow([1,3,-1,-3,5,3,6,7], 10))
 # Output: []
 
 print("Sliding Window Maximum")
-nums, size = [1,3,-1,-3,5,3,6,7], 3
+print(Solution().maxSlidingWindow([1,3,-1,-3,5,3,6,7], 3))
 # Output: [3,3,5,5,6,7]
-print(Solution().maxSlidingWindow(nums, size))
+print(Solution().maxSlidingWindow([1], 1))
+# Output: [1]
+print(Solution().maxSlidingWindow([1,3,-1,-3,5,3,6,7], 10))
+# Output: []
 
 print(Solution().maxSlidingWindowEx([1,3,-1,-3,5,3,6,7], 3))
-
+# Output: [3,3,5,5,6,7]
