@@ -83,10 +83,11 @@ class Solution:
                 dfs(back_int*10 + int(tail[0:1] or '0'), new_pos + 1, step + 1, all_len, tail[1:])
 
         # print('>')
-        dfs(int(num[0:1] or '-1'), 1, 1, len(num), num[1:])
+        dfs(int(num[0:1] or '0'), 1, 1, len(num), num[1:])
         return res + 1
 
     # https://leetcode.com/problems/number-of-ways-to-separate-numbers/solutions/1424057/python3-dp/
+    # Explanation: https://www.youtube.com/watch?v=xe6mfpv1JFA
     def numberOfCombinationsVerify(self, num: str) -> int:
         ''' Number of Ways to Separate Numbers (for Verification) '''
         n = len(num)
@@ -129,7 +130,7 @@ print(Solution().numberOfCombinations("094"))
 # Output: 0
 print(Solution().numberOfCombinations("0"))
 # Output: 0
-print(Solution().numberOfCombinations("1122"))
+print(Solution().numberOfCombinations("1122")) # solution building test
 # Output: 1/1111+1/22+1/112+1/13+1/4 == 5
 print(Solution().numberOfCombinations("11022"))
 # Output: 1/14+1/122+1/5 == 3
@@ -137,6 +138,10 @@ print(Solution().numberOfCombinations("113224345345672356"))
 # Output: ? == 180
 print(Solution().numberOfCombinations("1132243453456723562456731925"))
 # Output: ? == 1215
+# print(Solution().numberOfCombinations("113224345345672356245673192511322434534567235624567319251132243453456723562456731925242435"))
+# # Output: ? == 2685486 # 90 digits - 3 seconds
+# print(Solution().numberOfCombinations("113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583"))
+# # Output: ? == 156786812 # it does not cope in 60 minutes :(
 
 print("Number of Ways to Separate Numbers (Verify)")
 print(Solution().numberOfCombinationsVerify("327"))
@@ -153,3 +158,5 @@ print(Solution().numberOfCombinationsVerify("113224345345672356"))
 # Output: ? == 180
 print(Solution().numberOfCombinationsVerify("1132243453456723562456731925"))
 # Output: ? == 1215
+print(Solution().numberOfCombinationsVerify("113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583113224345345672356245673192583"))
+# Output: ? == 156786812  # counts in a second
