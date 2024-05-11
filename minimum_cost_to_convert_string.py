@@ -50,7 +50,6 @@ class Solution:
         def compare_all_paths():
             graph = defaultdict(lambda: defaultdict(int))
             # fix initial costs
-            # print('original, changed, cost',original, changed, cost)
             for ori, cha, cos in zip(original, changed, cost):
                 graph[ori][cha] = max(graph[ori][cha], cos)
             # bypass all connections
@@ -72,12 +71,14 @@ class Solution:
         # calculate labor costs
         for inp, out in zip(actioned_inp, actioned_out):
             res += min_paths[inp][out]
-        return res
+        return res if res < float('inf') else -1
 
 print(Solution().minimumCost("abcd","acbe",["a","b","c","c","e","d"],["b","c","b","e","b","e"],[2,5,5,1,2,20]))
 # Output: 28
 print(Solution().minimumCost("aaaa","bbbb",["a","c"],["c","b"],[1,2]))
 # Output: 12
+print(Solution().minimumCost("aaaa","bbbb",["a","c"],["d","b"],[1,2]))
+# Output: -1
 print(Solution().minimumCost("aaaa","bbbb",["a","c","a","d","e"],["c","b","d","e","b"],[3,2,1,1,1]))
 # Output: 12
 print(Solution().minimumCost("abcd","abce",["a"],["e"],[10000]))
