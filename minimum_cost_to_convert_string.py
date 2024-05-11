@@ -74,7 +74,9 @@ class Solution:
         return res if res < float('inf') else -1
 
 print(Solution().minimumCost("abcd","acbe",["a","b","c","c","e","d"],["b","c","b","e","b","e"],[2,5,5,1,2,20]))
-# Output: 28
+# Output: 28 (5 > 1+2)
+print(Solution().minimumCost("abcd","acbe",["a","b","c","c","f","e","d"],["b","c","b","f","e","b","e"],[2,5,5,1,2,1,20]));
+# Output: 29 (5 > 1+2+1)
 print(Solution().minimumCost("aaaa","bbbb",["a","c"],["c","b"],[1,2]))
 # Output: 12
 print(Solution().minimumCost("aaaa","bbbb",["a","c"],["d","b"],[1,2]))
