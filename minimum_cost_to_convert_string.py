@@ -198,7 +198,11 @@ print(Solution().minimumCostII("fgh","ghh",["bcd","fgh","thh"],["cde","thh","ghh
 # Output: 8
 print(Solution().minimumCostII("fgh","ghh",["fgh","f","g","thh"],["thh","g","h","ghh"],[3,1,1,5]))
 # Output: 2 (1+1 < 3+5)
+print(Solution().minimumCostII("fgh","f&&",["fgh","fgh"],["f&&","f&"],[11,1]))
+# Output: 11
 print(Solution().minimumCostII("abcdefgh","acdeeghh",["bcd","fgh","thh"],["cde","thh","ghh"],[1,3,5]))
 # Output: 9
 print(Solution().minimumCostII("abcdefgh","addddddd",["bcd","defgh"],["ddd","ddddd"],[100,1578]))
 # Output: -1
+print(Solution().minimumCostII("aaa","aaa",["a"],["e"],[10000]))
+# Output: 0
