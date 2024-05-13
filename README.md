@@ -124,6 +124,7 @@ Solving algorithmic problems on leetcode.com
 - [2380. Time Needed to Rearrange a Binary String](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/) >>> [time_needed_to_rearrange.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_needed_to_rearrange.py)
 - [2609. Find the Longest Balanced Substring of a Binary String](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) >>> [find_the_longest_balanced_substring_of_a_binary_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_the_longest_balanced_substring_of_a_binary_string.py)
 - [2976. Minimum Cost to Convert String I](https://leetcode.com/problems/minimum-cost-to-convert-string-i/) >>> [minimum_cost_to_convert_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_cost_to_convert_string.py)
+- [2977. Minimum Cost to Convert String II](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) >>> [minimum_cost_to_convert_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_cost_to_convert_string.py)
 - [3083. Existence of a Substring in a String and Its Reverse](https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/) >>> [existence_substring_in_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/existence_substring_in_string.py)
 
 ## Addition
@@ -136,7 +137,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 124(+8) >>> Files: 91**
+**Tasks: 125(+8) >>> Files: 91**
 
 ## Install
 ```shell
