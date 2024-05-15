@@ -88,6 +88,7 @@ Solving algorithmic problems on leetcode.com
 - [1375. Number of Times Binary String Is Prefix-Aligned](https://leetcode.com/problems/number-of-times-binary-string-is-prefix-aligned/) >>> [number_of_times_binary_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_times_binary_string.py)
 - [1376. Time Needed to Inform All Employees](https://leetcode.com/problems/time-needed-to-inform-all-employees/) >>> [time_needed_to_inform.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_needed_to_inform.py)
 - [1386. Cinema Seat Allocation](https://leetcode.com/problems/cinema-seat-allocation/) >>> [cinema_seat_allocation.py](https://github.com/rubygitflow/leetcode_python/blob/master/cinema_seat_allocation.py)
+- [1443. Minimum Time to Collect All Apples in a Tree](https://leetcode.com/problems/minimum-time-to-collect-all-apples-in-a-tree/) >>> [collect_all_apples_in_tree.py](https://github.com/rubygitflow/leetcode_python/blob/master/collect_all_apples_in_tree.py)
 - [1450. Number of Students Doing Homework at a Given Time](https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/) >>> [number_of_students_doing_homework_at_a_given_time.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_students_doing_homework_at_a_given_time.py)
 - [1451. Rearrange Words in a Sentence](https://leetcode.com/problems/rearrange-words-in-a-sentence/) >>> [rearrange_words_in_a_sentence.py](https://github.com/rubygitflow/leetcode_python/blob/master/rearrange_words_in_a_sentence.py)
 - [1480. Running Sum of 1d Array](https://leetcode.com/problems/running-sum-of-1d-array/) >>> [running_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/running_sum.py)
@@ -137,7 +138,7 @@ Solving algorithmic problems on leetcode.com
 - Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 
-**Tasks: 125(+8) >>> Files: 91**
+**Tasks: 126(+8) >>> Files: 92**
 
 ## Install
 ```shell
