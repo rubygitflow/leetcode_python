@@ -51,7 +51,7 @@ class Solution:
             g[u].append(v)
             g[v].append(u)
         vis = [False] * n
-        print(g)
+        # print(g)
         return dfs(0, 0)
 
 
