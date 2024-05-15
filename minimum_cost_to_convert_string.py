@@ -140,6 +140,7 @@ class Solution:
         '''
         # Step 1: Initialize necessary data structures and variables
         original_set = set(original)
+        original_len_set = set(map(len, original))
         changed_set  = set(changed)
         source_len = len(source)
         dp = [float('inf')] * (source_len + 1)
@@ -156,8 +157,7 @@ class Solution:
             target_char = target[i]
             if source_char == target_char:
                 dp[i + 1] = min(dp[i + 1], dp[i])
-            for substring in original_set:
-                substring_len = len(substring)
+            for substring_len in original_len_set:
                 if i + substring_len > source_len:
                     continue
                 sub_source = source[i:i+substring_len]
