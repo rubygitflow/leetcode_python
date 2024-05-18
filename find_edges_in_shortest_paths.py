@@ -73,11 +73,10 @@ class Solution:
         
         # let's consider edges as a complement of oncoming paths
         for a, b, w in edges:
-            if source_dist.get(a, inf) + w + target_dist.get(b, inf) == d \
-                or source_dist.get(b, inf) + w + target_dist.get(a, inf) == d:
-                ans.append(True)
-            else:
-                ans.append(False)
+            ans.append(
+                source_dist.get(a, inf) + w + target_dist.get(b, inf) == d \
+                or source_dist.get(b, inf) + w + target_dist.get(a, inf) == d
+            )
         return ans
 
 print(Solution().findAnswer(6,[[0,1,4],[0,2,1],[1,3,2],[1,4,3],[1,5,1],[2,3,1],[3,5,3],[4,5,2]]))
