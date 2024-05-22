@@ -41,7 +41,7 @@ print(is_empty({}))
 print(is_empty([None, False, 0]))
 # Output: False
 print(is_empty([]))
-# Output: true
+# Output: True
 print(is_empty('wer'))
 # Output: False
 print(is_empty(''))
@@ -49,4 +49,6 @@ print(is_empty(''))
 print(is_empty(4.9))
 # Output: False
 print(is_empty(None))
-# Output: True
+# Output: /False?/ True
+print(is_empty([None]))
+# Output: False
