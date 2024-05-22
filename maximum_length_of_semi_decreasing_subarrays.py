@@ -46,6 +46,7 @@ class Solution:
         # print('d',d)
         # print('reverse_sorted(d)',sorted(d, reverse=True))
         ans, k = 0, inf
+        # Decreasing array
         for x in sorted(d, reverse=True):
             ans = max(ans, d[x][-1] - k + 1)
             k = min(k, d[x][0])
@@ -60,6 +61,7 @@ class Solution:
         # print('d',d)
         # print('sorted(d)',sorted(d))
         ans, k = 0, inf
+        # Increasing array
         for x in sorted(d):
             ans = max(ans, d[x][-1] - k + 1)
             k = min(k, d[x][0])
