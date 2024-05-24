@@ -9,7 +9,7 @@ Solving algorithmic problems on leetcode.com
 - [7. Reverse Integer](https://leetcode.com/problems/reverse-integer/) >>> [reverse_integer.py](https://github.com/rubygitflow/leetcode_python/blob/master/reverse_integer.py)
 - [9. Palindrome Number](https://leetcode.com/problems/palindrome-number/) >>> [palindrome_number.py](https://github.com/rubygitflow/leetcode_python/blob/master/palindrome_number.py)
 - [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/) >>> [container_with_most_water.py](https://github.com/rubygitflow/leetcode_python/blob/master/container_with_most_water.py)
-- [15. 3Sum](https://leetcode.com/problems/3sum/) >>> [two_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/two_sum.py)
+- [15. 3Sum](https://leetcode.com/problems/3sum/) >>> [three_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/three_sum.py)
 - [18. 4Sum](https://leetcode.com/problems/4sum/) >>> [four_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/four_sum.py)
 - [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/) >>> [valid_parentheses.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_parentheses.py)
 - [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) >>> [generating_correct_bracket_sequences.py](https://github.com/rubygitflow/leetcode_python/blob/master/generating_correct_bracket_sequences.py)
@@ -142,7 +142,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 129(+9) >>> Files: 95**
+**Tasks: 129(+9) >>> Files: 96**
 
 ## Install
 ```shell
