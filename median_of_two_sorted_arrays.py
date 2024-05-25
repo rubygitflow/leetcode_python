@@ -1,5 +1,6 @@
 # https://leetcode.com/problems/median-of-two-sorted-arrays/description/
 # 4. Median of Two Sorted Arrays
+
 # Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
 # The overall run time complexity should be O(log (m+n)).
 
@@ -21,23 +22,30 @@
 # 1 <= m + n <= 2000
 # -106 <= nums1[i], nums2[i] <= 106
 
-# a bad, naive solution  - O(N * log N)
+from typing import List
+
 class Solution:
-    def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        ''' Median of Two Sorted Arrays '''
+    def findMedianSortedArraysSort(self, nums1: List[int], nums2: List[int]) -> float:
+        '''
+        Median of Two Sorted Arrays
+        /a bad, naive solution  - O(N * log N)/
+        '''
         list3 = nums1 + nums2
         list3.sort()
         l = len(list3)
         k = l // 2
+        output = 0
         if (l % 2) == 0:
-            (list3[k] + list3[k-1]) / 2
+            output = (list3[k] + list3[k-1]) / 2
         else:
-            list3[k]
+            output = list3[k]
+        return output
 
-# a good, optimized solution  - O(log (m+n))
-class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:
-        ''' Median of Two Sorted Arrays '''
+        '''
+        Median of Two Sorted Arrays
+        /a good, optimized solution  - O(log (m+n))/
+        '''
         if len(nums1) < len(nums2):
             a, b = nums1, nums2
         else:
@@ -46,7 +54,7 @@ class Solution:
         la, lb = len(a), len(b)
         l, r = 0, la - 1
         half = (la + lb) // 2
-        # Binary search loop
+        # Binary search loop in b
         while True:
             i = (l + r) // 2  # Partition position in 'a'
             j = half - i - 2  # Complementary partition position in 'b'
@@ -67,6 +75,7 @@ class Solution:
                 r = i - 1  # Move partition in 'a' left
             else: # b_current > a_right
                 l = i + 1  # Move partition in 'a' right
+        return None
 
 
 # Input:
@@ -105,4 +114,5 @@ nums1 = [3, 19, 20]
 nums2 = [] 
 
 # Execute:
-Solution().findMedianSortedArrays(nums1, nums2)
+print(Solution().findMedianSortedArraysSort(nums1, nums2))
+print(Solution().findMedianSortedArrays(nums1, nums2))
