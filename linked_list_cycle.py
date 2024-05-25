@@ -212,6 +212,7 @@ class Solution:
         # there is no cycle in the linked list. Return None.
         return None
 
+# creation a linked list from data with closure at pos
 def add_linked_list(data, pos = -1):
     tail = []
     tail.append(ListNode(data[0])) 

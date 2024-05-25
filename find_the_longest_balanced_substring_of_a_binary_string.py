@@ -36,14 +36,52 @@ class Solution:
                     k += 1
                     max_len = max(max_len, k*2)
         return max_len
+    def findTheLongestBalancedSubstringII(self, s: str) -> int:
+        out = 0
+        zeros = 0
+        ones = 0
+        for letter in s:
+            if letter=="0":
+                if ones==0:
+                    # continue counting
+                    zeros += 1
+                else:
+                    # break counting
+                    ones = 0
+                    zeros = 1
+            elif letter=="1":
+                if zeros>0:
+                    ones += 1
+                    # compare ones with zeros and add to result
+                    out = min(zeros, ones)
+        # fix the result
+        return out * 2
 
 
+print('findTheLongestBalancedSubstring')
 s = "01000111"
+print(Solution().findTheLongestBalancedSubstring(s))
 # Output: 6
 s = "00111"
+print(Solution().findTheLongestBalancedSubstring(s))
 # Output: 4
 s = "111"
+print(Solution().findTheLongestBalancedSubstring(s))
 # Output: 0
 s = "111011"
+print(Solution().findTheLongestBalancedSubstring(s))
 # Output: 2
-Solution().findTheLongestBalancedSubstring(s)
+
+print('findTheLongestBalancedSubstringII')
+s = "01000111"
+print(Solution().findTheLongestBalancedSubstringII(s))
+# Output: 6
+s = "00111"
+print(Solution().findTheLongestBalancedSubstringII(s))
+# Output: 4
+s = "111"
+print(Solution().findTheLongestBalancedSubstringII(s))
+# Output: 0
+s = "111011"
+print(Solution().findTheLongestBalancedSubstringII(s))
+# Output: 2
