@@ -189,15 +189,18 @@ class Solution:
         for c in s:
             d[c] += 1
         return d
+
     def isAnagramOld(self, s: str, t: str) -> bool:
         ''' Valid Anagram (Old Version - Case sensitive) '''
         if len(s) != len(t):
             return False
         return self.__dictFromString(s) == self.__dictFromString(t)
+
     def isAnagram(self, s: str, t: str) -> bool:
         ''' Valid Anagram '''
         if len(s) != len(t):
             return False
+
         # dic_s = {}
         # for char in s.lower():
         #     if char not in dic_s:
@@ -216,6 +219,7 @@ class Solution:
         output = [[]]
         if not strs:
             return output
+
         output[0].append(strs[0])
         for i in range(len(strs) - 1):
             found = False
@@ -236,6 +240,9 @@ class Solution:
         return output
     def minSteps(self, s: str, t: str) -> int:
         ''' Minimum Number of Steps to Make Two Strings Anagram '''
+        if len(s) != len(t):
+            return None
+
         dic_s = {}
         dic_t = {}
         for char in s.lower():
@@ -293,20 +300,22 @@ class Solution:
         ]
 
 print("Valid Anagram")
-s, t = "anagram", "naGaram"
-# Output: True
 # s, t = "rat", "car"
 # s, t = "cat", "Catherine"
+s, t = "anagram", "naGaram"
+# Case insensitive!!!
 print(Solution().isAnagram(s, t))
+# Output: True
+
 s, t = "anagram", "margana"
-# Case sensitive!!!
 print(Solution().isAnagramOld(s, t))
+# Output: True
 
 print("Group Anagrams")
 # strs = [""]
 strs = ["eat","tea","tan","ate","nat","bat"]
-# Output: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
 print(Solution().groupAnagrams(strs))
+# Output: [['eat', 'tea', 'ate'], ['tan', 'nat'], ['bat']]
 
 print("Find All Anagrams in a String")
 # s, p = "abab", "ab"
@@ -316,33 +325,51 @@ print(Solution().findAnagrams(s, p))
 
 print("Minimum Number of Steps to Make Two Strings Anagram")
 s, t = "leetcode", "practice"
-# Output: 5
-# s, t = "bab", "aba"
-# s, t = "anagram", "mangaar"
 print(Solution().minSteps(s, t))
-
-# s, t = "leetcode", "coats"
-s, t = "night", "thing"
+# Output: 5
+s, t = "bab", "aba"
+print(Solution().minSteps(s, t))
+# Output: 1
+s, t = "anagram", "mangaar"
+print(Solution().minSteps(s, t))
 # Output: 0
+print(Solution().minSteps("n👩ght🌄Прога", "t👩ghn🐃Прога"))
+# Output: 1
+s, t = "leetcode", "practic"
+print(Solution().minSteps(s, t))
+# Output: None
+
+print("Minimum Number of Steps to Make Two Strings Anagram II")
+s, t = "leetcode", "coats"
 print(Solution().minStepsII(s, t))
+# Output: 7
+s, t = "night", "thing"
+print(Solution().minStepsII(s, t))
+# Output: 0
+print(Solution().minStepsII("n👩ght🌄Прога", "Парго🐃th👩ng"))
+# Output: 2
 
-# nums1 = [12,28,46,32,50]
-# nums2 = [50,12,32,46,28]
-# Output: [1,4,3,2,0]
-
-# nums1 = [84,46]
-# nums2 = [84,46]
-# Output: [0,1]
 
 print("Find Anagram Mappings")
+nums1 = [12,28,46,32,50]
+nums2 = [50,12,32,46,28]
+print(Solution().anagramMappings(nums1, nums2))
+# Output: [1,4,3,2,0]
+
+nums1 = [84,46]
+nums2 = [84,46]
+print(Solution().anagramMappings(nums1, nums2))
+# Output: [0,1]
+
 nums1 = [84,46,46]
 nums2 = [46,84,46]
-# Output: [1, 0, 2]
 print(Solution().anagramMappings(nums1, nums2))
+# Output: [1, 0, 2] or [1, 0, 0] or [1, 2, 2] or [1, 2, 0]
 
 print("Find Resultant Array After Removing Anagrams")
-# words = ["abba","baba","bbaa","cd","cd"]
+words = ["abba","baba","bbaa","cd","cd"]
+print(Solution().removeAnagrams(words))
 # Output: ['abba', 'cd']
 words = ["abba","bbaa","cd","cd","baba"]
-# Output: ['abba', 'cd', 'baba']
 print(Solution().removeAnagrams(words))
+# Output: ['abba', 'cd', 'baba']
