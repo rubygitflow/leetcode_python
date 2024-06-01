@@ -122,6 +122,7 @@ Solving algorithmic problems on leetcode.com
 - [2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/) >>> [time_needed_to_buy.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_needed_to_buy.py)
 - [2186. Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
+- [2287. Rearrange Characters to Make Target String](https://leetcode.com/problems/rearrange-characters-to-make-target-string/) >>> [rearrange_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/rearrange_characters.py)
 - [2309. Greatest English Letter in Upper and Lower Case](https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/) >>> [greatest_letter.py](https://github.com/rubygitflow/leetcode_python/blob/master/greatest_letter.py)
 - [2351. First Letter to Appear Twice](https://leetcode.com/problems/first-letter-to-appear-twice/) >>> [first_letter_to_appear_twice.py](https://github.com/rubygitflow/leetcode_python/blob/master/first_letter_to_appear_twice.py)
 - [2376. Count Special Integers](https://leetcode.com/problems/count-special-integers/) >>> [count_special_integers.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_special_integers.py)
@@ -145,7 +146,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 152(+9) >>> Files: 99**
+**Tasks: 153(+9) >>> Files: 100**
 
 ## Install
 ```shell
