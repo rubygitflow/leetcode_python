@@ -122,6 +122,7 @@ Solving algorithmic problems on leetcode.com
 - [2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/) >>> [time_needed_to_buy.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_needed_to_buy.py)
 - [2186. Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
+- [2376. Count Special Integers](https://leetcode.com/problems/count-special-integers/) >>> [count_special_integers.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_special_integers.py)
 - [2380. Time Needed to Rearrange a Binary String](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/) >>> [time_needed_to_rearrange.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_needed_to_rearrange.py)
 - [2609. Find the Longest Balanced Substring of a Binary String](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) >>> [find_the_longest_balanced_substring_of_a_binary_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_the_longest_balanced_substring_of_a_binary_string.py)
 - [2727. Is Object Empty](https://leetcode.com/problems/is-object-empty/) >>> [is_object_empty.py](https://github.com/rubygitflow/leetcode_python/blob/master/is_object_empty.py)
@@ -142,7 +143,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 129(+9) >>> Files: 96**
+**Tasks: 150(+9) >>> Files: 97**
 
 ## Install
 ```shell
