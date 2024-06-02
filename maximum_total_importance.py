@@ -47,7 +47,7 @@ class Solution:
             deg[a] += 1
             deg[b] += 1
         deg.sort()
-        # print("Sorted list of road mentions",deg)
+        # print("Sorted list of road mentions:",deg)
         # Return the MAXIMUM total importance of all roads possible after assigning the values optimally:
         # assign each city with an integer value from 1 to n 
         # - for the most frequently mentioned road, assign the highest value
