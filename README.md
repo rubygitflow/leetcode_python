@@ -104,6 +104,7 @@ Solving algorithmic problems on leetcode.com
 - [1736. Latest Time by Replacing Hidden Digits](https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/) >>> [minimum_time_difference.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_difference.py)
 - [1737. Change Minimum Characters to Satisfy One of Three Conditions](https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/description/) >>> [change_minimum_characters_to_satisfy_one_of_three_conditions.py](https://github.com/rubygitflow/leetcode_python/blob/master/change_minimum_characters_to_satisfy_one_of_three_conditions.py)
 - [1742. Maximum Number of Balls in a Box](https://leetcode.com/problems/maximum-number-of-balls-in-a-box/) >>> [maximum_number_of_balls_in_a_box.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_number_of_balls_in_a_box.py)
+- [1748. Sum of Unique Elements](https://leetcode.com/problems/sum-of-unique-elements/) >>> [rearrange_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/rearrange_characters.py)
 - [1869. Longer Contiguous Segments of Ones than Zeros](https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/) >>> [longer_contiguous_segments_of_ones_than_zeros.py](https://github.com/rubygitflow/leetcode_python/blob/master/longer_contiguous_segments_of_ones_than_zeros.py)
 - [1870. Minimum Speed to Arrive on Time](https://leetcode.com/problems/minimum-speed-to-arrive-on-time/) >>> [minimum_speed_to_arrive_on_time.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_speed_to_arrive_on_time.py)
 - [1871. Jump Game VII](https://leetcode.com/problems/jump-game-vii/) >>> [jump_game.py](https://github.com/rubygitflow/leetcode_python/blob/master/jump_game.py)
@@ -151,7 +152,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 138(+9) >>> Files: 105**
+**Tasks: 139(+9) >>> Files: 105**
 
 ## Install
 ```shell
