@@ -36,8 +36,17 @@ class Solution:
             for j in range(i - 1):
                 res[j] = (res[j] + res[j + 1]) % 10
         return res[0]
+    def triangularSumII(self, nums: List[int]) -> int:
+        ''' Find Triangular Sum of an Array (optimized) '''
+        return sum( n * comb(len(nums) - 1, i) for i, n in enumerate(nums) ) % 10
 
 print("Find Triangular Sum of an Array (recursive)")
+print(Solution().triangularSum([1,2,3,4,5]))
+# Output: 8
+print(Solution().triangularSum([5]))
+# Output: 5
+
+print("Find Triangular Sum of an Array (optimized)")
 print(Solution().triangularSum([1,2,3,4,5]))
 # Output: 8
 print(Solution().triangularSum([5]))
