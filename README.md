@@ -111,6 +111,7 @@ Solving algorithmic problems on leetcode.com
 - [1884. Egg Drop With 2 Eggs and N Floors](https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/) >>> [egg_drop_with_2_eggs_and_n_floors.py](https://github.com/rubygitflow/leetcode_python/blob/master/egg_drop_with_2_eggs_and_n_floors.py)
 - [1928. Minimum Cost to Reach Destination in Time](https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/) >>> [minimum_cost_to_reach_destination_in_time.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_cost_to_reach_destination_in_time.py)
 - [1929. Concatenation of Array](https://leetcode.com/problems/concatenation-of-array/) >>> [concatenation_of_array.py](https://github.com/rubygitflow/leetcode_python/blob/master/concatenation_of_array.py)
+- [1945. Sum of Digits of String After Convert](https://leetcode.com/problems/sum-of-digits-of-string-after-convert/) >>> [sum_of_digits.py](https://github.com/rubygitflow/leetcode_python/blob/master/sum_of_digits.py)
 - [1955. Count Number of Special Subsequences](https://leetcode.com/problems/count-number-of-special-subsequences/) >>> [count_number_of_special_subsequences.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_special_subsequences.py)
 - [1956. Minimum Time For K Virus Variants to Spread](https://leetcode.com/problems/minimum-time-for-k-virus-variants-to-spread/) >>> [minimum_time_for_k_virus_variants_to_spread.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_for_k_virus_variants_to_spread.py)
 - [1957. Delete Characters to Make Fancy String](https://leetcode.com/problems/delete-characters-to-make-fancy-string/) >>> [delete_characters_to_make_fancy_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/delete_characters_to_make_fancy_string.py)
@@ -150,7 +151,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 137(+9) >>> Files: 104**
+**Tasks: 138(+9) >>> Files: 105**
 
 ## Install
 ```shell
