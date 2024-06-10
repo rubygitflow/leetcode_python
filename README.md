@@ -122,6 +122,7 @@ Solving algorithmic problems on leetcode.com
 - [2073. Time Needed to Buy Tickets](https://leetcode.com/problems/time-needed-to-buy-tickets/) >>> [time_needed_to_buy.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_needed_to_buy.py)
 - [2186. Minimum Number of Steps to Make Two Strings Anagram II](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2220. Minimum Bit Flips to Convert Number](https://leetcode.com/problems/minimum-bit-flips-to-convert-number/) >>> [minimum_bit_flips.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_bit_flips.py)
+- [2221. Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/) >>> [find_triangular_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_triangular_sum.py)
 - [2243. Calculate Digit Sum of a String](https://leetcode.com/problems/calculate-digit-sum-of-a-string/) >>> [calculate_digit_sum_of_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/calculate_digit_sum_of_string.py)
 - [2273. Find Resultant Array After Removing Anagrams](https://leetcode.com/problems/find-resultant-array-after-removing-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [2285. Maximum Total Importance of Roads](https://leetcode.com/problems/maximum-total-importance-of-roads/) >>> [maximum_total_importance.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_total_importance.py)
@@ -149,7 +150,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 136(+9) >>> Files: 103**
+**Tasks: 137(+9) >>> Files: 104**
 
 ## Install
 ```shell
