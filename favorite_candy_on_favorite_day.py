@@ -34,7 +34,6 @@
 # 1 <= dailyCapi <= 109
 
 from typing import List
-from math import ceil
 from itertools import accumulate
 
 class Solution:
@@ -59,4 +58,3 @@ print(Solution().canEat([5,2,6,4,1], [[3,1,2],[4,10,3],[3,10,100],[4,100,30],[1,
 # Output: [False,True,True,False,False]
 print(Solution().canEat([7,4,5,3], [[0, 2, 2], [1, 6, 1], [2, 5, 10]]))
 # Output: [True, False, True]
-

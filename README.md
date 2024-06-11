@@ -49,6 +49,7 @@ Solving algorithmic problems on leetcode.com
 - [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/) >>> [top_k_frequent_words.py](https://github.com/rubygitflow/leetcode_python/blob/master/top_k_frequent_words.py)
 - [365. Water and Jug Problem](https://leetcode.com/problems/water-and-jug-problem/) >>> [water_and_jug_problem.py](https://github.com/rubygitflow/leetcode_python/blob/master/water_and_jug_problem.py)
 - [374. Guess Number Higher or Lower](https://leetcode.com/problems/guess-number-higher-or-lower/) >>> [guess_number_higher_or_lower.py](https://github.com/rubygitflow/leetcode_python/blob/master/guess_number_higher_or_lower.py)
+- [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string/) >>> [first_unique_character.py](https://github.com/rubygitflow/leetcode_python/blob/master/first_unique_character.py)
 - [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement/) >>> [longest_repeating_character_replacement.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_repeating_character_replacement.py)
 - [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [480. Sliding Window Median](https://leetcode.com/problems/sliding-window-median/) >>> [sliding_window_median.py](https://github.com/rubygitflow/leetcode_python/blob/master/sliding_window_median.py)
@@ -153,7 +154,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 140(+9) >>> Files: 106**
+**Tasks: 141(+9) >>> Files: 107**
 
 ## Install
 ```shell
