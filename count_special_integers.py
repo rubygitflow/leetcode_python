@@ -44,6 +44,33 @@
 # Constraints:
 # 0 <= n <= 8
 
+
+#######################
+# https://leetcode.com/problems/count-numbers-with-unique-digits-ii/description/
+# 3032. Count Numbers With Unique Digits II
+# Explanation: https://algo.monster/liteproblems/3032
+
+# Given two positive integers a and b, return the count of numbers having unique digits in the range [a, b] (inclusive).
+
+# Example 1:
+# Input: a = 1, b = 20
+# Output: 19
+# Explanation: All the numbers in the range [1, 20] have unique digits except 11. Hence, the answer is 19.
+
+# Example 2:
+# Input: a = 9, b = 19
+# Output: 10
+# Explanation: All the numbers in the range [9, 19] have unique digits except 11. Hence, the answer is 10.
+
+# Example 3:
+# Input: a = 80, b = 120
+# Output: 27
+# Explanation: There are 41 numbers in the range [80, 120], 27 of which have unique digits.
+
+# Constraints:
+# 1 <= a <= b <= 1000
+
+
 class Solution:
     def countSpecialNumbers(self, n: int) -> int:
         ''' Count Special Integers '''
@@ -110,6 +137,10 @@ class Solution:
             out += cur
         return out
 
+    def numberCount(self, a: int, b: int) -> int:
+        ''' Count Numbers With Unique Digits II '''
+        return self.countSpecialNumbers(b) - (self.countSpecialNumbers(a-1) if a > 1 else 0)
+
 print("Count Special Integers")
 print(Solution().countSpecialNumbers(5))
 # Output: 5
@@ -141,3 +172,11 @@ print(Solution().countNumbersWithUniqueDigits(7))
 # Output: 712891
 print(Solution().countNumbersWithUniqueDigits(8))
 # Output: 2345851
+
+print("Count Numbers With Unique Digits II")
+print(Solution().numberCount(1, 20))
+# Output: 19
+print(Solution().numberCount(9, 19))
+# Output: 10
+print(Solution().numberCount(80, 120))
+# Output: 27
