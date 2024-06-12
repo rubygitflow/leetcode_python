@@ -24,11 +24,33 @@
 # Constraints:
 # 1 <= n <= 2 * 109
 
+
+#######################
+# https://leetcode.com/problems/count-numbers-with-unique-digits/description/
+# 357. Count Numbers with Unique Digits
+# Explanation: https://algo.monster/liteproblems/357
+
+# Given an integer n, return the count of all numbers with unique digits, x, where 0 <= x < 10n.
+
+# Example 1:
+# Input: n = 2
+# Output: 91
+# Explanation: The answer should be the total numbers in the range of 0 ≤ x < 100, excluding 11,22,33,44,55,66,77,88,99
+
+# Example 2:
+# Input: n = 0
+# Output: 1
+
+# Constraints:
+# 0 <= n <= 8
+
 class Solution:
     def countSpecialNumbers(self, n: int) -> int:
         ''' Count Special Integers '''
 
-        # Recursive function to calculate permutations A(m, n) = m! / (m-n)!
+        # Permutation function permutations(m, n)
+        # that calculates permutations of m elements taken n at a time.
+        # Recursive function to calculate permutations: permutations(m, n) = m! / (m-n)!
         def permutations(m, n):
             if n == 0:
                 return 1
@@ -78,6 +100,17 @@ class Solution:
 
         return answer
 
+    def countNumbersWithUniqueDigits(self, n: int) -> int:
+        ''' Count Numbers with Unique Digits '''
+        if n == 0:
+            return 1
+        out, cur = 10, 9
+        for i in range(n - 1):
+            cur *= 9 - i
+            out += cur
+        return out
+
+print("Count Special Integers")
 print(Solution().countSpecialNumbers(5))
 # Output: 5
 print(Solution().countSpecialNumbers(20))
@@ -88,3 +121,23 @@ print(Solution().countSpecialNumbers(320))
 # Output: 251
 print(Solution().countSpecialNumbers(2 * 10 ** 9))
 # Output: 5974650
+
+print("Count Numbers with Unique Digits")
+print(Solution().countNumbersWithUniqueDigits(0))
+# Output: 1
+print(Solution().countNumbersWithUniqueDigits(1))
+# Output: 10
+print(Solution().countNumbersWithUniqueDigits(2))
+# Output: 91
+print(Solution().countNumbersWithUniqueDigits(3))
+# Output: 739
+print(Solution().countNumbersWithUniqueDigits(4))
+# Output: 5275
+print(Solution().countNumbersWithUniqueDigits(5))
+# Output: 32491
+print(Solution().countNumbersWithUniqueDigits(6))
+# Output: 168571
+print(Solution().countNumbersWithUniqueDigits(7))
+# Output: 712891
+print(Solution().countNumbersWithUniqueDigits(8))
+# Output: 2345851
