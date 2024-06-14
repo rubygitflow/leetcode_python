@@ -26,6 +26,7 @@ class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         ''' Contains Duplicate (set)'''
         # return len(set(nums)) < len(nums)
+        # No need to interate through the entire list. We return a boolean at the first duplicate
         visited = set()
         for num in nums:
             if num in visited:
