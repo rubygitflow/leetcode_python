@@ -36,3 +36,7 @@ print(Solution().alternateDigitSum(111))
 # Output: 1
 print(Solution().alternateDigitSum(886996))
 # Output: 0
+print(Solution().alternateDigitSum(885996))
+# Output: -1
+print(Solution().alternateDigitSum(886995))
+# Output: 1
