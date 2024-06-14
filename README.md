@@ -136,6 +136,7 @@ Solving algorithmic problems on leetcode.com
 - [2351. First Letter to Appear Twice](https://leetcode.com/problems/first-letter-to-appear-twice/) >>> [first_letter_to_appear_twice.py](https://github.com/rubygitflow/leetcode_python/blob/master/first_letter_to_appear_twice.py)
 - [2376. Count Special Integers](https://leetcode.com/problems/count-special-integers/) >>> [count_special_integers.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_special_integers.py)
 - [2380. Time Needed to Rearrange a Binary String](https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/) >>> [time_needed_to_rearrange.py](https://github.com/rubygitflow/leetcode_python/blob/master/time_needed_to_rearrange.py)
+- [2544. Alternating Digit Sum](https://leetcode.com/problems/alternating-digit-sum/) >>> [alternating_digit_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/alternating_digit_sum.py)
 - [2609. Find the Longest Balanced Substring of a Binary String](https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/) >>> [find_the_longest_balanced_substring_of_a_binary_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_the_longest_balanced_substring_of_a_binary_string.py)
 - [2727. Is Object Empty](https://leetcode.com/problems/is-object-empty/) >>> [is_object_empty.py](https://github.com/rubygitflow/leetcode_python/blob/master/is_object_empty.py)
 - [2863. Maximum Length of Semi-Decreasing Subarrays](https://leetcode.com/problems/maximum-length-of-semi-decreasing-subarrays/) >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
@@ -156,7 +157,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 143(+9) >>> Files: 107**
+**Tasks: 144(+9) >>> Files: 108**
 
 ## Install
 ```shell
