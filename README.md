@@ -42,6 +42,7 @@ Solving algorithmic problems on leetcode.com
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
 - [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) >>> [sliding_window_median.py](https://github.com/rubygitflow/leetcode_python/blob/master/sliding_window_median.py)
 - [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
+- [258. Add Digits](https://leetcode.com/problems/add-digits/) >>> [alternating_digit_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/alternating_digit_sum.py)
 - [298. Binary Tree Longest Consecutive Sequence](https://leetcode.com/problems/longest-consecutive-sequence/) >>> [longest_consecutive_sequence.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_consecutive_sequence.py)
 - [301. Remove Invalid Parentheses](https://leetcode.com/problems/remove-invalid-parentheses/) >>> [remove_invalid_parentheses.py](https://github.com/rubygitflow/leetcode_python/blob/master/remove_invalid_parentheses.py)
 - [305. Number of Islands II](https://leetcode.com/problems/number-of-islands-ii/) >>> [number_of_islands.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_islands.py)
@@ -157,7 +158,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 144(+9) >>> Files: 108**
+**Tasks: 145(+9) >>> Files: 108**
 
 ## Install
 ```shell
