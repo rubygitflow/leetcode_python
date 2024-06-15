@@ -39,6 +39,7 @@ Solving algorithmic problems on leetcode.com
 - [167. Two Sum II - Input Array Is Sorted](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/) >>> [two_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/two_sum.py)
 - [188. Best Time to Buy and Sell Stock IV](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/) >>> [best_time_to_buy_and_sell_stock.py](https://github.com/rubygitflow/leetcode_python/blob/master/best_time_to_buy_and_sell_stock.py)
 - [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) >>> [number_of_islands.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_islands.py)
+- [204. Count Primes](https://leetcode.com/problems/count-primes/) >>> [count_primes.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_primes.py)
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
 - [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) >>> [contains_duplicate.py](https://github.com/rubygitflow/leetcode_python/blob/master/contains_duplicate.py)
 - [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) >>> [contains_duplicate.py](https://github.com/rubygitflow/leetcode_python/blob/master/contains_duplicate.py)
@@ -161,7 +162,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 148(+9) >>> Files: 109**
+**Tasks: 149(+9) >>> Files: 110**
 
 ## Install
 ```shell
