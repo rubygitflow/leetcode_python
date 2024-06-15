@@ -41,6 +41,7 @@ Solving algorithmic problems on leetcode.com
 - [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) >>> [number_of_islands.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_islands.py)
 - [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) >>> [linked_list_cycle.py](https://github.com/rubygitflow/leetcode_python/blob/master/linked_list_cycle.py)
 - [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate/) >>> [contains_duplicate.py](https://github.com/rubygitflow/leetcode_python/blob/master/contains_duplicate.py)
+- [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/) >>> [contains_duplicate.py](https://github.com/rubygitflow/leetcode_python/blob/master/contains_duplicate.py)
 - [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum/) >>> [sliding_window_median.py](https://github.com/rubygitflow/leetcode_python/blob/master/sliding_window_median.py)
 - [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [258. Add Digits](https://leetcode.com/problems/add-digits/) >>> [alternating_digit_sum.py](https://github.com/rubygitflow/leetcode_python/blob/master/alternating_digit_sum.py)
@@ -159,7 +160,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 146(+9) >>> Files: 109**
+**Tasks: 147(+9) >>> Files: 109**
 
 ## Install
 ```shell
