@@ -128,3 +128,16 @@ print(Solution().isHappy(7414))
 # Output: true
 print(Solution().isHappy(9999976))
 # Output: true
+
+
+def countHappyNumbers():
+    print("Quantity of Happy Numbers")
+    # 1_418_854/10_000_000
+    out = 0
+    # for i in range(1, (2**31 - 1)):
+    for i in range(1, 10000001):
+        if Solution().isHappy(i):
+            out += 1
+    return out
+
+# print(countHappyNumbers())
