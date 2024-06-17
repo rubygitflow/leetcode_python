@@ -17,6 +17,7 @@ Solving algorithmic problems on leetcode.com
 - [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) >>> [search_in_rotated_sorted_array.py](https://github.com/rubygitflow/leetcode_python/blob/master/search_in_rotated_sorted_array.py)
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) >>> [container_with_most_water.py](https://github.com/rubygitflow/leetcode_python/blob/master/container_with_most_water.py)
 - [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
+- [55. Jump Game](https://leetcode.com/problems/jump-game/) >>> [jump_game.py](https://github.com/rubygitflow/leetcode_python/blob/master/jump_game.py)
 - [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) >>> [merge_intervals.py](https://github.com/rubygitflow/leetcode_python/blob/master/merge_intervals.py)
 - [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) >>> [sqrt_x.py](https://github.com/rubygitflow/leetcode_python/blob/master/sqrt_x.py)
 - [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) >>> [binary_search.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_search.py)
@@ -164,7 +165,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 151(+9) >>> Files: 111**
+**Tasks: 152(+9) >>> Files: 111**
 
 ## Install
 ```shell
