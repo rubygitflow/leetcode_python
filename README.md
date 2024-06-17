@@ -18,6 +18,7 @@ Solving algorithmic problems on leetcode.com
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) >>> [container_with_most_water.py](https://github.com/rubygitflow/leetcode_python/blob/master/container_with_most_water.py)
 - [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/) >>> [merge_intervals.py](https://github.com/rubygitflow/leetcode_python/blob/master/merge_intervals.py)
+- [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) >>> [sqrt_x.py](https://github.com/rubygitflow/leetcode_python/blob/master/sqrt_x.py)
 - [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) >>> [binary_search.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_search.py)
 - [81. Search in Rotated Sorted Array II](https://leetcode.com/problems/search-in-rotated-sorted-array-ii/) >>> [search_in_rotated_sorted_array.py](https://github.com/rubygitflow/leetcode_python/blob/master/search_in_rotated_sorted_array.py)
 - [100. Same Tree](https://leetcode.com/problems/same-tree/) >>> [same_tree.py](https://github.com/rubygitflow/leetcode_python/blob/master/same_tree.py)
@@ -163,7 +164,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 150(+9) >>> Files: 110**
+**Tasks: 151(+9) >>> Files: 111**
 
 ## Install
 ```shell
