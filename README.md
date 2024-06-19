@@ -15,6 +15,7 @@ Solving algorithmic problems on leetcode.com
 - [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) >>> [generating_correct_bracket_sequences.py](https://github.com/rubygitflow/leetcode_python/blob/master/generating_correct_bracket_sequences.py)
 - [23. Merge k Sorted Lists](https://leetcode.com/problems/merge-k-sorted-lists/) >>> [merging_k_sorted_lists.py](https://github.com/rubygitflow/leetcode_python/blob/master/merging_k_sorted_lists.py)
 - [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array/) >>> [search_in_rotated_sorted_array.py](https://github.com/rubygitflow/leetcode_python/blob/master/search_in_rotated_sorted_array.py)
+- [38. Count and Say](https://leetcode.com/problems/count-and-say/) >>> [count_and_say.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_and_say.py)
 - [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/) >>> [container_with_most_water.py](https://github.com/rubygitflow/leetcode_python/blob/master/container_with_most_water.py)
 - [43. Multiply Strings](https://leetcode.com/problems/multiply-strings/) >>> [multiply_strings.py](https://github.com/rubygitflow/leetcode_python/blob/master/multiply_strings.py)
 - [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
@@ -166,7 +167,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 153(+9) >>> Files: 112**
+**Tasks: 154(+9) >>> Files: 113**
 
 ## Install
 ```shell
