@@ -154,6 +154,7 @@ Solving algorithmic problems on leetcode.com
 - [2976. Minimum Cost to Convert String I](https://leetcode.com/problems/minimum-cost-to-convert-string-i/) >>> [minimum_cost_to_convert_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_cost_to_convert_string.py)
 - [2977. Minimum Cost to Convert String II](https://leetcode.com/problems/minimum-cost-to-convert-string-ii/) >>> [minimum_cost_to_convert_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_cost_to_convert_string.py)
 - [3032. Count Numbers With Unique Digits II](https://leetcode.com/problems/count-numbers-with-unique-digits-ii/) >>> [count_special_integers.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_special_integers.py)
+- [3043. Find the Length of the Longest Common Prefix](https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/) >>> [common_prefix.py](https://github.com/rubygitflow/leetcode_python/blob/master/common_prefix.py)
 - [3083. Existence of a Substring in a String and Its Reverse](https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/) >>> [existence_substring_in_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/existence_substring_in_string.py)
 - [3123. Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths/) >>> [find_edges_in_shortest_paths.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_edges_in_shortest_paths.py)
 
@@ -168,7 +169,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 155(+9) >>> Files: 114**
+**Tasks: 156(+9) >>> Files: 114**
 
 ## Install
 ```shell
