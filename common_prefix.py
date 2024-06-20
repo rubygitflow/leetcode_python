@@ -23,6 +23,8 @@ from typing import List
 class Solution:
     def longestCommonPrefix(self, strs: List[str]) -> str:
         ''' Longest Common Prefix '''
+        if len(strs) < 2: return ""
+
         for i, char in enumerate(strs[0]):
             for word in strs[1:]:
                 if len(word)<=i or word[i] != char:
@@ -36,3 +38,5 @@ print(Solution().longestCommonPrefix(["dog","racecar","car"]))
 # Output: ""
 print(Solution().longestCommonPrefix(["flow","flow","flow"]))
 # Output: "flow"
+print(Solution().longestCommonPrefix(["dog"]))
+# Output: ""
