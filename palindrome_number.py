@@ -25,6 +25,7 @@
 
 class Solution:
     def isPalindrome(self, x: int) -> bool:
+        ''' Palindrome Number '''
         if x < 0 or (x and x % 10 == 0):
             return False
         y = 0
