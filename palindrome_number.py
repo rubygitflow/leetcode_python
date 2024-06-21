@@ -23,21 +23,28 @@
 
 # Follow up: Could you solve it without converting the integer to a string?
 
-def isPalindromeNumber(x: int) -> bool:
-    if x < 0 or (x and x % 10 == 0):
-        return False
-    y = 0
-    while y < x:
-        y = y * 10 + x % 10
-        x //= 10
-    return x in (y, y // 10)
-
-isPalindromeNumber(123435)
-isPalindromeNumber(73537)
-isPalindromeNumber(900)
-isPalindromeNumber(-123435)
-isPalindromeNumber(994499)
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x < 0 or (x and x % 10 == 0):
+            return False
+        y = 0
+        while y < x:
+            y = y * 10 + x % 10
+            x //= 10
+        return x in (y, y // 10)
 
 
-
-
+print(Solution().isPalindrome(-121))
+# Output: False
+print(Solution().isPalindrome(121))
+# Output: True
+print(Solution().isPalindrome(123435))
+# Output: False
+print(Solution().isPalindrome(73537))
+# Output: True
+print(Solution().isPalindrome(900))
+# Output: False
+print(Solution().isPalindrome(-123435))
+# Output: False
+print(Solution().isPalindrome(994499))
+# Output: True
