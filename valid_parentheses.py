@@ -26,6 +26,7 @@
 
 class Solution(object):
     def isValidParentheses(self, s) -> bool:
+        ''' Valid Parentheses '''
         stack = [] # only use append and pop
         pairs = {
             '(': ')',
@@ -40,7 +41,10 @@ class Solution(object):
         return len(stack) == 0
 
 s = "()[]{}"
-# Output: true
-# s = "(]"
-# Output: false
-Solution().isValidParentheses(s)
+print(Solution().isValidParentheses(s))
+# Output: True
+s = "(]"
+print(Solution().isValidParentheses(s))
+# Output: False
+print(Solution().isValidParentheses("([][])[]{}"))
+# Output: True
