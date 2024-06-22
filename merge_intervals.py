@@ -7,6 +7,7 @@
 # Input: intervals = [[1,3],[2,6],[8,10],[15,18]]
 # Output: [[1,6],[8,10],[15,18]]
 # Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
+
 # Example 2:
 # Input: intervals = [[1,4],[4,5]]
 # Output: [[1,5]]
@@ -25,7 +26,6 @@ class Solution:
         for e in sorted(intervals):
             if not output:
                 output.append(e)
-                continue
             else:
                 l, r = output[-1]
                 if e[0] <= r and e[1] >= l:
@@ -34,9 +34,18 @@ class Solution:
                     output.append(e)
         return output
 
-intervals = [[1,3],[15,18],[2,6],[8,10]]
-intervals = [[1,4],[4,5]]
-intervals = []
-intervals = [[-11,40],[1,4],[4,5]]
 
-Solution().mergeIntervals(intervals)
+print(Solution().mergeIntervals([[1,3],[2,6],[8,10],[15,18]]))
+# Output: [[1,6],[8,10],[15,18]]
+intervals = [[1,3],[15,18],[2,6],[8,10]]
+print(Solution().mergeIntervals(intervals))
+# Output: [[1,6],[8,10],[15,18]]
+intervals = [[1,4],[4,5]]
+print(Solution().mergeIntervals(intervals))
+# Output: [[1,5]]
+intervals = []
+print(Solution().mergeIntervals(intervals))
+# Output: []
+intervals = [[-11,40],[1,4],[4,5]]
+print(Solution().mergeIntervals(intervals))
+# Output: [[-11,40]]
