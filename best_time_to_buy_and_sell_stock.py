@@ -82,6 +82,7 @@
 #######################
 # https://leetcode.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee/description/
 # 714. Best Time to Buy and Sell Stock with Transaction Fee
+# Explanation: https://algo.monster/liteproblems/714
 
 # You are given an array prices where prices[i] is the price of a given stock on the ith day, and an integer fee representing a transaction fee.
 # Find the maximum profit you can achieve. You may complete as many transactions as you like, but you need to pay the transaction fee for each transaction.
@@ -194,6 +195,7 @@ class Solution:
         deals = self.__makeDeals(prices)
         # We can squeeze profit from combining intervals with small overlaps,
         # smaller than the fee size
+        # print(deals)
         merged_deals = [deals[0]]
         for i in range(1, len(deals)):
             if(merged_deals[-1][0] < deals[i][0] and
@@ -204,6 +206,23 @@ class Solution:
         return sum(
             [deal[1] - deal[0] - fee for deal in merged_deals if (deal[1] - deal[0] - fee) > 0]
         )
+    def maxProfitAfterFeeEx(self, prices: List[int], fee: int) -> int:
+        '''
+        Best Time to Buy and Sell Stock with Transaction Fee:
+        Time complexity: O(n)
+        Space complexity: O(1)
+        '''
+        # Initialize sell and buy variables:
+        # sell represents the max profit achievable without holding any stock
+        # buy represents the max profit achievable while holding a stock
+        sell, buy = 0, -prices[0]
+        # Iterate through the list of prices, starting from the second price
+        for price in prices[1:]:
+            # Update sell to the max of itself or the profit from selling a stock at the current price minus the fee
+            # Update buy to the max of itself or the value of the sell after buying a stock at the current price
+            sell, buy = max(sell, buy + price - fee), max(buy, sell - price)
+        # The value of sell at the end of iteration will represent the maximum profit achievable
+        return sell
     def maxProfitWithHold(self, prices: List[int]) -> int:
         ''' Best Time to Buy and Sell Stock with Cooldown '''
         sold = 0                # Represents the maximum profit if the stock is sold on the current day
@@ -261,6 +280,10 @@ print(Solution().maxProfitII(prices))
 # Output: 4
 print(Solution().maxProfitII([7,6,4,3,1]))
 # Output: 0
+print(Solution().maxProfitII([7]))
+# Output: 0
+print(Solution().maxProfitII([]))
+# Output: 0
 
 
 print("Best Time to Buy and Sell Stock III")
@@ -282,6 +305,13 @@ print(Solution().maxProfitAfterFee(prices, fee))
 # Output: 6
 prices, fee = [8,9,7,6,8,8], 2
 print(Solution().maxProfitAfterFee(prices, fee))
+# Output: 0
+
+print(Solution().maxProfitAfterFeeEx([1,3,2,8,4,9], 2))
+# Output: 8
+print(Solution().maxProfitAfterFeeEx([1,3,7,5,10,3], 3))
+# Output: 6
+print(Solution().maxProfitAfterFeeEx([8,9,7,6,8,8], 2))
 # Output: 0
 
 
