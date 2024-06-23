@@ -96,6 +96,7 @@ Solving algorithmic problems on leetcode.com
 - [1109. Corporate Flight Bookings](https://leetcode.com/problems/corporate-flight-bookings/) >>> [corporate_flight_bookings.py](https://github.com/rubygitflow/leetcode_python/blob/master/corporate_flight_bookings.py)
 - [1189. Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) >>> [maximum_number_of_balloons.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_number_of_balloons.py)
 - [1192. Critical Connections in a Network](https://leetcode.com/problems/critical-connections-in-a-network/) >>> [critical_connections_in_a_network.py](https://github.com/rubygitflow/leetcode_python/blob/master/critical_connections_in_a_network.py)
+- [1243. Array Transformation](https://leetcode.com/problems/array-transformation/) >>> [array_transformation.py](https://github.com/rubygitflow/leetcode_python/blob/master/array_transformation.py)
 - [1266. Minimum Time Visiting All Points](https://leetcode.com/problems/minimum-time-visiting-all-points/) >>> [minimum_time_visiting_all_points.py](https://github.com/rubygitflow/leetcode_python/blob/master/minimum_time_visiting_all_points.py)
 - [1347. Minimum Number of Steps to Make Two Strings Anagram](https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram/) >>> [valid_anagram.py](https://github.com/rubygitflow/leetcode_python/blob/master/valid_anagram.py)
 - [1375. Number of Times Binary String Is Prefix-Aligned](https://leetcode.com/problems/number-of-times-binary-string-is-prefix-aligned/) >>> [number_of_times_binary_string.py](https://github.com/rubygitflow/leetcode_python/blob/master/number_of_times_binary_string.py)
@@ -169,7 +170,7 @@ Solving algorithmic problems on leetcode.com
 - Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
 - Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
 
-**Tasks: 156(+9) >>> Files: 114**
+**Tasks: 157(+9) >>> Files: 115**
 
 ## Install
 ```shell
