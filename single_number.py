@@ -119,8 +119,8 @@ print(Solution().singleNumberII([2,2,3,2]))
 # Output: 3
 print(Solution().singleNumberII([0,1,0,1,0,1,99]))
 # Output: 99
-print(Solution().singleNumberII([0,1,0,1,0,1,99]))
-# Output: 99
+print(Solution().singleNumberII([0,1,0,1,0,1]))
+# Output: 0
 print("Single Number II (Brute Force)")
 print(Solution().singleNumberBFII([0,1,0,1,0,1,99]))
 # Output: 99
