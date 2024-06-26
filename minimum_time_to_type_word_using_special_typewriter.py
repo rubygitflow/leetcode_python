@@ -48,6 +48,7 @@
 
 class Solution:
     def minTimeToType(self, word: str) -> int:
+        ''' Minimum Time to Type Word Using Special Typewriter '''
         output = prev = 0
         for c in word:
             curr = ord(c) - ord('a') # absolute position
@@ -58,9 +59,11 @@ class Solution:
         return output
 
 word = "abc"
-Output: 5
+print(Solution().minTimeToType(word))
+# Output: 5
 word = "bza"
-Output: 7
+print(Solution().minTimeToType(word))
+# Output: 7
 word = "zjpc"
-Output: 34
-Solution().minTimeToType(word)
+print(Solution().minTimeToType(word))
+# Output: 34
