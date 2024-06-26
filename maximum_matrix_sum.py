@@ -24,16 +24,18 @@
 # -105 <= matrix[i][j] <= 105
 
 from typing import List
-from numpy import inf
+# from numpy import inf
 
 class Solution:
     def maxMatrixSum(self, matrix: List[List[int]]) -> int:
-    '''
-    для ЧЕТНОГО количества отрицательных чисел можем обойтись перемножением на [-1,-1] любое количество раз
-    для нечетного количества отрицательных чисел надо найти минимальное число в матрице, чтобы его заминусовать
-    '''
+        '''
+        Maximum Matrix Sum
+        для ЧЕТНОГО количества отрицательных чисел можем обойтись перемножением на [-1,-1] любое количество раз
+        для нечетного количества отрицательных чисел надо найти минимальное число в матрице, чтобы его заминусовать
+        '''
         total = cnt = 0
-        mi = inf
+        # mi = inf
+        mi = float('inf')
         for row in matrix:
             for v in row:
                 total += abs(v)
@@ -46,7 +48,8 @@ class Solution:
 
 
 matrix = [[1,-1],[-1,1]]
-Output: 4
+print(Solution().maxMatrixSum(matrix))
+# Output: 4
 matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]
-Output: 16
-Solution().maxMatrixSum(matrix)
+print(Solution().maxMatrixSum(matrix))
+# Output: 16
