@@ -11,6 +11,7 @@
 # Output: true
 # Explanation: '.', 'W', and 'B' are represented by the colors blue, white, and black respectively, and cell (rMove, cMove) is marked with an 'X'.
 # The two good lines with the chosen cell as an endpoint are annotated above with the red rectangles.
+
 # Example 2:
 # Input: board = [[".",".",".",".",".",".",".","."],[".","B",".",".","W",".",".","."],[".",".","W",".",".",".",".","."],[".",".",".","W","B",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".","B","W",".","."],[".",".",".",".",".",".","W","."],[".",".",".",".",".",".",".","B"]], rMove = 4, cMove = 4, color = "W"
 # Output: false
@@ -26,26 +27,30 @@ from typing import List
 
 class Solution:
     def checkMove(self, board: List[List[str]], rMove: int, cMove: int, color: str) -> bool:
+        ''' Check if Move is Legal '''
         print('color:',color)
         for v in board:
             print(v)
+
+        m, n = len(board), len(board[0])
         for dr, dc in (0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (-1, -1), (1, -1), (-1, 1):
             i, j = rMove + dr, cMove + dc
             size = 2
-            while 8 > i >= 0 <= j < 8:
-                if board[i][j] == '.'or size < 3 and board[i][j] == color:
+            while m > i >= 0 <= j < n:
+                if board[i][j] == '.' or size < 3 and board[i][j] == color:
                     break 
                 if board[i][j] == color:
-                    return True    
+                    return True
                 i += dr
                 j += dc
                 size += 1
         return False
 
 board, rMove, cMove, color = [[".",".",".","B",".",".",".","."],[".",".",".","W",".",".",".","."],[".",".",".","W",".",".",".","."],[".",".",".","W",".",".",".","."],["W","B","B",".","W","W","W","B"],[".",".",".","B",".",".",".","."],[".",".",".","B",".",".",".","."],[".",".",".","W",".",".",".","."]], 4, 3, "B"
+print(Solution().checkMove(board, rMove, cMove, color))
 # Output: true
 # может быть конечной точкой у имеющихся цветовых линий
 board, rMove, cMove, color = [[".",".",".",".",".",".",".","."],[".","B",".",".","W",".",".","."],[".",".","W",".",".",".",".","."],[".",".",".","W","B",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".","B","W",".","."],[".",".",".",".",".",".","W","."],[".",".",".",".",".",".",".","B"]], 4, 4, "W"
+print(Solution().checkMove(board, rMove, cMove, color))
 # Output: false
 # не может быть конечной точкой у имеющихся цветовых линий
-Solution().checkMove(board, rMove, cMove, color)

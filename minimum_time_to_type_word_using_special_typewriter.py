@@ -17,6 +17,7 @@
 # - Type the character 'b' in 1 second.
 # - Move the pointer clockwise to 'c' in 1 second.
 # - Type the character 'c' in 1 second.
+
 # Example 2:
 # Input: word = "bza"
 # Output: 7
@@ -28,6 +29,7 @@
 # - Type the character 'z' in 1 second.
 # - Move the pointer clockwise to 'a' in 1 second.
 # - Type the character 'a' in 1 second.
+
 # Example 3:
 # Input: word = "zjpc"
 # Output: 34
