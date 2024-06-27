@@ -12,12 +12,14 @@
 # Remove an 'e' from the first group of 'e's to create "leetcode".
 # No three consecutive characters are equal, so return "leetcode".
 # Example 2:
+
 # Input: s = "aaabaaaa"
 # Output: "aabaa"
 # Explanation:
 # Remove an 'a' from the first group of 'a's to create "aabaaaa".
 # Remove two 'a's from the second group of 'a's to create "aabaa".
 # No three consecutive characters are equal, so return "aabaa".
+
 # Example 3:
 # Input: s = "aab"
 # Output: "aab"
@@ -29,6 +31,7 @@
 
 class Solution:
     def makeFancyString(self, s: str) -> str:
+        ''' Delete Characters to Make Fancy String '''
         output = ''
         for c in s:
             if len(output) > 1 and output[-1] == output[-2] == c:
@@ -37,7 +40,10 @@ class Solution:
         return output
 
 s = "leeetcode"
+print(Solution().makeFancyString(s))
 # Output: "leetcode"
 s = "aaabaaaa"
+print(Solution().makeFancyString(s))
 # Output: "aabaa"
-Solution().makeFancyString(s)
+print(Solution().makeFancyString("aab"))
+# Output: "aab"
