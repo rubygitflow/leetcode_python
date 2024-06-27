@@ -29,6 +29,8 @@
 # 1 <= s.length <= 105
 # s consists only of lowercase English letters.
 
+from functools import reduce
+
 class Solution:
     def makeFancyString(self, s: str) -> str:
         ''' Delete Characters to Make Fancy String '''
@@ -39,6 +41,10 @@ class Solution:
             output += c
         return output
 
+    def makeFancyStringII(self, s: str) -> str:
+        ''' Delete Characters to Make Fancy String (reduce)'''
+        return reduce(lambda acc, ch: (acc[0] if ch == acc[1] and ch == acc[2] else acc[0] + ch, ch, acc[1]), list(s), ('','',''))[0]
+
 s = "leeetcode"
 print(Solution().makeFancyString(s))
 # Output: "leetcode"
@@ -46,4 +52,13 @@ s = "aaabaaaa"
 print(Solution().makeFancyString(s))
 # Output: "aabaa"
 print(Solution().makeFancyString("aab"))
+# Output: "aab"
+
+s = "leeetcode"
+print(Solution().makeFancyStringII(s))
+# Output: "leetcode"
+s = "aaabaaaa"
+print(Solution().makeFancyStringII(s))
+# Output: "aabaa"
+print(Solution().makeFancyStringII("aab"))
 # Output: "aab"
