@@ -37,6 +37,8 @@
 from functools import reduce
 from typing import List
 
+MOD = 10**9 + 7
+
 class Solution:
     def countSpecialSubsequences(self, nums: List[int]) -> int:
         '''
@@ -46,29 +48,27 @@ class Solution:
         total_zeros = 0 # number of subsequences of 0s so far
         total_ones = 0 # the number of subsequences of 0s followed by 1s so far
         total_twos = 0 # the number of special subsequences so far
-        M = 1000000007
         for n in nums:
             if n == 0:
                 # if we have found new 0 we can add it to any existing subsequence of 0s
                 # or use only this 0
-                total_zeros += (total_zeros + 1) % M
+                total_zeros += (total_zeros + 1) % MOD
             elif n == 1:
                 # if we have found new 1 we can add it to any existing subsequence of 0s or 0s and 1s
                 # to get a valid subsequence of 0s and 1s
-                total_ones += (total_zeros + total_ones) % M
+                total_ones += (total_zeros + total_ones) % MOD
             else:
                 # if we have found new 2 we can add it to any existing subsequence of 0s and 1s 0r 0s,1s and 2s
                 # to get a valid subsequence of 0s,1s and 2s
-                total_twos += (total_ones + total_twos) % M
+                total_twos += (total_ones + total_twos) % MOD
         return total_twos
 
     def countSpecialSubsequencesII(self, nums: List[int]) -> int:
         ''' Count Number of Special Subsequences (reduce)'''
-        M = 1000000007
         return reduce(lambda acc, n:\
-            ((1 + 2*acc[0]) % M if n == 0 else acc[0],\
-            (acc[0] + 2*acc[1]) % M if n == 1 else acc[1],\
-            (acc[1] + 2*acc[2]) % M if n == 2 else acc[2]),\
+            ((1 + 2*acc[0]) % MOD if n == 0 else acc[0],\
+            (acc[0] + 2*acc[1]) % MOD if n == 1 else acc[1],\
+            (acc[1] + 2*acc[2]) % MOD if n == 2 else acc[2]),\
             nums, (0,0,0))[2]
 
 
