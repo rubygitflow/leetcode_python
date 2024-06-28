@@ -48,30 +48,33 @@ from typing import List
 class Solution:
     def topKFrequentWords(self, words: List[str], k: int) -> List[str]:
         ''' Top K Frequent Words '''
-        data = Counter(words)
+        cnt = Counter(words)
         # сортировка по количествам (values) и отображение слов (keys)
         # в количестве k
-        return sorted(data, key=lambda x: (-data[x], x))[:k]
+        return sorted(cnt, key=lambda x: (-cnt[x], x))[:k]
     def topKFrequentElements(self, nums: List[int], k: int) -> List[int]:
         ''' Top K Frequent Elements '''
-        data = Counter(nums)
-        # data = defaultdict(int)
+        cnt = Counter(nums)
+        # cnt = defaultdict(int)
         # for c in nums:
-        #     data[c] += 1
+        #     cnt[c] += 1
         # сортировка по количествам (values) и отображение элементов (keys)
         # в количестве k
-        return sorted(data, key=lambda x: (-data[x], x))[:k]
+        return sorted(cnt, key=lambda x: (-cnt[x], x))[:k]
 
+print("Top K Frequent Words")
 words = ["i","love","leetcode","i","love","coding"]
-Solution().topKFrequentWords(words, 2)
+print(Solution().topKFrequentWords(words, 2))
 # Output: ["i","love"]
 
 words = ["the","day","is","sunny","the","the","the","sunny","is","is"]
-Solution().topKFrequentWords(words, 4)
+print(Solution().topKFrequentWords(words, 4))
 # Output: ["the","is","sunny","day"]
 
-# nums = [1,1,1,2,2,3]
+print("Top K Frequent Elements ")
+nums = [1,1,1,2,2,3]
+print(Solution().topKFrequentElements(nums, 2))
 # Output: [1,2]
 nums = [10,11,13,25,22,30,42,10,]
+print(Solution().topKFrequentElements(nums, 2))
 # Output: [10, 11]
-Solution().topKFrequentElements(nums, 2)
