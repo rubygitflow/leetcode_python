@@ -42,13 +42,15 @@
 # Each element in nums appears exactly three times except for one element which appears once.
 
 
-# from functools import reduce
 # https://docs-python.ru/standart-library/modul-functools-python/funktsija-reduce-modulja-functools/
-
+from functools import reduce
 from collections import Counter, defaultdict
 from typing import List
 
 class Solution:
+    def singleNumberIII(self, nums: List[int]) -> int:
+        ''' Single Number (reduce) '''
+        return reduce(lambda acc, y: acc ^ y, nums)
     def singleNumber(self, nums: List[int]) -> int:
         ''' Single Number '''
         # return reduce(lambda x, y: x ^ y, nums)
@@ -104,6 +106,20 @@ print(Solution().singleNumber([1]))
 print(Solution().singleNumber([0,1,0,1,0,1]))
 # Output: 1 - couldn't resolve correctly
 print(Solution().singleNumber([0,1,0,1]))
+# Output: 0 - unexpected situation
+
+print("Single Number (reduce)")
+print(Solution().singleNumberIII([2,2,1,1,1]))
+# Output: 1
+print(Solution().singleNumberIII([2,2,1]))
+# Output: 1
+print(Solution().singleNumberIII([4,1,2,1,2]))
+# Output: 4
+print(Solution().singleNumberIII([1]))
+# Output: 1
+print(Solution().singleNumberIII([0,1,0,1,0,1]))
+# Output: 1 - couldn't resolve correctly
+print(Solution().singleNumberIII([0,1,0,1]))
 # Output: 0 - unexpected situation
 
 print("Single Number (Brute Force)")
