@@ -51,7 +51,7 @@ class Solution:
         cnt = Counter(words)
         # сортировка по количествам (values) и отображение слов (keys)
         # в количестве k
-        return sorted(cnt, key=lambda x: (-cnt[x], x))[:k]
+        return sorted(cnt, key=lambda x: (-cnt[x], x))[:abs(k) if k != 0 else len(words)]
     def topKFrequentElements(self, nums: List[int], k: int) -> List[int]:
         ''' Top K Frequent Elements '''
         cnt = Counter(nums)
@@ -60,7 +60,7 @@ class Solution:
         #     cnt[c] += 1
         # сортировка по количествам (values) и отображение элементов (keys)
         # в количестве k
-        return sorted(cnt, key=lambda x: (-cnt[x], x))[:k]
+        return sorted(cnt, key=lambda x: (-cnt[x], x))[:abs(k) if k != 0 else len(words)]
 
 print("Top K Frequent Words")
 words = ["i","love","leetcode","i","love","coding"]
@@ -71,6 +71,12 @@ words = ["the","day","is","sunny","the","the","the","sunny","is","is"]
 print(Solution().topKFrequentWords(words, 4))
 # Output: ["the","is","sunny","day"]
 
+print(Solution().topKFrequentWords(["the","the","the","day","sunny","sunny","is","is","is"], 2))
+# Output: ["is", "the"]
+print(Solution().topKFrequentWords(["the","the","the","day","sunny","sunny","is","is","is"], 6))
+# Output: ["is", "the", "sunny", "day"]
+
+
 print("Top K Frequent Elements ")
 nums = [1,1,1,2,2,3]
 print(Solution().topKFrequentElements(nums, 2))
@@ -78,3 +84,16 @@ print(Solution().topKFrequentElements(nums, 2))
 nums = [10,11,13,25,22,30,42,10,]
 print(Solution().topKFrequentElements(nums, 2))
 # Output: [10, 11]
+
+print(Solution().topKFrequentElements([1], 1))
+# Output: [1]
+print(Solution().topKFrequentElements([10,11,13,25,22,30,42,10], 3))
+# Output: [10, 11, 13]
+print(Solution().topKFrequentElements([10,11,13,25,22,30,42,10], 0))
+# Output: [10, 11, 13, 22, 25, 30, 42]
+print(Solution().topKFrequentElements([10,11,13,25,22,30,42,10], -2))
+# Output: [10, 11]
+print(Solution().topKFrequentElements([1,1,1,2,2,3,0,0,0,5,5,5], 2))
+# Output: [0, 1]
+print(Solution().topKFrequentElements([1,1,1,2,2,3,5,5,5,0,0,0], 2))
+# Output: [0, 1]
