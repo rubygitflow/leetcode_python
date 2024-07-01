@@ -94,49 +94,50 @@ class Solution:
                 return x
         return 0
 
-print("Single Number")
-print(Solution().singleNumber([2,2,1,1,1]))
-# Output: 1
-print(Solution().singleNumber([2,2,1]))
-# Output: 1
-print(Solution().singleNumber([4,1,2,1,2]))
-# Output: 4
-print(Solution().singleNumber([1]))
-# Output: 1
-print(Solution().singleNumber([0,1,0,1,0,1]))
-# Output: 1 - couldn't resolve correctly
-print(Solution().singleNumber([0,1,0,1]))
-# Output: 0 - unexpected situation
+if __name__ == "__main__":
+    print("Single Number")
+    print(Solution().singleNumber([2,2,1,1,1]))
+    # Output: 1
+    print(Solution().singleNumber([2,2,1]))
+    # Output: 1
+    print(Solution().singleNumber([4,1,2,1,2]))
+    # Output: 4
+    print(Solution().singleNumber([1]))
+    # Output: 1
+    print(Solution().singleNumber([0,1,0,1,0,1]))
+    # Output: 1 - couldn't resolve correctly
+    print(Solution().singleNumber([0,1,0,1]))
+    # Output: 0 - unexpected situation
 
-print("Single Number (reduce)")
-print(Solution().singleNumberIII([2,2,1,1,1]))
-# Output: 1
-print(Solution().singleNumberIII([2,2,1]))
-# Output: 1
-print(Solution().singleNumberIII([4,1,2,1,2]))
-# Output: 4
-print(Solution().singleNumberIII([1]))
-# Output: 1
-print(Solution().singleNumberIII([0,1,0,1,0,1]))
-# Output: 1 - couldn't resolve correctly
-print(Solution().singleNumberIII([0,1,0,1]))
-# Output: 0 - unexpected situation
+    print("Single Number (reduce)")
+    print(Solution().singleNumberIII([2,2,1,1,1]))
+    # Output: 1
+    print(Solution().singleNumberIII([2,2,1]))
+    # Output: 1
+    print(Solution().singleNumberIII([4,1,2,1,2]))
+    # Output: 4
+    print(Solution().singleNumberIII([1]))
+    # Output: 1
+    print(Solution().singleNumberIII([0,1,0,1,0,1]))
+    # Output: 1 - couldn't resolve correctly
+    print(Solution().singleNumberIII([0,1,0,1]))
+    # Output: 0 - unexpected situation
 
-print("Single Number (Brute Force)")
-print(Solution().singleNumberBF([0,1,0,1,0,1,99]))
-# Output: 99
-print(Solution().singleNumber([0,1,0,1,0,1,99]))
-# Output: 98 - couldn't resolve correctly
-print(Solution().singleNumberBF([0,1,0,1,0,1]))
-# Output: 0 - unexpected situation
+    print("Single Number (Brute Force)")
+    print(Solution().singleNumberBF([0,1,0,1,0,1,99]))
+    # Output: 99
+    print(Solution().singleNumber([0,1,0,1,0,1,99]))
+    # Output: 98 - couldn't resolve correctly
+    print(Solution().singleNumberBF([0,1,0,1,0,1]))
+    # Output: 0 - unexpected situation
 
-print("Single Number II")
-print(Solution().singleNumberII([2,2,3,2]))
-# Output: 3
-print(Solution().singleNumberII([0,1,0,1,0,1,99]))
-# Output: 99
-print(Solution().singleNumberII([0,1,0,1,0,1]))
-# Output: 0
-print("Single Number II (Brute Force)")
-print(Solution().singleNumberBFII([0,1,0,1,0,1,99]))
-# Output: 99
+    print("Single Number II")
+    print(Solution().singleNumberII([2,2,3,2]))
+    # Output: 3
+    print(Solution().singleNumberII([0,1,0,1,0,1,99]))
+    # Output: 99
+    print(Solution().singleNumberII([0,1,0,1,0,1]))
+    # Output: 0
+    print("Single Number II (Brute Force)")
+    print(Solution().singleNumberBFII([0,1,0,1,0,1,99]))
+    # Output: 99
