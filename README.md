@@ -183,3 +183,8 @@ $ git clone git@github.com:rubygitflow/leetcode_python.git && cd leetcode_python
 ```shell
 $ python3 minimum_time_difference.py
 ```
+
+## Run tests
+```shell
+$ pytest test_full.py
+```

@@ -54,9 +54,8 @@ class Solution:
         # print(g)
         return dfs(0, 0)
 
-
 print(Solution().minTime(7,[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]],[False,False,True,False,True,True,False]))
-# Output: 8 
+# Output: 8
 print(Solution().minTime(7,[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]],[False,False,True,False,False,True,False]))
 # Output: 6
 print(Solution().minTime(7,[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]],[False,False,False,False,False,False,False]))
