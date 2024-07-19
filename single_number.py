@@ -49,10 +49,10 @@ from typing import List
 
 class Solution:
     def singleNumberIII(self, nums: List[int]) -> int:
-        ''' Single Number (reduce) '''
+        ''' Single Number (reduce)'''
         return reduce(lambda acc, y: acc ^ y, nums)
     def singleNumber(self, nums: List[int]) -> int:
-        ''' Single Number '''
+        ''' Single Number (FOR-loop)'''
         # return reduce(lambda x, y: x ^ y, nums)
         for i in range(1, len(nums)):
             # Проводим побитовую операцию xor
@@ -95,7 +95,7 @@ class Solution:
         return 0
 
 if __name__ == "__main__":
-    print("Single Number")
+    print("Single Number (FOR-loop)")
     print(Solution().singleNumber([2,2,1,1,1]))
     # Output: 1
     print(Solution().singleNumber([2,2,1]))

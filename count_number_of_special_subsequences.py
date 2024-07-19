@@ -42,7 +42,7 @@ MOD = 10**9 + 7
 class Solution:
     def countSpecialSubsequences(self, nums: List[int]) -> int:
         '''
-        Count Number of Special Subsequences
+        Count Number of Special Subsequences (FOR-loop)
         подсчет перебором за один проход
         '''
         total_zeros = 0 # number of subsequences of 0s so far
@@ -72,32 +72,35 @@ class Solution:
             nums, (0,0,0))[2]
 
 
-nums = [0,1,2]
-print(Solution().countSpecialSubsequences(nums))
-# Output: 1
-nums = [0,1,2,0]
-print(Solution().countSpecialSubsequences(nums))
-# Output: 1
-nums = [0,1,2,2]
-print(Solution().countSpecialSubsequences(nums))
-# Output: 3
-nums = [2,2,0,0]
-print(Solution().countSpecialSubsequences(nums))
-# Output: 0
-nums = [0,1,2,0,1,2]
-print(Solution().countSpecialSubsequences(nums))
-# Output: 7
-# 0 - 1 вариант
-# 00 - 2+1 варианта  0_ _0 00
-# 000 - 6 + 1 вариантов 0__ _0_ 00_ 0_0 _00 __0 000 
+if __name__ == "__main__":
+    print("Count Number of Special Subsequences (FOR-loop)")
+    nums = [0,1,2]
+    print(Solution().countSpecialSubsequences(nums))
+    # Output: 1
+    nums = [0,1,2,0]
+    print(Solution().countSpecialSubsequences(nums))
+    # Output: 1
+    nums = [0,1,2,2]
+    print(Solution().countSpecialSubsequences(nums))
+    # Output: 3
+    nums = [2,2,0,0]
+    print(Solution().countSpecialSubsequences(nums))
+    # Output: 0
+    nums = [0,1,2,0,1,2]
+    print(Solution().countSpecialSubsequences(nums))
+    # Output: 7
+    # 0 - 1 вариант
+    # 00 - 2+1 варианта  0_ _0 00
+    # 000 - 6 + 1 вариантов 0__ _0_ 00_ 0_0 _00 __0 000
 
-print(Solution().countSpecialSubsequencesII([0,1,2]))
-# Output: 1
-print(Solution().countSpecialSubsequencesII([0,1,2,0]))
-# Output: 1
-print(Solution().countSpecialSubsequencesII([0,1,2,2]))
-# Output: 3
-print(Solution().countSpecialSubsequencesII([2,2,0,0]))
-# Output: 0
-print(Solution().countSpecialSubsequencesII([0,1,2,0,1,2]))
-# Output: 7
+    print("Count Number of Special Subsequences (reduce)")
+    print(Solution().countSpecialSubsequencesII([0,1,2]))
+    # Output: 1
+    print(Solution().countSpecialSubsequencesII([0,1,2,0]))
+    # Output: 1
+    print(Solution().countSpecialSubsequencesII([0,1,2,2]))
+    # Output: 3
+    print(Solution().countSpecialSubsequencesII([2,2,0,0]))
+    # Output: 0
+    print(Solution().countSpecialSubsequencesII([0,1,2,0,1,2]))
+    # Output: 7

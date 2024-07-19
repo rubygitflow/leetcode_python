@@ -186,5 +186,9 @@ $ python3 minimum_time_difference.py
 
 ## Run tests
 ```shell
+$ pytest -v test_full.py
+```
+or
+```shell
 $ pytest test_full.py
 ```
