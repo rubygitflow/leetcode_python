@@ -60,12 +60,10 @@ class Solution:
             prev = curr
         return output
 
-word = "abc"
-print(Solution().minTimeToType(word))
-# Output: 5
-word = "bza"
-print(Solution().minTimeToType(word))
-# Output: 7
-word = "zjpc"
-print(Solution().minTimeToType(word))
-# Output: 34
+if __name__ == "__main__":
+    print(Solution().minTimeToType("abc"))
+    # Output: 5
+    print(Solution().minTimeToType("bza"))
+    # Output: 7
+    print(Solution().minTimeToType("zjpc"))
+    # Output: 34

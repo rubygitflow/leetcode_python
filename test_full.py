@@ -3,11 +3,49 @@
 
 import pytest
 
+from list_node import ListNode, add_linked_list
+
 from collect_all_apples_in_tree import Solution as Solution1443
 from single_number import Solution as Solution136_137
 from top_k_frequent_words import Solution as Solution347_692
 from delete_characters_to_make_fancy_string import Solution as Solution1957
 from count_number_of_special_subsequences import Solution as Solution1955
+from check_if_move_is_legal import Solution as Solution1958
+from minimum_time_for_k_virus_variants_to_spread import Solution as Solution1956
+from minimum_time_to_type_word_using_special_typewriter import Solution as Solution1974
+from maximum_matrix_sum import Solution as Solution1975
+from merging_k_sorted_lists import Solution as Solution23
+
+
+
+@pytest.mark.skip(reason="Python-task only")
+def test_the_merging_k_sorted_lists():
+    assert str(Solution23().mergeKLists([add_linked_list([2,6]),add_linked_list([1,4,5]),add_linked_list([1,3,4])])) == '[1,1,2,3,4,4,5,6]'
+
+
+def test_the_maximum_matrix_sum():
+    assert Solution1975().maxMatrixSum([[1,-1],[-1,1]]) == 4
+    assert Solution1975().maxMatrixSum([[1,2,3],[-1,-2,-3],[1,2,3]]) == 16
+
+
+def test_the_minimum_time_to_type_word_using_special_typewriter():
+    assert Solution1974().minTimeToType("abc") == 5
+    assert Solution1974().minTimeToType("bza") == 7
+    assert Solution1974().minTimeToType("zjpc") == 34
+
+
+@pytest.mark.skip(reason="Python-case only")
+def test_the_minimum_time_for_k_virus_variants_to_spread():
+    assert Solution1956().minDayskVariants([[1,1],[6,1]], 2) == 3
+    assert Solution1956().minDayskVariants([[3,3],[1,2],[9,2]], 2) == 2
+    assert Solution1956().minDayskVariants([[3,3],[1,2],[9,2]], 3) == 4
+
+
+def test_the_check_if_move_is_legal():
+    board, rMove, cMove, color = [[".",".",".","B",".",".",".","."],[".",".",".","W",".",".",".","."],[".",".",".","W",".",".",".","."],[".",".",".","W",".",".",".","."],["W","B","B",".","W","W","W","B"],[".",".",".","B",".",".",".","."],[".",".",".","B",".",".",".","."],[".",".",".","W",".",".",".","."]], 4, 3, "B"
+    assert Solution1958().checkMove(board, rMove, cMove, color) == True
+    board, rMove, cMove, color = [[".",".",".",".",".",".",".","."],[".","B",".",".","W",".",".","."],[".",".","W",".",".",".",".","."],[".",".",".","W","B",".",".","."],[".",".",".",".",".",".",".","."],[".",".",".",".","B","W",".","."],[".",".",".",".",".",".","W","."],[".",".",".",".",".",".",".","B"]], 4, 4, "W"
+    assert Solution1958().checkMove(board, rMove, cMove, color) == False
 
 
 @pytest.mark.skip(reason="Python-case only")

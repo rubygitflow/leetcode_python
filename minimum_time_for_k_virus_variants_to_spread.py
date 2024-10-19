@@ -44,10 +44,13 @@ class Solution:
         # k вирусов встретятся на расстоянии в позиции dists[k - 2] 
         return dists[k - 2]
 
-points = [[1,1],[6,1]], k = 2
-# Output: 3
-points = [[3,3],[1,2],[9,2]], k = 2
-# Output: 2
-points = [[3,3],[1,2],[9,2]], k = 3
-# Output: 4
-Solution().minDayskVariants(points, k)
+if __name__ == "__main__":
+    points, k = [[1,1],[6,1]], 2
+    print(Solution().minDayskVariants(points, k))
+    # Output: 3
+    points, k = [[3,3],[1,2],[9,2]], 2
+    print(Solution().minDayskVariants(points, k))
+    # Output: 2
+    points, k = [[3,3],[1,2],[9,2]], 3
+    print(Solution().minDayskVariants(points, k))
+    # Output: 4

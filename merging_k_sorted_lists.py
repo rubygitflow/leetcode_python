@@ -46,7 +46,9 @@
 import sys
 import time
 import tracemalloc
-from typing import List
+from heapq import heappop, heappush
+from list_node import ListNode, add_linked_list
+from typing import List, Optional
 from collections import Counter
 
 class Solution:
@@ -116,6 +118,26 @@ class Solution:
         output = self.__iterateSortedLists()
         self.__trace_stop(t)
         return output
+    def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
+        ''' Merging K sorted lists (final)'''
+        if not lists:
+            return []
+
+        head = ListNode(0)
+        tail = head
+        heap = [] # where the pop method returns the smallest item
+        for i in range(len(lists)):
+            if lists[i]:
+                heappush(heap, (lists[i].val, i))
+        while heap:
+            list_index = heappop(heap)[1]
+            tail.next = lists[list_index]
+            lists[list_index] = lists[list_index].next
+            if lists[list_index]:
+                heappush(heap, (lists[list_index].val, list_index))
+            tail = tail.next
+        return head.next
+
 
 # 3
 # 3 1 44 88
@@ -124,21 +146,27 @@ class Solution:
 # Output: 
 # [1, 5, 16, 23, 44, 44, 78, 88, 98]
 
-4
-6 2 26 64 88 96 96
-4 8 20 65 86
-7 1 4 16 42 58 61 69
-3 1 84 86
+# 4
+# 6 2 26 64 88 96 96
+# 4 8 20 65 86
+# 7 1 4 16 42 58 61 69
+# 3 1 84 86
 # Output: 
 # [1, 1, 2, 4, 8, 16, 20, 26, 42, 58, 61, 64, 65, 69, 84, 86, 86, 88, 96, 96]
 
+if __name__ == "__main__":
+    print("Merge k Sorted Lists (Algorithm I)")
+    print("Enter the number of arrays and the arrays themselves:")
+    print(Solution().inputAndCombineSortedLists())
+    # 0.0005667209625244141
+    # Current memory usage is 0.002923MB; Peak was 0.003371MB
 
-Solution().inputAndCombineSortedLists()
+    print("Merge k Sorted Lists (Algorithm II)")
+    print("Enter the number of arrays and the arrays themselves:")
+    print(Solution().inputAndCombineSortedListsOld())
+    # 0.0002269744873046875
+    # Current memory usage is 0.000512MB; Peak was 0.000896MB
 
-# 0.0005667209625244141
-# Current memory usage is 0.002923MB; Peak was 0.003371MB
-
-Solution().inputAndCombineSortedListsOld()
-
-# 0.0002269744873046875
-# Current memory usage is 0.000512MB; Peak was 0.000896MB
+    print("Merge k Sorted Lists (final")
+    print(Solution().mergeKLists([add_linked_list([2,6]),add_linked_list([1,4,5]),add_linked_list([1,3,4])]))
+    # Output: [1,1,2,3,4,4,5,6]

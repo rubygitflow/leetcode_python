@@ -47,9 +47,10 @@ class Solution:
         return total - mi * 2
 
 
-matrix = [[1,-1],[-1,1]]
-print(Solution().maxMatrixSum(matrix))
-# Output: 4
-matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]
-print(Solution().maxMatrixSum(matrix))
-# Output: 16
+if __name__ == "__main__":
+    matrix = [[1,-1],[-1,1]]
+    print(Solution().maxMatrixSum(matrix))
+    # Output: 4
+    matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]
+    print(Solution().maxMatrixSum(matrix))
+    # Output: 16
