@@ -61,24 +61,25 @@ class Solution:
 
         return (num - 1) % 9 + 1;
 
-print("Alternating Digit Sum")
-print(Solution().alternateDigitSum(521))
-# Output: 4
-print(Solution().alternateDigitSum(111))
-# Output: 1
-print(Solution().alternateDigitSum(886996))
-# Output: 0
-print(Solution().alternateDigitSum(885996))
-# Output: -1
-print(Solution().alternateDigitSum(886995))
-# Output: 1
+if __name__ == "__main__":
+    print("Alternating Digit Sum")
+    print(Solution().alternateDigitSum(521))
+    # Output: 4
+    print(Solution().alternateDigitSum(111))
+    # Output: 1
+    print(Solution().alternateDigitSum(886996))
+    # Output: 0
+    print(Solution().alternateDigitSum(885996))
+    # Output: -1
+    print(Solution().alternateDigitSum(886995))
+    # Output: 1
 
-print("Add Digits (digital root - Time complexity: O(1))")
-print(Solution().addDigits(38))
-# Output: 2
-print(Solution().addDigits(0))
-# Output: 0
-print(Solution().addDigits(886995))
-# Output: 9
-print(Solution().addDigits(1))
-# Output: 1
+    print("Add Digits (digital root - Time complexity: O(1))")
+    print(Solution().addDigits(38))
+    # Output: 2
+    print(Solution().addDigits(0))
+    # Output: 0
+    print(Solution().addDigits(886995))
+    # Output: 9
+    print(Solution().addDigits(1))
+    # Output: 1

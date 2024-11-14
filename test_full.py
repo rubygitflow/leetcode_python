@@ -15,7 +15,68 @@ from minimum_time_for_k_virus_variants_to_spread import Solution as Solution1956
 from minimum_time_to_type_word_using_special_typewriter import Solution as Solution1974
 from maximum_matrix_sum import Solution as Solution1975
 from merging_k_sorted_lists import Solution as Solution23
+from advantage_shuffle import Solution as Solution870
+from alternating_digit_sum import Solution as Solution258_2544
+from best_time_to_buy_and_sell_stock import Solution as Solution121_122_123_188_309_714
 
+
+def test_the_best_time_to_buy_and_sell_stock():
+    assert Solution121_122_123_188_309_714().maxProfit([7,1,5,3,6,4]) == 5
+    assert Solution121_122_123_188_309_714().maxProfit([7,6,4,3,1]) == 0
+
+def test_the_best_time_to_buy_and_sell_stock_ii():
+    assert Solution121_122_123_188_309_714().maxProfitII([7,1,5,3,6,4]) == 7
+    assert Solution121_122_123_188_309_714().maxProfitII([1,2,3,4,5]) == 4
+    assert Solution121_122_123_188_309_714().maxProfitII([7,6,4,3,1]) == 0
+    assert Solution121_122_123_188_309_714().maxProfitII([7]) == 0
+    assert Solution121_122_123_188_309_714().maxProfitII([]) == 0
+
+def test_the_best_time_to_buy_and_sell_stock_iii():
+    assert Solution121_122_123_188_309_714().maxProfitIII([3,3,5,0,0,3,1,4]) == 6
+    assert Solution121_122_123_188_309_714().maxProfitIII([1,2,3,4,5]) == 4
+    assert Solution121_122_123_188_309_714().maxProfitIII([7,6,4,3,1]) == 0
+    assert Solution121_122_123_188_309_714().maxProfitIII([7]) == 0
+    assert Solution121_122_123_188_309_714().maxProfitIII([]) == 0
+
+def test_the_best_time_to_buy_and_sell_stock_iv():
+    assert Solution121_122_123_188_309_714().maxProfitIV(2, [2,4,1]) == 2
+    assert Solution121_122_123_188_309_714().maxProfitIV(2, [3,2,6,7,5,0,3]) == 8
+    assert Solution121_122_123_188_309_714().maxProfitIV(2, [3,2,6,5,0,3]) == 7
+
+def test_the_best_time_to_buy_and_sell_stock_with_cooldown():
+    assert Solution121_122_123_188_309_714().maxProfitWithHold([1,2,3,0,2]) == 3
+    assert Solution121_122_123_188_309_714().maxProfitWithHold([1]) == 0
+
+def test_the_best_time_to_buy_and_sell_stock_with_fee_ex():
+    assert Solution121_122_123_188_309_714().maxProfitAfterFeeEx([1,3,2,8,4,9], 2) == 8
+    assert Solution121_122_123_188_309_714().maxProfitAfterFeeEx([1,3,7,5,10,3], 3) == 6
+    assert Solution121_122_123_188_309_714().maxProfitAfterFeeEx([8,9,7,6,8,8], 2) == 0
+
+@pytest.mark.skip(reason="Python-case only")
+def test_the_best_time_to_buy_and_sell_stock_with_fee():
+    assert Solution121_122_123_188_309_714().maxProfitAfterFee([1,3,2,8,4,9], 2) == 8
+    assert Solution121_122_123_188_309_714().maxProfitAfterFee([1,3,7,5,10,3], 3) == 6
+    assert Solution121_122_123_188_309_714().maxProfitAfterFee([8,9,7,6,8,8], 2) == 0
+
+
+def test_the_add_digits():
+    assert Solution258_2544().addDigits(38) == 2
+    assert Solution258_2544().addDigits(0) == 0
+    assert Solution258_2544().addDigits(886995) == 9
+    assert Solution258_2544().addDigits(1) == 1
+
+def test_the_alternating_digit_sum():
+    assert Solution258_2544().alternateDigitSum(521) == 4
+    assert Solution258_2544().alternateDigitSum(111) == 1
+    assert Solution258_2544().alternateDigitSum(886996) == 0
+    assert Solution258_2544().alternateDigitSum(885996) == -1
+    assert Solution258_2544().alternateDigitSum(886995) == 1
+
+
+def test_the_advantage_shuffle():
+    assert Solution870().advantageCount([2,7,11,15], [1,10,4,11]) == [2,11,7,15]
+    assert Solution870().advantageCount([12,24,8,32], [13,25,32,11]) == [24,32,8,12]
+    assert Solution870().advantageCount([12,24,8], [13,25,32,11]) == []
 
 
 @pytest.mark.skip(reason="Python-task only")

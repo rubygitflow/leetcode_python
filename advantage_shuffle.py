@@ -38,7 +38,10 @@ class Solution:
             # print('output',output)
         return output
 
-print(Solution().advantageCount([2,7,11,15], [1,10,4,11]))
-# Output: [2,11,7,15]
-print(Solution().advantageCount([12,24,8,32], [13,25,32,11]))
-# Output: [24,32,8,12]
+if __name__ == "__main__":
+    print(Solution().advantageCount([2,7,11,15], [1,10,4,11]))
+    # Output: [2,11,7,15]
+    print(Solution().advantageCount([12,24,8,32], [13,25,32,11]))
+    # Output: [24,32,8,12]
+    print(Solution().advantageCount([12,24,8], [13,25,32,11]))
+    # Output: []

@@ -262,73 +262,74 @@ class Solution:
         return res
 
 
-print("Best Time to Buy and Sell Stock")
-prices = [7,1,5,3,6,4]
-print(Solution().maxProfit(prices))
-# Output: 5
-prices = [7,6,4,3,1]
-print(Solution().maxProfit(prices))
-# Output: 0
+if __name__ == "__main__":
+    print("Best Time to Buy and Sell Stock")
+    prices = [7,1,5,3,6,4]
+    print(Solution().maxProfit(prices))
+    # Output: 5
+    prices = [7,6,4,3,1]
+    print(Solution().maxProfit(prices))
+    # Output: 0
 
 
-print("Best Time to Buy and Sell Stock II")
-prices = [7,1,5,3,6,4]
-print(Solution().maxProfitII(prices))
-# Output: 7
-prices = [1,2,3,4,5]
-print(Solution().maxProfitII(prices))
-# Output: 4
-print(Solution().maxProfitII([7,6,4,3,1]))
-# Output: 0
-print(Solution().maxProfitII([7]))
-# Output: 0
-print(Solution().maxProfitII([]))
-# Output: 0
+    print("Best Time to Buy and Sell Stock II")
+    prices = [7,1,5,3,6,4]
+    print(Solution().maxProfitII(prices))
+    # Output: 7
+    prices = [1,2,3,4,5]
+    print(Solution().maxProfitII(prices))
+    # Output: 4
+    print(Solution().maxProfitII([7,6,4,3,1]))
+    # Output: 0
+    print(Solution().maxProfitII([7]))
+    # Output: 0
+    print(Solution().maxProfitII([]))
+    # Output: 0
 
 
-print("Best Time to Buy and Sell Stock III")
-prices = [3,3,5,0,0,3,1,4]
-print(Solution().maxProfitIII(prices))
-# Output: 6
-print(Solution().maxProfitIII([1,2,3,4,5]))
-# Output: 4
-print(Solution().maxProfitIII([7,6,4,3,1]))
-# Output: 0
+    print("Best Time to Buy and Sell Stock III")
+    prices = [3,3,5,0,0,3,1,4]
+    print(Solution().maxProfitIII(prices))
+    # Output: 6
+    print(Solution().maxProfitIII([1,2,3,4,5]))
+    # Output: 4
+    print(Solution().maxProfitIII([7,6,4,3,1]))
+    # Output: 0
 
 
-print("Best Time to Buy and Sell Stock with Transaction Fee")
-prices, fee = [1,3,2,8,4,9], 2
-print(Solution().maxProfitAfterFee(prices, fee))
-# Output: 8
-prices, fee = [1,3,7,5,10,3], 3
-print(Solution().maxProfitAfterFee(prices, fee))
-# Output: 6
-prices, fee = [8,9,7,6,8,8], 2
-print(Solution().maxProfitAfterFee(prices, fee))
-# Output: 0
+    print("Best Time to Buy and Sell Stock with Transaction Fee")
+    prices, fee = [1,3,2,8,4,9], 2
+    print(Solution().maxProfitAfterFee(prices, fee))
+    # Output: 8
+    prices, fee = [1,3,7,5,10,3], 3
+    print(Solution().maxProfitAfterFee(prices, fee))
+    # Output: 6
+    prices, fee = [8,9,7,6,8,8], 2
+    print(Solution().maxProfitAfterFee(prices, fee))
+    # Output: 0
 
-print(Solution().maxProfitAfterFeeEx([1,3,2,8,4,9], 2))
-# Output: 8
-print(Solution().maxProfitAfterFeeEx([1,3,7,5,10,3], 3))
-# Output: 6
-print(Solution().maxProfitAfterFeeEx([8,9,7,6,8,8], 2))
-# Output: 0
-
-
-print("Best Time to Buy and Sell Stock with Cooldown")
-prices = [1,2,3,0,2]
-print(Solution().maxProfitWithHold(prices))
-# Output: 3
-print(Solution().maxProfitWithHold([1]))
-# Output: 0
+    print(Solution().maxProfitAfterFeeEx([1,3,2,8,4,9], 2))
+    # Output: 8
+    print(Solution().maxProfitAfterFeeEx([1,3,7,5,10,3], 3))
+    # Output: 6
+    print(Solution().maxProfitAfterFeeEx([8,9,7,6,8,8], 2))
+    # Output: 0
 
 
-print("Best Time to Buy and Sell Stock IV")
-k, prices = 2, [2,4,1]
-print(Solution().maxProfitIV(k, prices))
-# Output: 2
-k, prices = 2, [3,2,6,7,5,0,3]
-print(Solution().maxProfitIV(k, prices))
-# Output: 8
-print(Solution().maxProfitIV(2, [3,2,6,5,0,3]))
-# Output: 7
+    print("Best Time to Buy and Sell Stock with Cooldown")
+    prices = [1,2,3,0,2]
+    print(Solution().maxProfitWithHold(prices))
+    # Output: 3
+    print(Solution().maxProfitWithHold([1]))
+    # Output: 0
+
+
+    print("Best Time to Buy and Sell Stock IV")
+    k, prices = 2, [2,4,1]
+    print(Solution().maxProfitIV(k, prices))
+    # Output: 2
+    k, prices = 2, [3,2,6,7,5,0,3]
+    print(Solution().maxProfitIV(k, prices))
+    # Output: 8
+    print(Solution().maxProfitIV(2, [3,2,6,5,0,3]))
+    # Output: 7
