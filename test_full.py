@@ -5,6 +5,7 @@ import pytest
 
 from list_node import ListNode, add_linked_list
 
+from generating_correct_bracket_sequences import Solution as Solution22
 from collect_all_apples_in_tree import Solution as Solution1443
 from single_number import Solution as Solution136_137
 from top_k_frequent_words import Solution as Solution347_692
@@ -184,3 +185,18 @@ def test_the_collect_all_apples_in_tree():
     assert Solution1443().minTime(7,[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]],[True,False,False,False,False,False,False]) == 0
     assert Solution1443().minTime(9,[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6],[4,7],[4,8]],[False,False,False,False,False,False,False,False,True]) == 6
     assert Solution1443().minTime(9,[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6],[4,7],[4,8]],[False,True,False,False,True,False,False,False,True]) == 6
+
+
+def test_the_generate_parenthesis():
+    assert Solution22().generateParenthesis(2) == ["(())", "()()"]
+    assert Solution22().generateParenthesis(3) == ["((()))","(()())","(())()","()(())","()()()"]
+    assert Solution22().generateParenthesis(1) == ["()"]
+
+def test_the_calculate_parenthesis_permutation():
+    assert Solution22().calculateParenthesisPermutation(2) == 2
+    assert Solution22().countWellFormedParenthesis(5) == 42
+    assert Solution22().calculateParenthesisPermutation(15) == 9694845
+
+@pytest.mark.skip(reason="Python-case only")
+def test_the_calculate_parenthesis_permutation_by_the_formula():
+    assert Solution22().countWellFormedParenthesis(15) == 9694845
