@@ -162,17 +162,17 @@ Solving algorithmic problems on leetcode.com
 - [3123. Find Edges in Shortest Paths](https://leetcode.com/problems/find-edges-in-shortest-paths/) >>> [find_edges_in_shortest_paths.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_edges_in_shortest_paths.py)
 
 ## Addition
-- [Find all sequences of Ones in a binary vector] >>> [binary_vector.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_vector.py)
-- [Find two numbers from the unsorted list in such that they add up to target] >>> [find_number_from_array_that_adds_up_to_given_number.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_number_from_array_that_adds_up_to_given_number.py)
-- [Output all the unique pairs from a numeric array] >>> [all_unique_pairs.py](https://github.com/rubygitflow/leetcode_python/blob/master/all_unique_pairs.py)
-- [Just count all the unique pairs from the numeric array] >>> [all_unique_pairs.py](https://github.com/rubygitflow/leetcode_python/blob/master/all_unique_pairs.py)
-- [a list of strings of a given length from the dictArray dictionary] >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
-- [the dictArray dictionary, filtered by line lengths] >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
-- [Take Pairs With Absolute Difference K] >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
-- [Matching strings up to letter permutation] >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
-- [Maximum Length of Semi-Increasing Subarrays] >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
-- [Calculate Parentheses Permutation] >>> [generating_correct_bracket_sequences.py](https://github.com/rubygitflow/leetcode_python/blob/master/generating_correct_bracket_sequences.py)
-- [Count Well Formed Parenthesis By The Formula] >>> [generating_correct_bracket_sequences.py](https://github.com/rubygitflow/leetcode_python/blob/master/generating_correct_bracket_sequences.py)
+- Find all sequences of Ones in a binary vector >>> [binary_vector.py](https://github.com/rubygitflow/leetcode_python/blob/master/binary_vector.py)
+- Find two numbers from the unsorted list in such that they add up to target >>> [find_number_from_array_that_adds_up_to_given_number.py](https://github.com/rubygitflow/leetcode_python/blob/master/find_number_from_array_that_adds_up_to_given_number.py)
+- Output all the unique pairs from a numeric array >>> [all_unique_pairs.py](https://github.com/rubygitflow/leetcode_python/blob/master/all_unique_pairs.py)
+- Just count all the unique pairs from the numeric array >>> [all_unique_pairs.py](https://github.com/rubygitflow/leetcode_python/blob/master/all_unique_pairs.py)
+- A list of strings of a given length from the dictArray dictionary >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
+- The dictArray dictionary, filtered by line lengths >>> [longest_substring_without_repeating_characters.py](https://github.com/rubygitflow/leetcode_python/blob/master/longest_substring_without_repeating_characters.py)
+- Take Pairs With Absolute Difference K >>> [count_number_of_pairs_with_absolute_difference_k.py](https://github.com/rubygitflow/leetcode_python/blob/master/count_number_of_pairs_with_absolute_difference_k.py)
+- Matching strings up to letter permutation >>> [matching_strings_up_to_letter_permutation.py](https://github.com/rubygitflow/leetcode_python/blob/master/matching_strings_up_to_letter_permutation.py)
+- Maximum Length of Semi-Increasing Subarrays >>> [maximum_length_of_semi_decreasing_subarrays.py](https://github.com/rubygitflow/leetcode_python/blob/master/maximum_length_of_semi_decreasing_subarrays.py)
+- Calculate Parentheses Permutation >>> [generating_correct_bracket_sequences.py](https://github.com/rubygitflow/leetcode_python/blob/master/generating_correct_bracket_sequences.py)
+- Count Well Formed Parenthesis By The Formula >>> [generating_correct_bracket_sequences.py](https://github.com/rubygitflow/leetcode_python/blob/master/generating_correct_bracket_sequences.py)
 
 **Tasks: 159(+11) >>> Files: 117**
 
